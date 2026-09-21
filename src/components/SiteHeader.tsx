@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { openSiteSearch } from "./search-bus";
 
 const NAV = [
   { href: "/", label: "Home" },
@@ -12,44 +11,33 @@ const NAV = [
   { href: "/about", label: "About" },
 ];
 
-function isActive(pathname: string, href: string): boolean {
-  if (href === "/") return pathname === "/";
-  return pathname === href || pathname.startsWith(href + "/");
-}
-
+/** Reference nav: 78px sticky bar, mark-only skewed lime logo, five links,
+ *  one circular search button that opens the search overlay;
+ *  at <=980px only the search trigger remains. No login/signup. */
 export default function SiteHeader() {
-  const pathname = usePathname();
-  const [open, setOpen] = useState(false);
-
   return (
-    <header className="site-header">
-      <div className="container header-inner">
-        <Link href="/" className="logo" aria-label="Thread Academy home">
-          <span className="logo-mark" aria-hidden="true" />
-          <span className="logo-text">Thread&nbsp;Academy</span>
-        </Link>
-        <nav className={`main-nav${open ? " open" : ""}`} aria-label="Primary">
-          {NAV.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={isActive(pathname, item.href) ? "active" : ""}
-              onClick={() => setOpen(false)}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-        <div className="header-actions" />
-        <button
-          className="nav-toggle"
-          aria-label={open ? "Close menu" : "Open menu"}
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? "✕" : "☰"}
+    <header className="nav">
+      <Link href="/" className="brand" aria-label="Thread Academy home">
+        <span className="brand-mark" aria-hidden="true" />
+      </Link>
+      <nav className="nav-links" aria-label="Primary">
+        {NAV.map((item) => (
+          <Link key={item.href} href={item.href}>
+            {item.label}
+          </Link>
+        ))}
+      </nav>
+      <div className="nav-actions">
+        <button className="nav-search" aria-label="Search" onClick={() => openSiteSearch()}>
+          <svg width="19" height="19" viewBox="0 0 19 19" fill="none" aria-hidden="true">
+            <circle cx="8.5" cy="8.5" r="6.5" stroke="currentColor" strokeWidth="2" />
+            <path d="M13.5 13.5L17.5 17.5" stroke="currentColor" strokeWidth="2" />
+          </svg>
         </button>
       </div>
+      <button className="mobile-menu" aria-label="Open search" onClick={() => openSiteSearch()}>
+        ⌕
+      </button>
     </header>
   );
 }
