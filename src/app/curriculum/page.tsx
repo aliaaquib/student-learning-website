@@ -13,7 +13,6 @@ export default function CurriculumIndexPage() {
     <>
       <PageHero
         crumbs={[{ label: "Home", href: "/" }, { label: "Curriculum" }]}
-        eyebrow="Choose a learning structure"
         title="Curriculum"
         lede="Each curriculum is represented on its own terms. Choose one to see its stages and levels, then continue to subjects and chapters."
       />

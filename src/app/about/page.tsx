@@ -38,7 +38,6 @@ export default function AboutPage() {
     <>
       <PageHero
         crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
-        eyebrow="Why Thread Academy exists"
         title="Knowledge needs a path."
         lede="Thread Academy is an educational knowledge platform built to make complete school subjects easier to navigate, understand, and revisit."
       />

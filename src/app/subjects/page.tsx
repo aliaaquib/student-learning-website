@@ -44,7 +44,6 @@ export default function SubjectsPage() {
     <>
       <PageHero
         crumbs={[{ label: "Home", href: "/" }, { label: "Subjects" }]}
-        eyebrow="Knowledge library"
         title="Subjects"
         lede="Explore school subjects by category. Every subject can be followed through British, Cambridge, American, or IB structures."
       />

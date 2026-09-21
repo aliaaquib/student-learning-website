@@ -50,7 +50,6 @@ export default function ResourcesHubPage() {
     <>
       <PageHero
         crumbs={[{ label: "Home", href: "/" }, { label: "Resources" }]}
-        eyebrow="Curriculum-aware study materials"
         title="Resources"
         lede="Find notes, worksheets, worked examples, interactive tools, and revision materials beside the chapter they support."
       />
