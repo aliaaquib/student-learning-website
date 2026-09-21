@@ -35,6 +35,48 @@
   "text": "american curriculum us k–12 system the american system runs from kindergarten through grade 12: elementary school, middle school and high school, with standards set state by state. elementary school grades k–2 grades 3–5 middle school grade 6 grade 7 grade 8 high school grades 9–10 grades 11–12"
  },
  {
+  "kind": "topic",
+  "title": "Applied Ethics",
+  "path": "Philosophy → IB → DP Year 1 → Ethics → Applied Ethics",
+  "url": "/subjects/philosophy/ib/dp-year-1/ethics/applied-ethics",
+  "text": "applied ethics philosophy → ib → dp year 1 → ethics → applied ethics moral theory meets the real world: who’s responsible when ai harms, and do animals count? real dilemmas: ai, animals, the environment."
+ },
+ {
+  "kind": "subject",
+  "title": "Arabic",
+  "path": "Subjects",
+  "url": "/subjects/arabic",
+  "text": "arabic لغة الضاد — the language of a rich civilisation. arabic is spoken by 400+ million people across 25 countries. you’ll master the script, the sounds — including the famous ‘ض’ — and build real conversational foundations. the arabic script first words practical arabic"
+ },
+ {
+  "kind": "topic",
+  "title": "Arabic Sounds",
+  "path": "Arabic → British → Year 10 → The Arabic Script → Arabic Sounds",
+  "url": "/subjects/arabic/british/year-10/script/arabic-sounds",
+  "text": "arabic sounds arabic → british → year 10 → the arabic script → arabic sounds arabic’s deep, emphatic sounds are its signature — and they’re learnable with practice. from ع to ض: the famous sounds."
+ },
+ {
+  "kind": "topic",
+  "title": "Arguments",
+  "path": "Philosophy → IB → DP Year 1 → Thinking Clearly → Arguments",
+  "url": "/subjects/philosophy/ib/dp-year-1/thinking-clearly/arguments",
+  "text": "arguments philosophy → ib → dp year 1 → thinking clearly → arguments a philosophical argument isn’t a quarrel — it’s a set of reasons offered in support of a conclusion. premises, conclusions and validity."
+ },
+ {
+  "kind": "topic",
+  "title": "Arguments for God",
+  "path": "Religious Studies → British → Year 10 → Philosophy of Religion → Arguments for God",
+  "url": "/subjects/religious-studies/british/year-10/philosophy-religion/arguments-for-god",
+  "text": "arguments for god religious studies → british → year 10 → philosophy of religion → arguments for god for centuries, philosophers have argued god’s existence can be proved by reason alone. here are the famous attempts. the classic cases for god’s existence."
+ },
+ {
+  "kind": "subject",
+  "title": "Astronomy",
+  "path": "Subjects",
+  "url": "/subjects/astronomy",
+  "text": "astronomy planets, stars and the universe beyond. astronomy is the oldest science — and the most humbling. you’ll tour the solar system, learn how stars are born and die, and see how we explore a universe 93 billion light-years across. the solar system stars and galaxies exploring space"
+ },
+ {
   "kind": "chapter",
   "title": "Atomic Structure",
   "path": "Chemistry → Cambridge → IGCSE → Atomic Structure",
@@ -54,6 +96,34 @@
   "path": "Chemistry → Cambridge → IGCSE → Atomic Structure → Atoms and Elements",
   "url": "/subjects/chemistry/cambridge/igcse/atomic-structure/atoms-and-elements",
   "text": "atoms and elements chemistry → cambridge → igcse → atomic structure → atoms and elements everything is built from atoms: tiny nuclei of protons and neutrons, orbited by electrons. learn the particles, and what makes each element unique. protons, neutrons, electrons — and what makes an element."
+ },
+ {
+  "kind": "topic",
+  "title": "Basic Sentence Patterns",
+  "path": "Chinese → British → Year 10 → First Conversations → Basic Sentence Patterns",
+  "url": "/subjects/chinese/british/year-10/first-conversations/basic-patterns",
+  "text": "basic sentence patterns chinese → british → year 10 → first conversations → basic sentence patterns good news: chinese verbs never conjugate. the patterns are beautifully simple. word order without conjugations."
+ },
+ {
+  "kind": "topic",
+  "title": "Basic Sentences",
+  "path": "Arabic → British → Year 10 → First Words → Basic Sentences",
+  "url": "/subjects/arabic/british/year-10/first-words/basic-sentences",
+  "text": "basic sentences arabic → british → year 10 → first words → basic sentences arabic sentences often start with the verb — and ‘to be’ in the present is invisible. your first arabic sentences."
+ },
+ {
+  "kind": "topic",
+  "title": "Being a Global Citizen",
+  "path": "Global Studies → IB → DP Year 1 → Global Citizenship → Being a Global Citizen",
+  "url": "/subjects/global-studies/ib/dp-year-1/global-citizenship/global-citizen",
+  "text": "being a global citizen global studies → ib → dp year 1 → global citizenship → being a global citizen climate, pandemics, ai — the biggest issues of your lifetime ignore borders. global citizenship means acting like it. rights, responsibilities beyond borders."
+ },
+ {
+  "kind": "topic",
+  "title": "Being an Active Citizen",
+  "path": "Civics → American → Grade 8 → Citizenship → Being an Active Citizen",
+  "url": "/subjects/civics/american/grade-8/citizenship/being-an-active-citizen",
+  "text": "being an active citizen civics → american → grade 8 → citizenship → being an active citizen you don’t need to wait for a ballot box to shape your community. how you can make a difference now."
  },
  {
   "kind": "subject",
@@ -126,11 +196,214 @@
   "text": "chemistry what stuff is made of — and why it reacts. chemistry explains the material world: the atoms everything is built from, how they bond into molecules, and why substances transform in reactions. you'll move from particles you can't see to predictions you can test. atomic structure the periodic table chemical bonding chemical changes quantitative chemistry"
  },
  {
+  "kind": "topic",
+  "title": "Child Development",
+  "path": "Psychology → British → Year 12 → Development → Child Development",
+  "url": "/subjects/psychology/british/year-12/development/child-development",
+  "text": "child development psychology → british → year 12 → development → child development children aren’t small adults — they think in qualitatively different ways at each stage of development. piaget, attachment and growing minds."
+ },
+ {
+  "kind": "subject",
+  "title": "Chinese",
+  "path": "Subjects",
+  "url": "/subjects/chinese",
+  "text": "chinese 你好! the world’s most spoken language. mandarin chinese opens up 1.4 billion speakers and 5,000 years of culture. you’ll conquer the four tones, meet your first characters, and start real conversations. sounds and tones first conversations daily chinese"
+ },
+ {
+  "kind": "chapter",
+  "title": "Citizenship",
+  "path": "Civics → American → Grade 8 → Citizenship",
+  "url": "/subjects/civics/american/grade-8/citizenship",
+  "text": "citizenship civics → american → grade 8 → citizenship rights, duties and belonging. rights and responsibilities being an active citizen"
+ },
+ {
+  "kind": "resource",
+  "title": "Citizenship resources",
+  "path": "Resources → Civics → American → Grade 8 → Citizenship",
+  "url": "/resources/civics/american/grade-8/citizenship",
+  "text": "citizenship resources notes worksheets videos revision civics → american → grade 8 → citizenship rights and responsibilities being an active citizen"
+ },
+ {
+  "kind": "subject",
+  "title": "Civics",
+  "path": "Subjects",
+  "url": "/subjects/civics",
+  "text": "civics your rights, your vote, your community. civics is about your place in public life: the rights you hold, how government touches your day, and how you can shape the community around you — starting now, not just when you can vote. citizenship government media literacy"
+ },
+ {
+  "kind": "topic",
+  "title": "Climate Change",
+  "path": "Environmental Science → Cambridge → IGCSE → Human Impact → Climate Change",
+  "url": "/subjects/environmental-science/cambridge/igcse/human-impact/climate-change",
+  "text": "climate change environmental science → cambridge → igcse → human impact → climate change human activity is warming the planet — here’s the mechanism, the evidence, and what follows. the greenhouse effect, the evidence and the consequences."
+ },
+ {
   "kind": "subject",
   "title": "Computer Science",
   "path": "Subjects",
   "url": "/subjects/computer-science",
   "text": "computer science how computers think — and how to make them do what you want. computer science is about solving problems precisely. you'll learn how to break problems down, write programs in python, and understand the ideas — from variables to functions — that every piece of software is built on. computational thinking programming fundamentals algorithms data representation"
+ },
+ {
+  "kind": "topic",
+  "title": "Conformity",
+  "path": "Psychology → British → Year 12 → Social Behaviour → Conformity",
+  "url": "/subjects/psychology/british/year-12/social-behaviour/conformity",
+  "text": "conformity psychology → british → year 12 → social behaviour → conformity put someone in a group giving wrong answers, and a third of the time they’ll agree — knowing the group is wrong. why we go along with the group."
+ },
+ {
+  "kind": "topic",
+  "title": "Conservation",
+  "path": "Environmental Science → Cambridge → IGCSE → Sustainability → Conservation",
+  "url": "/subjects/environmental-science/cambridge/igcse/sustainability/conservation",
+  "text": "conservation environmental science → cambridge → igcse → sustainability → conservation conservation is the active protection of biodiversity — from nature reserves to breeding programmes. protecting species and habitats for the future."
+ },
+ {
+  "kind": "chapter",
+  "title": "Core Grammar",
+  "path": "German → British → Year 10 → Core Grammar",
+  "url": "/subjects/german/british/year-10/core-grammar",
+  "text": "core grammar german → british → year 10 → core grammar verbs, word order and cases. present tense verbs genders and cases"
+ },
+ {
+  "kind": "resource",
+  "title": "Core Grammar resources",
+  "path": "Resources → German → British → Year 10 → Core Grammar",
+  "url": "/resources/german/british/year-10/core-grammar",
+  "text": "core grammar resources notes worksheets videos revision german → british → year 10 → core grammar present tense verbs genders and cases"
+ },
+ {
+  "kind": "chapter",
+  "title": "Culture and Identity",
+  "path": "Sociology → British → Year 12 → Culture and Identity",
+  "url": "/subjects/sociology/british/year-12/culture-identity",
+  "text": "culture and identity sociology → british → year 12 → culture and identity norms, socialisation and who we become. culture and norms socialisation"
+ },
+ {
+  "kind": "resource",
+  "title": "Culture and Identity resources",
+  "path": "Resources → Sociology → British → Year 12 → Culture and Identity",
+  "url": "/resources/sociology/british/year-12/culture-identity",
+  "text": "culture and identity resources notes worksheets videos revision sociology → british → year 12 → culture and identity culture and norms socialisation"
+ },
+ {
+  "kind": "topic",
+  "title": "Culture and Norms",
+  "path": "Sociology → British → Year 12 → Culture and Identity → Culture and Norms",
+  "url": "/subjects/sociology/british/year-12/culture-identity/culture-and-norms",
+  "text": "culture and norms sociology → british → year 12 → culture and identity → culture and norms you queue without thinking, lower your voice in libraries, and feel awkward breaking dress codes — that’s culture working invisibly. the unwritten rules that run society."
+ },
+ {
+  "kind": "chapter",
+  "title": "Cyrillic",
+  "path": "Russian → British → Year 10 → Cyrillic",
+  "url": "/subjects/russian/british/year-10/cyrillic",
+  "text": "cyrillic russian → british → year 10 → cyrillic the alphabet in a weekend. the cyrillic alphabet pronunciation and stress"
+ },
+ {
+  "kind": "resource",
+  "title": "Cyrillic resources",
+  "path": "Resources → Russian → British → Year 10 → Cyrillic",
+  "url": "/resources/russian/british/year-10/cyrillic",
+  "text": "cyrillic resources notes worksheets videos revision russian → british → year 10 → cyrillic the cyrillic alphabet pronunciation and stress"
+ },
+ {
+  "kind": "chapter",
+  "title": "Daily Chinese",
+  "path": "Chinese → British → Year 10 → Daily Chinese",
+  "url": "/subjects/chinese/british/year-10/daily-chinese",
+  "text": "daily chinese chinese → british → year 10 → daily chinese numbers, time and getting around. numbers time and plans"
+ },
+ {
+  "kind": "resource",
+  "title": "Daily Chinese resources",
+  "path": "Resources → Chinese → British → Year 10 → Daily Chinese",
+  "url": "/resources/chinese/british/year-10/daily-chinese",
+  "text": "daily chinese resources notes worksheets videos revision chinese → british → year 10 → daily chinese numbers time and plans"
+ },
+ {
+  "kind": "chapter",
+  "title": "Daily Japanese",
+  "path": "Japanese → British → Year 10 → Daily Japanese",
+  "url": "/subjects/japanese/british/year-10/daily-japanese",
+  "text": "daily japanese japanese → british → year 10 → daily japanese numbers, time and everyday life. numbers time and daily life"
+ },
+ {
+  "kind": "resource",
+  "title": "Daily Japanese resources",
+  "path": "Resources → Japanese → British → Year 10 → Daily Japanese",
+  "url": "/resources/japanese/british/year-10/daily-japanese",
+  "text": "daily japanese resources notes worksheets videos revision japanese → british → year 10 → daily japanese numbers time and daily life"
+ },
+ {
+  "kind": "topic",
+  "title": "Daily Phrases",
+  "path": "Arabic → British → Year 10 → Practical Arabic → Daily Phrases",
+  "url": "/subjects/arabic/british/year-10/practical-arabic/daily-phrases",
+  "text": "daily phrases arabic → british → year 10 → practical arabic → daily phrases from ‘inshallah’ to bargaining — the phrases you’ll actually use. the phrases that run daily life."
+ },
+ {
+  "kind": "chapter",
+  "title": "Daily Russian",
+  "path": "Russian → British → Year 10 → Daily Russian",
+  "url": "/subjects/russian/british/year-10/daily-russian",
+  "text": "daily russian russian → british → year 10 → daily russian numbers, time and everyday phrases. numbers time and phrases"
+ },
+ {
+  "kind": "resource",
+  "title": "Daily Russian resources",
+  "path": "Resources → Russian → British → Year 10 → Daily Russian",
+  "url": "/resources/russian/british/year-10/daily-russian",
+  "text": "daily russian resources notes worksheets videos revision russian → british → year 10 → daily russian numbers time and phrases"
+ },
+ {
+  "kind": "chapter",
+  "title": "Democracy",
+  "path": "Political Science → IB → DP Year 1 → Democracy",
+  "url": "/subjects/political-science/ib/dp-year-1/democracy",
+  "text": "democracy political science → ib → dp year 1 → democracy how democracies work — and why they’re fragile. how democracy works voting systems"
+ },
+ {
+  "kind": "resource",
+  "title": "Democracy resources",
+  "path": "Resources → Political Science → IB → DP Year 1 → Democracy",
+  "url": "/resources/political-science/ib/dp-year-1/democracy",
+  "text": "democracy resources notes worksheets videos revision political science → ib → dp year 1 → democracy how democracy works voting systems"
+ },
+ {
+  "kind": "chapter",
+  "title": "Development",
+  "path": "Psychology → British → Year 12 → Development",
+  "url": "/subjects/psychology/british/year-12/development",
+  "text": "development psychology → british → year 12 → development how minds grow from childhood on. child development stress and wellbeing"
+ },
+ {
+  "kind": "resource",
+  "title": "Development resources",
+  "path": "Resources → Psychology → British → Year 12 → Development",
+  "url": "/resources/psychology/british/year-12/development",
+  "text": "development resources notes worksheets videos revision psychology → british → year 12 → development child development stress and wellbeing"
+ },
+ {
+  "kind": "subject",
+  "title": "Earth Science",
+  "path": "Subjects",
+  "url": "/subjects/earth-science",
+  "text": "earth science the planet beneath your feet — rocks, plates and oceans. earth science explains the ground you stand on, the water you drink and the air you breathe. from the planet’s molten core to the cycle that moves every drop of water, you’ll learn how earth’s systems connect. earth’s structure rocks and minerals water systems"
+ },
+ {
+  "kind": "chapter",
+  "title": "Earth’s Structure",
+  "path": "Earth Science → American → Grades 9–10 → Earth’s Structure",
+  "url": "/subjects/earth-science/american/grades-9-10/earth-structure",
+  "text": "earth’s structure earth science → american → grades 9–10 → earth’s structure layers, plates and the forces that move continents. layers of the earth plate tectonics"
+ },
+ {
+  "kind": "resource",
+  "title": "Earth’s Structure resources",
+  "path": "Resources → Earth Science → American → Grades 9–10 → Earth’s Structure",
+  "url": "/resources/earth-science/american/grades-9-10/earth-structure",
+  "text": "earth’s structure resources notes worksheets videos revision earth science → american → grades 9–10 → earth’s structure layers of the earth plate tectonics"
  },
  {
   "kind": "subject",
@@ -140,11 +413,81 @@
   "text": "economics how choices, markets and money shape the world. economics studies how people, businesses and governments make choices when resources are scarce. from the price of bread to national inflation, you'll learn the models economists use — and their limits. microeconomics macroeconomics"
  },
  {
+  "kind": "chapter",
+  "title": "Ecosystems",
+  "path": "Environmental Science → Cambridge → IGCSE → Ecosystems",
+  "url": "/subjects/environmental-science/cambridge/igcse/ecosystems",
+  "text": "ecosystems environmental science → cambridge → igcse → ecosystems how living things and their environment fit together. what is an ecosystem? food chains and food webs"
+ },
+ {
+  "kind": "resource",
+  "title": "Ecosystems resources",
+  "path": "Resources → Environmental Science → Cambridge → IGCSE → Ecosystems",
+  "url": "/resources/environmental-science/cambridge/igcse/ecosystems",
+  "text": "ecosystems resources notes worksheets videos revision environmental science → cambridge → igcse → ecosystems what is an ecosystem? food chains and food webs"
+ },
+ {
+  "kind": "subject",
+  "title": "Engineering",
+  "path": "Subjects",
+  "url": "/subjects/engineering",
+  "text": "engineering design, build, test — solving problems that matter. engineering is creativity with constraints: every bridge, phone and prosthetic limb began as someone’s solution to a problem. you’ll learn to think like an engineer — define, design, test, improve. the design process structures machines"
+ },
+ {
   "kind": "subject",
   "title": "English",
   "path": "Subjects",
   "url": "/subjects/english",
   "text": "english read deeply. write clearly. argue well. english builds the two skills everything else depends on: understanding what you read and expressing what you think. you'll analyse texts, craft essays and stories, and master the mechanics of powerful sentences. reading skills writing skills grammar & vocabulary"
+ },
+ {
+  "kind": "subject",
+  "title": "Environmental Science",
+  "path": "Subjects",
+  "url": "/subjects/environmental-science",
+  "text": "environmental science how the natural world works — and how we protect it. environmental science studies how living things interact with their surroundings — and how human activity changes those relationships. you’ll learn how ecosystems function, what threatens them, and what a sustainable future could look like. ecosystems human impact sustainability"
+ },
+ {
+  "kind": "chapter",
+  "title": "Ethics",
+  "path": "Philosophy → IB → DP Year 1 → Ethics",
+  "url": "/subjects/philosophy/ib/dp-year-1/ethics",
+  "text": "ethics philosophy → ib → dp year 1 → ethics what makes actions right or wrong? moral theories applied ethics"
+ },
+ {
+  "kind": "resource",
+  "title": "Ethics resources",
+  "path": "Resources → Philosophy → IB → DP Year 1 → Ethics",
+  "url": "/resources/philosophy/ib/dp-year-1/ethics",
+  "text": "ethics resources notes worksheets videos revision philosophy → ib → dp year 1 → ethics moral theories applied ethics"
+ },
+ {
+  "kind": "chapter",
+  "title": "Everyday German",
+  "path": "German → British → Year 10 → Everyday German",
+  "url": "/subjects/german/british/year-10/everyday-german",
+  "text": "everyday german german → british → year 10 → everyday german real situations, real conversations. numbers and time shopping and food"
+ },
+ {
+  "kind": "resource",
+  "title": "Everyday German resources",
+  "path": "Resources → German → British → Year 10 → Everyday German",
+  "url": "/resources/german/british/year-10/everyday-german",
+  "text": "everyday german resources notes worksheets videos revision german → british → year 10 → everyday german numbers and time shopping and food"
+ },
+ {
+  "kind": "chapter",
+  "title": "Exploring Space",
+  "path": "Astronomy → American → Grades 9–10 → Exploring Space",
+  "url": "/subjects/astronomy/american/grades-9-10/exploring-space",
+  "text": "exploring space astronomy → american → grades 9–10 → exploring space how we study the universe. telescopes space missions"
+ },
+ {
+  "kind": "resource",
+  "title": "Exploring Space resources",
+  "path": "Resources → Astronomy → American → Grades 9–10 → Exploring Space",
+  "url": "/resources/astronomy/american/grades-9-10/exploring-space",
+  "text": "exploring space resources notes worksheets videos revision astronomy → american → grades 9–10 → exploring space telescopes space missions"
  },
  {
   "kind": "topic",
@@ -154,11 +497,81 @@
   "text": "expressions mathematics → cambridge → igcse → algebra → expressions tidy up algebra: collect like terms, expand brackets and factorise. simplifying first makes every equation easier to solve. simplifying, expanding and collecting like terms."
  },
  {
+  "kind": "topic",
+  "title": "Fallacies",
+  "path": "Philosophy → IB → DP Year 1 → Thinking Clearly → Fallacies",
+  "url": "/subjects/philosophy/ib/dp-year-1/thinking-clearly/fallacies",
+  "text": "fallacies philosophy → ib → dp year 1 → thinking clearly → fallacies bad arguments usually fail in familiar ways — learn the patterns and you’ll spot them everywhere. the classic ways arguments go wrong."
+ },
+ {
+  "kind": "topic",
+  "title": "First Characters",
+  "path": "Chinese → British → Year 10 → Sounds and Tones → First Characters",
+  "url": "/subjects/chinese/british/year-10/sounds-tones/first-characters",
+  "text": "first characters chinese → british → year 10 → sounds and tones → first characters chinese characters look impossible — until you learn they’re built from reusable parts. meeting hanzi."
+ },
+ {
+  "kind": "chapter",
+  "title": "First Conversations",
+  "path": "Chinese → British → Year 10 → First Conversations",
+  "url": "/subjects/chinese/british/year-10/first-conversations",
+  "text": "first conversations chinese → british → year 10 → first conversations greetings and introductions. greetings basic sentence patterns"
+ },
+ {
+  "kind": "resource",
+  "title": "First Conversations resources",
+  "path": "Resources → Chinese → British → Year 10 → First Conversations",
+  "url": "/resources/chinese/british/year-10/first-conversations",
+  "text": "first conversations resources notes worksheets videos revision chinese → british → year 10 → first conversations greetings basic sentence patterns"
+ },
+ {
+  "kind": "chapter",
+  "title": "First Steps",
+  "path": "Russian → British → Year 10 → First Steps",
+  "url": "/subjects/russian/british/year-10/first-steps",
+  "text": "first steps russian → british → year 10 → first steps greetings and basic grammar. greetings nouns and verbs"
+ },
+ {
+  "kind": "resource",
+  "title": "First Steps resources",
+  "path": "Resources → Russian → British → Year 10 → First Steps",
+  "url": "/resources/russian/british/year-10/first-steps",
+  "text": "first steps resources notes worksheets videos revision russian → british → year 10 → first steps greetings nouns and verbs"
+ },
+ {
+  "kind": "chapter",
+  "title": "First Words",
+  "path": "Arabic → British → Year 10 → First Words",
+  "url": "/subjects/arabic/british/year-10/first-words",
+  "text": "first words arabic → british → year 10 → first words greetings and everyday phrases. greetings basic sentences"
+ },
+ {
+  "kind": "resource",
+  "title": "First Words resources",
+  "path": "Resources → Arabic → British → Year 10 → First Words",
+  "url": "/resources/arabic/british/year-10/first-words",
+  "text": "first words resources notes worksheets videos revision arabic → british → year 10 → first words greetings basic sentences"
+ },
+ {
+  "kind": "topic",
+  "title": "Food Chains and Food Webs",
+  "path": "Environmental Science → Cambridge → IGCSE → Ecosystems → Food Chains and Food Webs",
+  "url": "/subjects/environmental-science/cambridge/igcse/ecosystems/food-webs",
+  "text": "food chains and food webs environmental science → cambridge → igcse → ecosystems → food chains and food webs feeding relationships decide how energy moves through an ecosystem — and why removing one species can shake the whole web. who eats whom — and what happens when a link breaks."
+ },
+ {
   "kind": "chapter",
   "title": "Forces",
   "path": "Physics → Cambridge → IGCSE → Forces",
   "url": "/subjects/physics/cambridge/igcse/forces",
   "text": "forces physics → cambridge → igcse → forces pushes, pulls and newton's three laws of motion. newton's laws of motion"
+ },
+ {
+  "kind": "topic",
+  "title": "Forces in Structures",
+  "path": "Engineering → American → Grades 11–12 → Structures → Forces in Structures",
+  "url": "/subjects/engineering/american/grades-11-12/structures/forces-in-structures",
+  "text": "forces in structures engineering → american → grades 11–12 → structures → forces in structures every structure is a deal with gravity: loads must travel safely down to the ground. tension, compression and load paths."
  },
  {
   "kind": "resource",
@@ -168,11 +581,25 @@
   "text": "forces resources notes worksheets videos revision physics → cambridge → igcse → forces newton's laws of motion"
  },
  {
+  "kind": "chapter",
+  "title": "Foundations",
+  "path": "Sociology → British → Year 12 → Foundations",
+  "url": "/subjects/sociology/british/year-12/foundations",
+  "text": "foundations sociology → british → year 12 → foundations what sociology is and how it thinks. the sociological imagination research methods"
+ },
+ {
+  "kind": "resource",
+  "title": "Foundations resources",
+  "path": "Resources → Sociology → British → Year 12 → Foundations",
+  "url": "/resources/sociology/british/year-12/foundations",
+  "text": "foundations resources notes worksheets videos revision sociology → british → year 12 → foundations the sociological imagination research methods"
+ },
+ {
   "kind": "subject",
   "title": "French",
   "path": "Subjects",
   "url": "/subjects/french",
-  "text": "french parlez français — step by step, from bonjour. french is spoken on every continent and prized in diplomacy, culture and business. you'll start with greetings and everyday phrases, then build the grammar that lets you say exactly what you mean. french basics grammar foundations"
+  "text": "french parlez français — step by step, from bonjour. french is spoken on every continent and prized in diplomacy, culture and business. you'll start with greetings and everyday phrases, then build the grammar that lets you say exactly what you mean. french basics grammar foundations revision"
  },
  {
   "kind": "chapter",
@@ -190,10 +617,31 @@
  },
  {
   "kind": "topic",
+  "title": "French Revision: Mixed Practice",
+  "path": "French → Cambridge → IGCSE → Revision → French Revision: Mixed Practice",
+  "url": "/subjects/french/cambridge/igcse/revision/french-revision-mixed",
+  "text": "french revision: mixed practice french → cambridge → igcse → revision → french revision: mixed practice a tour of the essentials — greetings, verbs, genders, numbers — to lock in your french foundations. key grammar and vocabulary, all in one place."
+ },
+ {
+  "kind": "topic",
   "title": "Functions",
   "path": "Mathematics → Cambridge → IGCSE → Algebra → Functions",
   "url": "/subjects/mathematics/cambridge/igcse/algebra/functions",
   "text": "functions mathematics → cambridge → igcse → algebra → functions a function is a machine: feed in a number, get another number out. learn function notation, how to evaluate functions, and what graphs reveal. machines that turn inputs into outputs."
+ },
+ {
+  "kind": "topic",
+  "title": "Galaxies",
+  "path": "Astronomy → American → Grades 9–10 → Stars and Galaxies → Galaxies",
+  "url": "/subjects/astronomy/american/grades-9-10/stars-galaxies/galaxies",
+  "text": "galaxies astronomy → american → grades 9–10 → stars and galaxies → galaxies galaxies are cities of billions of stars — and there are hundreds of billions of them. island universes, including our milky way."
+ },
+ {
+  "kind": "topic",
+  "title": "Genders and Cases",
+  "path": "German → British → Year 10 → Core Grammar → Genders and Cases",
+  "url": "/subjects/german/british/year-10/core-grammar/genders-and-cases",
+  "text": "genders and cases german → british → year 10 → core grammar → genders and cases every german noun has a gender, and articles change with the case. here’s the system without tears. der, die, das — and why they change."
  },
  {
   "kind": "subject",
@@ -201,6 +649,139 @@
   "path": "Subjects",
   "url": "/subjects/geography",
   "text": "geography the planet, its people and the forces connecting them. geography connects the physical planet with human life. you'll study rivers and coasts alongside cities and development, learning to explain patterns — and to evaluate the big challenges facing the world. physical geography weather & climate human geography"
+ },
+ {
+  "kind": "subject",
+  "title": "German",
+  "path": "Subjects",
+  "url": "/subjects/german",
+  "text": "german die sprache von dichtern, denkern und ingenieuren. german opens up europe’s biggest economy and a culture of philosophy, music and engineering. you’ll master the sounds, survive the cases, and hold real conversations. getting started core grammar everyday german"
+ },
+ {
+  "kind": "topic",
+  "title": "German Sounds",
+  "path": "German → British → Year 10 → Getting Started → German Sounds",
+  "url": "/subjects/german/british/year-10/getting-started/german-sounds",
+  "text": "german sounds german → british → year 10 → getting started → german sounds german is pronounced as written — learn the few tricky sounds and you can read anything aloud. pronunciation from day one."
+ },
+ {
+  "kind": "chapter",
+  "title": "Getting Started",
+  "path": "German → British → Year 10 → Getting Started",
+  "url": "/subjects/german/british/year-10/getting-started",
+  "text": "getting started german → british → year 10 → getting started sounds, greetings and first words. german sounds greetings and introductions"
+ },
+ {
+  "kind": "resource",
+  "title": "Getting Started resources",
+  "path": "Resources → German → British → Year 10 → Getting Started",
+  "url": "/resources/german/british/year-10/getting-started",
+  "text": "getting started resources notes worksheets videos revision german → british → year 10 → getting started german sounds greetings and introductions"
+ },
+ {
+  "kind": "topic",
+  "title": "Global Challenges",
+  "path": "Political Science → IB → DP Year 1 → Global Politics → Global Challenges",
+  "url": "/subjects/political-science/ib/dp-year-1/global-politics/global-challenges",
+  "text": "global challenges political science → ib → dp year 1 → global politics → global challenges some problems ignore borders — which makes them the hardest politics of all. climate, pandemics and problems no state can solve alone."
+ },
+ {
+  "kind": "chapter",
+  "title": "Global Citizenship",
+  "path": "Global Studies → IB → DP Year 1 → Global Citizenship",
+  "url": "/subjects/global-studies/ib/dp-year-1/global-citizenship",
+  "text": "global citizenship global studies → ib → dp year 1 → global citizenship acting in a connected world. being a global citizen sustainable development"
+ },
+ {
+  "kind": "resource",
+  "title": "Global Citizenship resources",
+  "path": "Resources → Global Studies → IB → DP Year 1 → Global Citizenship",
+  "url": "/resources/global-studies/ib/dp-year-1/global-citizenship",
+  "text": "global citizenship resources notes worksheets videos revision global studies → ib → dp year 1 → global citizenship being a global citizen sustainable development"
+ },
+ {
+  "kind": "chapter",
+  "title": "Global Politics",
+  "path": "Political Science → IB → DP Year 1 → Global Politics",
+  "url": "/subjects/political-science/ib/dp-year-1/global-politics",
+  "text": "global politics political science → ib → dp year 1 → global politics nations, power and cooperation. international relations global challenges"
+ },
+ {
+  "kind": "resource",
+  "title": "Global Politics resources",
+  "path": "Resources → Political Science → IB → DP Year 1 → Global Politics",
+  "url": "/resources/political-science/ib/dp-year-1/global-politics",
+  "text": "global politics resources notes worksheets videos revision political science → ib → dp year 1 → global politics international relations global challenges"
+ },
+ {
+  "kind": "subject",
+  "title": "Global Studies",
+  "path": "Subjects",
+  "url": "/subjects/global-studies",
+  "text": "global studies one world, many connections. global studies looks at the ties binding the planet: trade, migration, culture and shared crises. you’ll learn how globalisation works, who it helps, and what it means to be a global citizen. globalisation migration global citizenship"
+ },
+ {
+  "kind": "chapter",
+  "title": "Globalisation",
+  "path": "Global Studies → IB → DP Year 1 → Globalisation",
+  "url": "/subjects/global-studies/ib/dp-year-1/globalisation",
+  "text": "globalisation global studies → ib → dp year 1 → globalisation how the world became connected. what is globalisation? winners and losers"
+ },
+ {
+  "kind": "resource",
+  "title": "Globalisation resources",
+  "path": "Resources → Global Studies → IB → DP Year 1 → Globalisation",
+  "url": "/resources/global-studies/ib/dp-year-1/globalisation",
+  "text": "globalisation resources notes worksheets videos revision global studies → ib → dp year 1 → globalisation what is globalisation? winners and losers"
+ },
+ {
+  "kind": "chapter",
+  "title": "Government",
+  "path": "Civics → American → Grade 8 → Government",
+  "url": "/subjects/civics/american/grade-8/government",
+  "text": "government civics → american → grade 8 → government how the state is organised. levels of government how laws are made"
+ },
+ {
+  "kind": "resource",
+  "title": "Government resources",
+  "path": "Resources → Civics → American → Grade 8 → Government",
+  "url": "/resources/civics/american/grade-8/government",
+  "text": "government resources notes worksheets videos revision civics → american → grade 8 → government levels of government how laws are made"
+ },
+ {
+  "kind": "topic",
+  "title": "Greetings",
+  "path": "Arabic → British → Year 10 → First Words → Greetings",
+  "url": "/subjects/arabic/british/year-10/first-words/arabic-greetings",
+  "text": "greetings arabic → british → year 10 → first words → greetings arabic greetings are warm rituals — peace, blessings, and genuine ‘how are you’s. السلام عليكم and responses."
+ },
+ {
+  "kind": "topic",
+  "title": "Greetings",
+  "path": "Chinese → British → Year 10 → First Conversations → Greetings",
+  "url": "/subjects/chinese/british/year-10/first-conversations/chinese-greetings",
+  "text": "greetings chinese → british → year 10 → first conversations → greetings 你好 opens every door — but real chinese greetings go much further. 你好 and the rituals of meeting."
+ },
+ {
+  "kind": "topic",
+  "title": "Greetings",
+  "path": "Japanese → British → Year 10 → Speaking Basics → Greetings",
+  "url": "/subjects/japanese/british/year-10/speaking-basics/japanese-greetings",
+  "text": "greetings japanese → british → year 10 → speaking basics → greetings japanese greetings change with the time of day — and bowing speaks as loudly as words. こんにちは and the art of politeness."
+ },
+ {
+  "kind": "topic",
+  "title": "Greetings",
+  "path": "Russian → British → Year 10 → First Steps → Greetings",
+  "url": "/subjects/russian/british/year-10/first-steps/russian-greetings",
+  "text": "greetings russian → british → year 10 → first steps → greetings two hellos — informal and formal — and the phrases that start every relationship. привет and здравствуйте."
+ },
+ {
+  "kind": "topic",
+  "title": "Greetings and Introductions",
+  "path": "German → British → Year 10 → Getting Started → Greetings and Introductions",
+  "url": "/subjects/german/british/year-10/getting-started/greetings-introductions",
+  "text": "greetings and introductions german → british → year 10 → getting started → greetings and introductions first conversations: saying hello, introducing yourself, and being polite about it. hallo, wie geht’s, and beyond."
  },
  {
   "kind": "topic",
@@ -217,11 +798,60 @@
   "text": "greetings and introductions spanish → cambridge → igcse → spanish basics → greetings and introductions your first spanish: say hello for every time of day, introduce yourself, and ask how someone is — with pronunciation that actually works. your first spanish: hola, me llamo… and more."
  },
  {
+  "kind": "topic",
+  "title": "Hiragana",
+  "path": "Japanese → British → Year 10 → Writing Systems → Hiragana",
+  "url": "/subjects/japanese/british/year-10/writing-systems/hiragana",
+  "text": "hiragana japanese → british → year 10 → writing systems → hiragana hiragana’s 46 characters write every japanese sound — learn them and you can read anything aloud. the 46 sounds that write japanese."
+ },
+ {
   "kind": "subject",
   "title": "History",
   "path": "Subjects",
   "url": "/subjects/history",
   "text": "history what happened — and why it still matters. history is the study of how the modern world was made. you'll investigate revolutions and empires, learn to weigh evidence like a historian, and practise building arguments from sources rather than opinions. the modern world the twentieth century working with sources"
+ },
+ {
+  "kind": "topic",
+  "title": "How Democracy Works",
+  "path": "Political Science → IB → DP Year 1 → Democracy → How Democracy Works",
+  "url": "/subjects/political-science/ib/dp-year-1/democracy/how-democracy-works",
+  "text": "how democracy works political science → ib → dp year 1 → democracy → how democracy works democracy is more than voting — it’s a system of rights, laws and institutions that lets majorities rule without crushing minorities. elections, rights and the rule of law."
+ },
+ {
+  "kind": "topic",
+  "title": "How Laws Are Made",
+  "path": "Civics → American → Grade 8 → Government → How Laws Are Made",
+  "url": "/subjects/civics/american/grade-8/government/how-laws-are-made",
+  "text": "how laws are made civics → american → grade 8 → government → how laws are made laws don’t appear by magic — they survive a gauntlet of debates, votes and scrutiny. from idea to statute."
+ },
+ {
+  "kind": "topic",
+  "title": "How Memory Works",
+  "path": "Psychology → British → Year 12 → Mind and Memory → How Memory Works",
+  "url": "/subjects/psychology/british/year-12/mind-memory/how-memory-works",
+  "text": "how memory works psychology → british → year 12 → mind and memory → how memory works memory isn’t a recording — it’s a reconstruction, rebuilt every time you recall it. encoding, storage and retrieval."
+ },
+ {
+  "kind": "topic",
+  "title": "How We Know",
+  "path": "Philosophy → IB → DP Year 1 → Reality and Knowledge → How We Know",
+  "url": "/subjects/philosophy/ib/dp-year-1/reality-knowledge/how-we-know",
+  "text": "how we know philosophy → ib → dp year 1 → reality and knowledge → how we know you believe the sun will rise tomorrow — but can you prove it? welcome to epistemology. rationalism, empiricism and scepticism."
+ },
+ {
+  "kind": "chapter",
+  "title": "Human Impact",
+  "path": "Environmental Science → Cambridge → IGCSE → Human Impact",
+  "url": "/subjects/environmental-science/cambridge/igcse/human-impact",
+  "text": "human impact environmental science → cambridge → igcse → human impact pollution, climate change and their effects. pollution climate change"
+ },
+ {
+  "kind": "resource",
+  "title": "Human Impact resources",
+  "path": "Resources → Environmental Science → Cambridge → IGCSE → Human Impact",
+  "url": "/resources/environmental-science/cambridge/igcse/human-impact",
+  "text": "human impact resources notes worksheets videos revision environmental science → cambridge → igcse → human impact pollution climate change"
  },
  {
   "kind": "chapter",
@@ -231,11 +861,60 @@
   "text": "ib curriculum international baccalaureate the ib offers three programmes — pyp, myp and the diploma programme — built around inquiry, international-mindedness and the learner profile. pyp pyp lower pyp upper myp myp 1–2 myp 3 myp 4–5 dp dp year 1 dp year 2"
  },
  {
+  "kind": "chapter",
+  "title": "Inequality",
+  "path": "Sociology → British → Year 12 → Inequality",
+  "url": "/subjects/sociology/british/year-12/inequality",
+  "text": "inequality sociology → british → year 12 → inequality class, mobility and who gets what. social class social mobility"
+ },
+ {
+  "kind": "resource",
+  "title": "Inequality resources",
+  "path": "Resources → Sociology → British → Year 12 → Inequality",
+  "url": "/resources/sociology/british/year-12/inequality",
+  "text": "inequality resources notes worksheets videos revision sociology → british → year 12 → inequality social class social mobility"
+ },
+ {
+  "kind": "topic",
+  "title": "International Relations",
+  "path": "Political Science → IB → DP Year 1 → Global Politics → International Relations",
+  "url": "/subjects/political-science/ib/dp-year-1/global-politics/international-relations",
+  "text": "international relations political science → ib → dp year 1 → global politics → international relations there’s no world government, yet states mostly keep the peace. why? why states cooperate — and why they fight."
+ },
+ {
   "kind": "topic",
   "title": "Introduction to Algebra",
   "path": "Mathematics → Cambridge → IGCSE → Algebra → Introduction to Algebra",
   "url": "/subjects/mathematics/cambridge/igcse/algebra/introduction",
   "text": "introduction to algebra mathematics → cambridge → igcse → algebra → introduction to algebra algebra lets you reason about numbers you don't know yet. meet expressions, equations, and the vocabulary — variable, coefficient, constant, term — that the whole chapter runs on. what algebra is and why letters beat numbers."
+ },
+ {
+  "kind": "subject",
+  "title": "Japanese",
+  "path": "Subjects",
+  "url": "/subjects/japanese",
+  "text": "japanese こんにちは! three scripts, one fascinating language. japanese blends three writing systems and a culture of exquisite politeness levels. you’ll master hiragana, meet your first kanji, and start speaking. writing systems speaking basics daily japanese"
+ },
+ {
+  "kind": "topic",
+  "title": "Katakana and Kanji",
+  "path": "Japanese → British → Year 10 → Writing Systems → Katakana and Kanji",
+  "url": "/subjects/japanese/british/year-10/writing-systems/katakana-and-kanji",
+  "text": "katakana and kanji japanese → british → year 10 → writing systems → katakana and kanji katakana writes foreign words in angular script; kanji pack meaning into characters borrowed from china. foreign words and chinese characters."
+ },
+ {
+  "kind": "topic",
+  "title": "Layers of the Earth",
+  "path": "Earth Science → American → Grades 9–10 → Earth’s Structure → Layers of the Earth",
+  "url": "/subjects/earth-science/american/grades-9-10/earth-structure/layers-of-the-earth",
+  "text": "layers of the earth earth science → american → grades 9–10 → earth’s structure → layers of the earth earth is layered like an onion — and we know it without ever digging deeper than 12 km. crust, mantle, outer core, inner core."
+ },
+ {
+  "kind": "topic",
+  "title": "Levels of Government",
+  "path": "Civics → American → Grade 8 → Government → Levels of Government",
+  "url": "/subjects/civics/american/grade-8/government/levels-of-government",
+  "text": "levels of government civics → american → grade 8 → government → levels of government bins, schools, hospitals, armies — different levels of government handle different parts of your life. local, regional, national — who does what."
  },
  {
   "kind": "topic",
@@ -252,11 +931,60 @@
   "text": "linear equations mathematics → cambridge → igcse → algebra → linear equations the golden rule of algebra: whatever you do to one side, do to the other. master one-step, two-step and both-sides equations — and always check your answer. solve for x: one step, two steps, both sides."
  },
  {
+  "kind": "chapter",
+  "title": "Machines",
+  "path": "Engineering → American → Grades 11–12 → Machines",
+  "url": "/subjects/engineering/american/grades-11-12/machines",
+  "text": "machines engineering → american → grades 11–12 → machines how machines multiply human effort. simple machines mechanisms"
+ },
+ {
+  "kind": "resource",
+  "title": "Machines resources",
+  "path": "Resources → Engineering → American → Grades 11–12 → Machines",
+  "url": "/resources/engineering/american/grades-11-12/machines",
+  "text": "machines resources notes worksheets videos revision engineering → american → grades 11–12 → machines simple machines mechanisms"
+ },
+ {
+  "kind": "topic",
+  "title": "Major World Religions",
+  "path": "Religious Studies → British → Year 10 → World Religions → Major World Religions",
+  "url": "/subjects/religious-studies/british/year-10/world-religions/major-world-religions",
+  "text": "major world religions religious studies → british → year 10 → world religions → major world religions billions of people orient their lives around a handful of great traditions — each with its own story of what life means. an overview of the great traditions."
+ },
+ {
+  "kind": "topic",
+  "title": "Materials",
+  "path": "Engineering → American → Grades 11–12 → The Design Process → Materials",
+  "url": "/subjects/engineering/american/grades-11-12/design-process/materials",
+  "text": "materials engineering → american → grades 11–12 → the design process → materials steel, plastic, wood, carbon fibre — every material is a bundle of trade-offs. choosing the right material for the job."
+ },
+ {
   "kind": "subject",
   "title": "Mathematics",
   "path": "Subjects",
   "url": "/subjects/mathematics",
   "text": "mathematics the language of patterns — from algebra to geometry. mathematics trains you to reason precisely. start with number and arithmetic, master algebra — the art of working with unknowns — then explore geometry, statistics and probability, where patterns and chance follow strict, beautiful rules. number & arithmetic algebra geometry statistics probability"
+ },
+ {
+  "kind": "topic",
+  "title": "Mechanisms",
+  "path": "Engineering → American → Grades 11–12 → Machines → Mechanisms",
+  "url": "/subjects/engineering/american/grades-11-12/machines/mechanisms",
+  "text": "mechanisms engineering → american → grades 11–12 → machines → mechanisms mechanisms convert one kind of motion into another: rotation to linear, fast to slow, back-and-forth to round-and-round. turning motion into useful work."
+ },
+ {
+  "kind": "chapter",
+  "title": "Media Literacy",
+  "path": "Civics → American → Grade 8 → Media Literacy",
+  "url": "/subjects/civics/american/grade-8/media-literacy",
+  "text": "media literacy civics → american → grade 8 → media literacy reading the news like a citizen. news and bias misinformation"
+ },
+ {
+  "kind": "resource",
+  "title": "Media Literacy resources",
+  "path": "Resources → Civics → American → Grade 8 → Media Literacy",
+  "url": "/resources/civics/american/grade-8/media-literacy",
+  "text": "media literacy resources notes worksheets videos revision civics → american → grade 8 → media literacy news and bias misinformation"
  },
  {
   "kind": "chapter",
@@ -273,11 +1001,158 @@
   "text": "microeconomics resources notes worksheets videos revision economics → cambridge → igcse → microeconomics supply and demand"
  },
  {
+  "kind": "chapter",
+  "title": "Migration",
+  "path": "Global Studies → IB → DP Year 1 → Migration",
+  "url": "/subjects/global-studies/ib/dp-year-1/migration",
+  "text": "migration global studies → ib → dp year 1 → migration why people move — and what happens when they do. why people migrate migration debates"
+ },
+ {
+  "kind": "topic",
+  "title": "Migration Debates",
+  "path": "Global Studies → IB → DP Year 1 → Migration → Migration Debates",
+  "url": "/subjects/global-studies/ib/dp-year-1/migration/migration-debates",
+  "text": "migration debates global studies → ib → dp year 1 → migration → migration debates few topics divide democracies like immigration. here are the actual arguments — and what the evidence says. the arguments for and against."
+ },
+ {
+  "kind": "resource",
+  "title": "Migration resources",
+  "path": "Resources → Global Studies → IB → DP Year 1 → Migration",
+  "url": "/resources/global-studies/ib/dp-year-1/migration",
+  "text": "migration resources notes worksheets videos revision global studies → ib → dp year 1 → migration why people migrate migration debates"
+ },
+ {
+  "kind": "topic",
+  "title": "Mind and Body",
+  "path": "Philosophy → IB → DP Year 1 → Reality and Knowledge → Mind and Body",
+  "url": "/subjects/philosophy/ib/dp-year-1/reality-knowledge/mind-and-body",
+  "text": "mind and body philosophy → ib → dp year 1 → reality and knowledge → mind and body your brain is 1.4 kg of meat — yet it produces the taste of coffee, the feeling of love, the sense of being you. how? what is consciousness?"
+ },
+ {
+  "kind": "chapter",
+  "title": "Mind and Memory",
+  "path": "Psychology → British → Year 12 → Mind and Memory",
+  "url": "/subjects/psychology/british/year-12/mind-memory",
+  "text": "mind and memory psychology → british → year 12 → mind and memory how we remember — and why we forget. how memory works thinking and biases"
+ },
+ {
+  "kind": "resource",
+  "title": "Mind and Memory resources",
+  "path": "Resources → Psychology → British → Year 12 → Mind and Memory",
+  "url": "/resources/psychology/british/year-12/mind-memory",
+  "text": "mind and memory resources notes worksheets videos revision psychology → british → year 12 → mind and memory how memory works thinking and biases"
+ },
+ {
+  "kind": "topic",
+  "title": "Minerals",
+  "path": "Earth Science → American → Grades 9–10 → Rocks and Minerals → Minerals",
+  "url": "/subjects/earth-science/american/grades-9-10/rocks-minerals/minerals",
+  "text": "minerals earth science → american → grades 9–10 → rocks and minerals → minerals rocks are made of minerals — naturally occurring solids with a definite chemistry and crystal structure. what minerals are and how we identify them."
+ },
+ {
+  "kind": "topic",
+  "title": "Misinformation",
+  "path": "Civics → American → Grade 8 → Media Literacy → Misinformation",
+  "url": "/subjects/civics/american/grade-8/media-literacy/misinformation",
+  "text": "misinformation civics → american → grade 8 → media literacy → misinformation falsehoods spread faster than truth online — but a few habits make you much harder to fool. spotting falsehoods online."
+ },
+ {
+  "kind": "topic",
+  "title": "Moral Theories",
+  "path": "Philosophy → IB → DP Year 1 → Ethics → Moral Theories",
+  "url": "/subjects/philosophy/ib/dp-year-1/ethics/moral-theories",
+  "text": "moral theories philosophy → ib → dp year 1 → ethics → moral theories three great theories compete to answer: what makes an action right? utilitarianism, kant and virtue ethics."
+ },
+ {
+  "kind": "topic",
+  "title": "News and Bias",
+  "path": "Civics → American → Grade 8 → Media Literacy → News and Bias",
+  "url": "/subjects/civics/american/grade-8/media-literacy/news-and-bias",
+  "text": "news and bias civics → american → grade 8 → media literacy → news and bias all news is selected, framed and edited. that doesn’t make it fake — but it does make it partial. how news is made — and slanted."
+ },
+ {
   "kind": "topic",
   "title": "Newton's Laws of Motion",
   "path": "Physics → Cambridge → IGCSE → Forces → Newton's Laws of Motion",
   "url": "/subjects/physics/cambridge/igcse/forces/newtons-laws",
   "text": "newton's laws of motion physics → cambridge → igcse → forces → newton's laws of motion three laws from 1687 that still govern everything from a falling apple to a rocket launch. learn them, draw the forces, and calculate what happens next. the three laws that govern how everything moves."
+ },
+ {
+  "kind": "topic",
+  "title": "Nouns and Verbs",
+  "path": "Russian → British → Year 10 → First Steps → Nouns and Verbs",
+  "url": "/subjects/russian/british/year-10/first-steps/nouns-and-verbs",
+  "text": "nouns and verbs russian → british → year 10 → first steps → nouns and verbs russian nouns have gender and six cases — but start with the nominative and one verb pattern. gender, cases preview, conjugation."
+ },
+ {
+  "kind": "topic",
+  "title": "Numbers",
+  "path": "Arabic → British → Year 10 → Practical Arabic → Numbers",
+  "url": "/subjects/arabic/british/year-10/practical-arabic/arabic-numbers",
+  "text": "numbers arabic → british → year 10 → practical arabic → numbers arabic numerals (0–9) are arabic — but the words have delightful quirks. counting from 1 to 100."
+ },
+ {
+  "kind": "topic",
+  "title": "Numbers",
+  "path": "Chinese → British → Year 10 → Daily Chinese → Numbers",
+  "url": "/subjects/chinese/british/year-10/daily-chinese/chinese-numbers",
+  "text": "numbers chinese → british → year 10 → daily chinese → numbers chinese numbers are gloriously logical: 11 is ‘ten-one’, 20 is ‘two-ten’. counting the logical way."
+ },
+ {
+  "kind": "topic",
+  "title": "Numbers",
+  "path": "Japanese → British → Year 10 → Daily Japanese → Numbers",
+  "url": "/subjects/japanese/british/year-10/daily-japanese/japanese-numbers",
+  "text": "numbers japanese → british → year 10 → daily japanese → numbers japanese numbers are logical — but counting things needs special ‘counter’ words. counting and counters."
+ },
+ {
+  "kind": "topic",
+  "title": "Numbers",
+  "path": "Russian → British → Year 10 → Daily Russian → Numbers",
+  "url": "/subjects/russian/british/year-10/daily-russian/russian-numbers",
+  "text": "numbers russian → british → year 10 → daily russian → numbers russian numbers combine logically — with a few famous irregularities. counting to 100 and beyond."
+ },
+ {
+  "kind": "topic",
+  "title": "Numbers and Time",
+  "path": "German → British → Year 10 → Everyday German → Numbers and Time",
+  "url": "/subjects/german/british/year-10/everyday-german/numbers-time",
+  "text": "numbers and time german → british → year 10 → everyday german → numbers and time count, tell the time, and make plans — the practical core of any language. zahlen, uhrzeit, termine."
+ },
+ {
+  "kind": "topic",
+  "title": "Obedience",
+  "path": "Psychology → British → Year 12 → Social Behaviour → Obedience",
+  "url": "/subjects/psychology/british/year-12/social-behaviour/obedience",
+  "text": "obedience psychology → british → year 12 → social behaviour → obedience ordinary people, told by an authority figure to hurt a stranger, mostly obeyed — a finding that still disturbs. milgram’s shocking study of authority."
+ },
+ {
+  "kind": "topic",
+  "title": "Oceans",
+  "path": "Earth Science → American → Grades 9–10 → Water Systems → Oceans",
+  "url": "/subjects/earth-science/american/grades-9-10/water-systems/oceans",
+  "text": "oceans earth science → american → grades 9–10 → water systems → oceans oceans cover 71% of earth, hold 97% of its water, and set the thermostat for the whole planet. currents, tides and why oceans drive the climate."
+ },
+ {
+  "kind": "subject",
+  "title": "Philosophy",
+  "path": "Subjects",
+  "url": "/subjects/philosophy",
+  "text": "philosophy the biggest questions, examined carefully. philosophy asks the questions other subjects take for granted: what is real? what is right? how do we know? you’ll learn to argue precisely — and to spot when arguments fail. thinking clearly ethics reality and knowledge"
+ },
+ {
+  "kind": "chapter",
+  "title": "Philosophy of Religion",
+  "path": "Religious Studies → British → Year 10 → Philosophy of Religion",
+  "url": "/subjects/religious-studies/british/year-10/philosophy-religion",
+  "text": "philosophy of religion religious studies → british → year 10 → philosophy of religion does god exist? can we know? arguments for god the problem of evil"
+ },
+ {
+  "kind": "resource",
+  "title": "Philosophy of Religion resources",
+  "path": "Resources → Religious Studies → British → Year 10 → Philosophy of Religion",
+  "url": "/resources/religious-studies/british/year-10/philosophy-religion",
+  "text": "philosophy of religion resources notes worksheets videos revision religious studies → british → year 10 → philosophy of religion arguments for god the problem of evil"
  },
  {
   "kind": "chapter",
@@ -301,6 +1176,76 @@
   "text": "physics the rules the universe plays by. physics is the study of matter, energy and how they interact. from the forces that move a football to the waves that carry light, you'll learn to describe the physical world with precision — and to predict what happens next. forces motion energy waves electricity"
  },
  {
+  "kind": "topic",
+  "title": "Pinyin and Tones",
+  "path": "Chinese → British → Year 10 → Sounds and Tones → Pinyin and Tones",
+  "url": "/subjects/chinese/british/year-10/sounds-tones/pinyin-and-tones",
+  "text": "pinyin and tones chinese → british → year 10 → sounds and tones → pinyin and tones mā, má, mǎ, mà — mother, hemp, horse, scold. tones aren’t decoration; they’re meaning. the sound system that makes mandarin work."
+ },
+ {
+  "kind": "topic",
+  "title": "Plate Tectonics",
+  "path": "Earth Science → American → Grades 9–10 → Earth’s Structure → Plate Tectonics",
+  "url": "/subjects/earth-science/american/grades-9-10/earth-structure/plate-tectonics",
+  "text": "plate tectonics earth science → american → grades 9–10 → earth’s structure → plate tectonics earth’s surface is cracked into moving plates — and their slow collisions build mountains and trigger earthquakes. why continents drift and earthquakes happen."
+ },
+ {
+  "kind": "topic",
+  "title": "Political Ideologies",
+  "path": "Political Science → IB → DP Year 1 → Power and Politics → Political Ideologies",
+  "url": "/subjects/political-science/ib/dp-year-1/power-politics/ideologies",
+  "text": "political ideologies political science → ib → dp year 1 → power and politics → political ideologies ideologies are maps of how society should work — and they still structure every political argument you’ll hear. liberalism, conservatism, socialism and beyond."
+ },
+ {
+  "kind": "subject",
+  "title": "Political Science",
+  "path": "Subjects",
+  "url": "/subjects/political-science",
+  "text": "political science power, government and how decisions get made. political science studies who gets what, when and how. you’ll learn how governments work, why democracies wobble, and how ordinary people can shape the decisions that shape them. power and politics democracy global politics"
+ },
+ {
+  "kind": "topic",
+  "title": "Pollution",
+  "path": "Environmental Science → Cambridge → IGCSE → Human Impact → Pollution",
+  "url": "/subjects/environmental-science/cambridge/igcse/human-impact/pollution",
+  "text": "pollution environmental science → cambridge → igcse → human impact → pollution pollution is any harmful substance released into the environment faster than nature can absorb it. air, water and land: where pollution comes from and what it does."
+ },
+ {
+  "kind": "chapter",
+  "title": "Power and Politics",
+  "path": "Political Science → IB → DP Year 1 → Power and Politics",
+  "url": "/subjects/political-science/ib/dp-year-1/power-politics",
+  "text": "power and politics political science → ib → dp year 1 → power and politics what politics really is. what is politics? political ideologies"
+ },
+ {
+  "kind": "resource",
+  "title": "Power and Politics resources",
+  "path": "Resources → Political Science → IB → DP Year 1 → Power and Politics",
+  "url": "/resources/political-science/ib/dp-year-1/power-politics",
+  "text": "power and politics resources notes worksheets videos revision political science → ib → dp year 1 → power and politics what is politics? political ideologies"
+ },
+ {
+  "kind": "chapter",
+  "title": "Practical Arabic",
+  "path": "Arabic → British → Year 10 → Practical Arabic",
+  "url": "/subjects/arabic/british/year-10/practical-arabic",
+  "text": "practical arabic arabic → british → year 10 → practical arabic numbers, time and daily life. numbers daily phrases"
+ },
+ {
+  "kind": "resource",
+  "title": "Practical Arabic resources",
+  "path": "Resources → Arabic → British → Year 10 → Practical Arabic",
+  "url": "/resources/arabic/british/year-10/practical-arabic",
+  "text": "practical arabic resources notes worksheets videos revision arabic → british → year 10 → practical arabic numbers daily phrases"
+ },
+ {
+  "kind": "topic",
+  "title": "Present Tense Verbs",
+  "path": "German → British → Year 10 → Core Grammar → Present Tense Verbs",
+  "url": "/subjects/german/british/year-10/core-grammar/present-tense",
+  "text": "present tense verbs german → british → year 10 → core grammar → present tense verbs one pattern unlocks most german verbs — learn the endings and you’re conjugating. conjugating regular verbs."
+ },
+ {
   "kind": "chapter",
   "title": "Programming Fundamentals",
   "path": "Computer Science → Cambridge → IGCSE → Programming Fundamentals",
@@ -313,6 +1258,20 @@
   "path": "Resources → Computer Science → Cambridge → IGCSE → Programming Fundamentals",
   "url": "/resources/computer-science/cambridge/igcse/programming",
   "text": "programming fundamentals resources notes worksheets videos revision computer science → cambridge → igcse → programming fundamentals variables"
+ },
+ {
+  "kind": "topic",
+  "title": "Pronunciation and Stress",
+  "path": "Russian → British → Year 10 → Cyrillic → Pronunciation and Stress",
+  "url": "/subjects/russian/british/year-10/cyrillic/pronunciation-stress",
+  "text": "pronunciation and stress russian → british → year 10 → cyrillic → pronunciation and stress in russian, stress is free and powerful — unstressed ‘o’ becomes ‘a’, and stress can change meaning. stress changes everything."
+ },
+ {
+  "kind": "subject",
+  "title": "Psychology",
+  "path": "Subjects",
+  "url": "/subjects/psychology",
+  "text": "psychology why people think, feel and behave the way they do. psychology is the science of mind and behaviour. you’ll learn how memory works, why we conform, what emotions are for — and how psychologists know what they claim to know. mind and memory social behaviour development"
  },
  {
   "kind": "topic",
@@ -336,11 +1295,214 @@
   "text": "reading skills resources notes worksheets videos revision english → cambridge → igcse → reading skills understanding theme"
  },
  {
+  "kind": "chapter",
+  "title": "Reality and Knowledge",
+  "path": "Philosophy → IB → DP Year 1 → Reality and Knowledge",
+  "url": "/subjects/philosophy/ib/dp-year-1/reality-knowledge",
+  "text": "reality and knowledge philosophy → ib → dp year 1 → reality and knowledge what exists, and how do we know? mind and body how we know"
+ },
+ {
+  "kind": "resource",
+  "title": "Reality and Knowledge resources",
+  "path": "Resources → Philosophy → IB → DP Year 1 → Reality and Knowledge",
+  "url": "/resources/philosophy/ib/dp-year-1/reality-knowledge",
+  "text": "reality and knowledge resources notes worksheets videos revision philosophy → ib → dp year 1 → reality and knowledge mind and body how we know"
+ },
+ {
+  "kind": "topic",
+  "title": "Religion and Ethics",
+  "path": "Religious Studies → British → Year 10 → Religion and Society → Religion and Ethics",
+  "url": "/subjects/religious-studies/british/year-10/religion-society/religion-and-ethics",
+  "text": "religion and ethics religious studies → british → year 10 → religion and society → religion and ethics can you be good without god? and does religion make people better — or worse? does morality need god?"
+ },
+ {
+  "kind": "chapter",
+  "title": "Religion and Society",
+  "path": "Religious Studies → British → Year 10 → Religion and Society",
+  "url": "/subjects/religious-studies/british/year-10/religion-society",
+  "text": "religion and society religious studies → british → year 10 → religion and society faith in the modern world. religion and ethics secularisation"
+ },
+ {
+  "kind": "resource",
+  "title": "Religion and Society resources",
+  "path": "Resources → Religious Studies → British → Year 10 → Religion and Society",
+  "url": "/resources/religious-studies/british/year-10/religion-society",
+  "text": "religion and society resources notes worksheets videos revision religious studies → british → year 10 → religion and society religion and ethics secularisation"
+ },
+ {
+  "kind": "subject",
+  "title": "Religious Studies",
+  "path": "Subjects",
+  "url": "/subjects/religious-studies",
+  "text": "religious studies beliefs, practices and the search for meaning. religious studies examines the world’s faiths with curiosity and respect — what they teach, how they’re practised, and the big questions they address. this is academic study, not preaching: all traditions are examined fairly. world religions philosophy of religion religion and society"
+ },
+ {
+  "kind": "topic",
+  "title": "Renewable Energy",
+  "path": "Environmental Science → Cambridge → IGCSE → Sustainability → Renewable Energy",
+  "url": "/subjects/environmental-science/cambridge/igcse/sustainability/renewable-energy",
+  "text": "renewable energy environmental science → cambridge → igcse → sustainability → renewable energy renewables turn ongoing natural flows into electricity — no fuel burned, no co₂ released. solar, wind, hydro — energy that doesn’t run out."
+ },
+ {
+  "kind": "topic",
+  "title": "Research Methods",
+  "path": "Sociology → British → Year 12 → Foundations → Research Methods",
+  "url": "/subjects/sociology/british/year-12/foundations/research-methods",
+  "text": "research methods sociology → british → year 12 → foundations → research methods you can’t put society in a test tube — so sociologists use surveys, interviews, observation and statistics. how sociologists gather evidence."
+ },
+ {
+  "kind": "chapter",
+  "title": "Revision",
+  "path": "French → Cambridge → IGCSE → Revision",
+  "url": "/subjects/french/cambridge/igcse/revision",
+  "text": "revision french → cambridge → igcse → revision consolidate your french with mixed practice. french revision: mixed practice"
+ },
+ {
+  "kind": "resource",
+  "title": "Revision resources",
+  "path": "Resources → French → Cambridge → IGCSE → Revision",
+  "url": "/resources/french/cambridge/igcse/revision",
+  "text": "revision resources notes worksheets videos revision french → cambridge → igcse → revision french revision: mixed practice"
+ },
+ {
+  "kind": "topic",
+  "title": "Rights and Responsibilities",
+  "path": "Civics → American → Grade 8 → Citizenship → Rights and Responsibilities",
+  "url": "/subjects/civics/american/grade-8/citizenship/rights-and-responsibilities",
+  "text": "rights and responsibilities civics → american → grade 8 → citizenship → rights and responsibilities citizenship is a two-way deal: rights you can claim, responsibilities you owe. what citizenship gives — and asks."
+ },
+ {
   "kind": "topic",
   "title": "Rivers and Erosion",
   "path": "Geography → Cambridge → IGCSE → Physical Geography → Rivers and Erosion",
   "url": "/subjects/geography/cambridge/igcse/physical-geography/rivers-and-erosion",
   "text": "rivers and erosion geography → cambridge → igcse → physical geography → rivers and erosion rivers are sculptors: they erode, transport and deposit material, carving valleys and building floodplains. learn the processes and the landforms they create. how flowing water sculpts the land."
+ },
+ {
+  "kind": "chapter",
+  "title": "Rocks and Minerals",
+  "path": "Earth Science → American → Grades 9–10 → Rocks and Minerals",
+  "url": "/subjects/earth-science/american/grades-9-10/rocks-minerals",
+  "text": "rocks and minerals earth science → american → grades 9–10 → rocks and minerals the materials that build the planet. the rock cycle minerals"
+ },
+ {
+  "kind": "resource",
+  "title": "Rocks and Minerals resources",
+  "path": "Resources → Earth Science → American → Grades 9–10 → Rocks and Minerals",
+  "url": "/resources/earth-science/american/grades-9-10/rocks-minerals",
+  "text": "rocks and minerals resources notes worksheets videos revision earth science → american → grades 9–10 → rocks and minerals the rock cycle minerals"
+ },
+ {
+  "kind": "subject",
+  "title": "Russian",
+  "path": "Subjects",
+  "url": "/subjects/russian",
+  "text": "russian привет! from tolstoy to space stations. russian uses the cyrillic alphabet — learned in a weekend — and opens up 260 million speakers, great literature, and a rich scientific tradition. cyrillic first steps daily russian"
+ },
+ {
+  "kind": "topic",
+  "title": "Sacred Texts",
+  "path": "Religious Studies → British → Year 10 → World Religions → Sacred Texts",
+  "url": "/subjects/religious-studies/british/year-10/world-religions/sacred-texts",
+  "text": "sacred texts religious studies → british → year 10 → world religions → sacred texts the bible, qur’an, vedas, torah — texts billions treat as sacred, read in radically different ways. scriptures and how they’re read."
+ },
+ {
+  "kind": "topic",
+  "title": "Secularisation",
+  "path": "Religious Studies → British → Year 10 → Religion and Society → Secularisation",
+  "url": "/subjects/religious-studies/british/year-10/religion-society/secularisation",
+  "text": "secularisation religious studies → british → year 10 → religion and society → secularisation churches empty in europe while pentecostalism booms in africa — religion’s future is complicated. is religion declining?"
+ },
+ {
+  "kind": "topic",
+  "title": "Sentence Structure",
+  "path": "Japanese → British → Year 10 → Speaking Basics → Sentence Structure",
+  "url": "/subjects/japanese/british/year-10/speaking-basics/sentence-structure",
+  "text": "sentence structure japanese → british → year 10 → speaking basics → sentence structure japanese puts the verb last — and tiny particles mark who did what to whom. subject-object-verb and particles."
+ },
+ {
+  "kind": "topic",
+  "title": "Shapes That Hold",
+  "path": "Engineering → American → Grades 11–12 → Structures → Shapes That Hold",
+  "url": "/subjects/engineering/american/grades-11-12/structures/shapes-that-hold",
+  "text": "shapes that hold engineering → american → grades 11–12 → structures → shapes that hold shape is a material: the right geometry can make weak stuff strong. triangles, arches and clever geometry."
+ },
+ {
+  "kind": "topic",
+  "title": "Shopping and Food",
+  "path": "German → British → Year 10 → Everyday German → Shopping and Food",
+  "url": "/subjects/german/british/year-10/everyday-german/shopping-food",
+  "text": "shopping and food german → british → year 10 → everyday german → shopping and food order food, shop, and handle money — survival german at its tastiest. einkaufen und essen."
+ },
+ {
+  "kind": "topic",
+  "title": "Simple Machines",
+  "path": "Engineering → American → Grades 11–12 → Machines → Simple Machines",
+  "url": "/subjects/engineering/american/grades-11-12/machines/simple-machines",
+  "text": "simple machines engineering → american → grades 11–12 → machines → simple machines six simple machines underlie every engine, crane and bicycle ever built. levers, pulleys, gears and inclined planes."
+ },
+ {
+  "kind": "chapter",
+  "title": "Social Behaviour",
+  "path": "Psychology → British → Year 12 → Social Behaviour",
+  "url": "/subjects/psychology/british/year-12/social-behaviour",
+  "text": "social behaviour psychology → british → year 12 → social behaviour how other people shape what we do. conformity obedience"
+ },
+ {
+  "kind": "resource",
+  "title": "Social Behaviour resources",
+  "path": "Resources → Psychology → British → Year 12 → Social Behaviour",
+  "url": "/resources/psychology/british/year-12/social-behaviour",
+  "text": "social behaviour resources notes worksheets videos revision psychology → british → year 12 → social behaviour conformity obedience"
+ },
+ {
+  "kind": "topic",
+  "title": "Social Class",
+  "path": "Sociology → British → Year 12 → Inequality → Social Class",
+  "url": "/subjects/sociology/british/year-12/inequality/social-class",
+  "text": "social class sociology → british → year 12 → inequality → social class where you’re born still predicts how long you’ll live, how healthy you’ll be, and how far you’ll go. how class shapes life chances."
+ },
+ {
+  "kind": "topic",
+  "title": "Social Mobility",
+  "path": "Sociology → British → Year 12 → Inequality → Social Mobility",
+  "url": "/subjects/sociology/british/year-12/inequality/social-mobility",
+  "text": "social mobility sociology → british → year 12 → inequality → social mobility the promise: talent and effort decide your fate. the reality is more complicated. can people move up — and does education help?"
+ },
+ {
+  "kind": "topic",
+  "title": "Socialisation",
+  "path": "Sociology → British → Year 12 → Culture and Identity → Socialisation",
+  "url": "/subjects/sociology/british/year-12/culture-identity/socialisation",
+  "text": "socialisation sociology → british → year 12 → culture and identity → socialisation nobody is born knowing how to queue, shake hands or sit an exam — every bit of it is learned. how we learn to be members of society."
+ },
+ {
+  "kind": "subject",
+  "title": "Sociology",
+  "path": "Subjects",
+  "url": "/subjects/sociology",
+  "text": "sociology how societies shape the people in them. sociology studies the invisible forces — norms, institutions, inequality — that shape billions of lives. you’ll learn to see the social patterns behind personal troubles. foundations culture and identity inequality"
+ },
+ {
+  "kind": "chapter",
+  "title": "Sounds and Tones",
+  "path": "Chinese → British → Year 10 → Sounds and Tones",
+  "url": "/subjects/chinese/british/year-10/sounds-tones",
+  "text": "sounds and tones chinese → british → year 10 → sounds and tones pinyin and the four tones. pinyin and tones first characters"
+ },
+ {
+  "kind": "resource",
+  "title": "Sounds and Tones resources",
+  "path": "Resources → Chinese → British → Year 10 → Sounds and Tones",
+  "url": "/resources/chinese/british/year-10/sounds-tones",
+  "text": "sounds and tones resources notes worksheets videos revision chinese → british → year 10 → sounds and tones pinyin and tones first characters"
+ },
+ {
+  "kind": "topic",
+  "title": "Space Missions",
+  "path": "Astronomy → American → Grades 9–10 → Exploring Space → Space Missions",
+  "url": "/subjects/astronomy/american/grades-9-10/exploring-space/space-missions",
+  "text": "space missions astronomy → american → grades 9–10 → exploring space → space missions from sputnik’s beep to rovers on mars — how humanity explores space without (mostly) leaving earth. probes, stations and the journey to mars."
  },
  {
   "kind": "subject",
@@ -364,6 +1526,55 @@
   "text": "spanish basics resources notes worksheets videos revision spanish → cambridge → igcse → spanish basics greetings and introductions"
  },
  {
+  "kind": "chapter",
+  "title": "Speaking Basics",
+  "path": "Japanese → British → Year 10 → Speaking Basics",
+  "url": "/subjects/japanese/british/year-10/speaking-basics",
+  "text": "speaking basics japanese → british → year 10 → speaking basics greetings and first sentences. greetings sentence structure"
+ },
+ {
+  "kind": "resource",
+  "title": "Speaking Basics resources",
+  "path": "Resources → Japanese → British → Year 10 → Speaking Basics",
+  "url": "/resources/japanese/british/year-10/speaking-basics",
+  "text": "speaking basics resources notes worksheets videos revision japanese → british → year 10 → speaking basics greetings sentence structure"
+ },
+ {
+  "kind": "chapter",
+  "title": "Stars and Galaxies",
+  "path": "Astronomy → American → Grades 9–10 → Stars and Galaxies",
+  "url": "/subjects/astronomy/american/grades-9-10/stars-galaxies",
+  "text": "stars and galaxies astronomy → american → grades 9–10 → stars and galaxies how stars live, die and light up the universe. the life cycle of stars galaxies"
+ },
+ {
+  "kind": "resource",
+  "title": "Stars and Galaxies resources",
+  "path": "Resources → Astronomy → American → Grades 9–10 → Stars and Galaxies",
+  "url": "/resources/astronomy/american/grades-9-10/stars-galaxies",
+  "text": "stars and galaxies resources notes worksheets videos revision astronomy → american → grades 9–10 → stars and galaxies the life cycle of stars galaxies"
+ },
+ {
+  "kind": "topic",
+  "title": "Stress and Wellbeing",
+  "path": "Psychology → British → Year 12 → Development → Stress and Wellbeing",
+  "url": "/subjects/psychology/british/year-12/development/stress-wellbeing",
+  "text": "stress and wellbeing psychology → british → year 12 → development → stress and wellbeing stress is the body’s alarm system — lifesaving in emergencies, corrosive when it never switches off. what stress does and how to handle it."
+ },
+ {
+  "kind": "chapter",
+  "title": "Structures",
+  "path": "Engineering → American → Grades 11–12 → Structures",
+  "url": "/subjects/engineering/american/grades-11-12/structures",
+  "text": "structures engineering → american → grades 11–12 → structures why buildings stand up — and bridges don’t fall down. forces in structures shapes that hold"
+ },
+ {
+  "kind": "resource",
+  "title": "Structures resources",
+  "path": "Resources → Engineering → American → Grades 11–12 → Structures",
+  "url": "/resources/engineering/american/grades-11-12/structures",
+  "text": "structures resources notes worksheets videos revision engineering → american → grades 11–12 → structures forces in structures shapes that hold"
+ },
+ {
   "kind": "topic",
   "title": "Supply and Demand",
   "path": "Economics → Cambridge → IGCSE → Microeconomics → Supply and Demand",
@@ -371,11 +1582,95 @@
   "text": "supply and demand economics → cambridge → igcse → microeconomics → supply and demand two curves that set nearly every price you'll ever pay. learn how supply and demand work, what shifts them, and how markets find equilibrium. the two curves that set nearly every price."
  },
  {
+  "kind": "chapter",
+  "title": "Sustainability",
+  "path": "Environmental Science → Cambridge → IGCSE → Sustainability",
+  "url": "/subjects/environmental-science/cambridge/igcse/sustainability",
+  "text": "sustainability environmental science → cambridge → igcse → sustainability meeting needs today without wrecking tomorrow. renewable energy conservation"
+ },
+ {
+  "kind": "resource",
+  "title": "Sustainability resources",
+  "path": "Resources → Environmental Science → Cambridge → IGCSE → Sustainability",
+  "url": "/resources/environmental-science/cambridge/igcse/sustainability",
+  "text": "sustainability resources notes worksheets videos revision environmental science → cambridge → igcse → sustainability renewable energy conservation"
+ },
+ {
+  "kind": "topic",
+  "title": "Sustainable Development",
+  "path": "Global Studies → IB → DP Year 1 → Global Citizenship → Sustainable Development",
+  "url": "/subjects/global-studies/ib/dp-year-1/global-citizenship/sustainable-development",
+  "text": "sustainable development global studies → ib → dp year 1 → global citizenship → sustainable development in 2015, every country agreed 17 goals to end poverty, protect the planet and ensure prosperity by 2030. the sdgs: a to-do list for humanity."
+ },
+ {
+  "kind": "topic",
+  "title": "Telescopes",
+  "path": "Astronomy → American → Grades 9–10 → Exploring Space → Telescopes",
+  "url": "/subjects/astronomy/american/grades-9-10/exploring-space/telescopes",
+  "text": "telescopes astronomy → american → grades 9–10 → exploring space → telescopes telescopes are light buckets: the bigger the mirror, the fainter the objects they can see. catching light from across the cosmos."
+ },
+ {
+  "kind": "topic",
+  "title": "The Arabic Alphabet",
+  "path": "Arabic → British → Year 10 → The Arabic Script → The Arabic Alphabet",
+  "url": "/subjects/arabic/british/year-10/script/arabic-alphabet",
+  "text": "the arabic alphabet arabic → british → year 10 → the arabic script → the arabic alphabet arabic’s 28 letters change shape by position — but the system is beautifully logical. 28 letters, right to left."
+ },
+ {
+  "kind": "chapter",
+  "title": "The Arabic Script",
+  "path": "Arabic → British → Year 10 → The Arabic Script",
+  "url": "/subjects/arabic/british/year-10/script",
+  "text": "the arabic script arabic → british → year 10 → the arabic script reading and writing from zero. the arabic alphabet arabic sounds"
+ },
+ {
+  "kind": "resource",
+  "title": "The Arabic Script resources",
+  "path": "Resources → Arabic → British → Year 10 → The Arabic Script",
+  "url": "/resources/arabic/british/year-10/script",
+  "text": "the arabic script resources notes worksheets videos revision arabic → british → year 10 → the arabic script the arabic alphabet arabic sounds"
+ },
+ {
+  "kind": "topic",
+  "title": "The Cyrillic Alphabet",
+  "path": "Russian → British → Year 10 → Cyrillic → The Cyrillic Alphabet",
+  "url": "/subjects/russian/british/year-10/cyrillic/cyrillic-alphabet",
+  "text": "the cyrillic alphabet russian → british → year 10 → cyrillic → the cyrillic alphabet cyrillic looks exotic but a third of its letters are familiar — and the rest are one weekend’s work. 33 letters, many familiar."
+ },
+ {
+  "kind": "chapter",
+  "title": "The Design Process",
+  "path": "Engineering → American → Grades 11–12 → The Design Process",
+  "url": "/subjects/engineering/american/grades-11-12/design-process",
+  "text": "the design process engineering → american → grades 11–12 → the design process how engineers turn problems into solutions. the engineering design cycle materials"
+ },
+ {
+  "kind": "resource",
+  "title": "The Design Process resources",
+  "path": "Resources → Engineering → American → Grades 11–12 → The Design Process",
+  "url": "/resources/engineering/american/grades-11-12/design-process",
+  "text": "the design process resources notes worksheets videos revision engineering → american → grades 11–12 → the design process the engineering design cycle materials"
+ },
+ {
+  "kind": "topic",
+  "title": "The Engineering Design Cycle",
+  "path": "Engineering → American → Grades 11–12 → The Design Process → The Engineering Design Cycle",
+  "url": "/subjects/engineering/american/grades-11-12/design-process/engineering-design-cycle",
+  "text": "the engineering design cycle engineering → american → grades 11–12 → the design process → the engineering design cycle engineering isn’t guesswork — it’s a loop: define the problem, brainstorm, prototype, test, and iterate. ask, imagine, plan, create, improve."
+ },
+ {
   "kind": "topic",
   "title": "The Industrial Revolution",
   "path": "History → Cambridge → IGCSE → The Modern World → The Industrial Revolution",
   "url": "/subjects/history/cambridge/igcse/modern-world/industrial-revolution",
   "text": "the industrial revolution history → cambridge → igcse → the modern world → the industrial revolution between 1750 and 1900, steam, coal and factories remade britain — and then the world. learn what changed, why it started in britain, and what it cost. how steam, coal and factories remade the world."
+ },
+ {
+  "kind": "topic",
+  "title": "The Life Cycle of Stars",
+  "path": "Astronomy → American → Grades 9–10 → Stars and Galaxies → The Life Cycle of Stars",
+  "url": "/subjects/astronomy/american/grades-9-10/stars-galaxies/life-cycle-of-stars",
+  "text": "the life cycle of stars astronomy → american → grades 9–10 → stars and galaxies → the life cycle of stars stars are born in clouds of gas, burn for millions to trillions of years, and die spectacularly — seeding the universe with heavy elements. from nebula to white dwarf — or black hole."
  },
  {
   "kind": "chapter",
@@ -390,6 +1685,104 @@
   "path": "Resources → History → Cambridge → IGCSE → The Modern World",
   "url": "/resources/history/cambridge/igcse/modern-world",
   "text": "the modern world resources notes worksheets videos revision history → cambridge → igcse → the modern world the industrial revolution"
+ },
+ {
+  "kind": "topic",
+  "title": "The Planets",
+  "path": "Astronomy → American → Grades 9–10 → The Solar System → The Planets",
+  "url": "/subjects/astronomy/american/grades-9-10/solar-system/the-planets",
+  "text": "the planets astronomy → american → grades 9–10 → the solar system → the planets eight planets orbit the sun — four rocky, four giant — each a world with its own story. eight worlds, from mercury to neptune."
+ },
+ {
+  "kind": "topic",
+  "title": "The Problem of Evil",
+  "path": "Religious Studies → British → Year 10 → Philosophy of Religion → The Problem of Evil",
+  "url": "/subjects/religious-studies/british/year-10/philosophy-religion/problem-of-evil",
+  "text": "the problem of evil religious studies → british → year 10 → philosophy of religion → the problem of evil the oldest objection to god: a good, all-powerful god and terrible suffering can’t all be true. or can they? if god is good and all-powerful, why suffering?"
+ },
+ {
+  "kind": "topic",
+  "title": "The Rock Cycle",
+  "path": "Earth Science → American → Grades 9–10 → Rocks and Minerals → The Rock Cycle",
+  "url": "/subjects/earth-science/american/grades-9-10/rocks-minerals/the-rock-cycle",
+  "text": "the rock cycle earth science → american → grades 9–10 → rocks and minerals → the rock cycle every rock is recycled: melted, broken, buried or baked into something new, over millions of years. igneous, sedimentary, metamorphic — rock never rests."
+ },
+ {
+  "kind": "topic",
+  "title": "The Sociological Imagination",
+  "path": "Sociology → British → Year 12 → Foundations → The Sociological Imagination",
+  "url": "/subjects/sociology/british/year-12/foundations/the-sociological-imagination",
+  "text": "the sociological imagination sociology → british → year 12 → foundations → the sociological imagination unemployment feels personal — but when millions lose jobs at once, it’s a social fact demanding a social explanation. seeing personal troubles as public issues."
+ },
+ {
+  "kind": "chapter",
+  "title": "The Solar System",
+  "path": "Astronomy → American → Grades 9–10 → The Solar System",
+  "url": "/subjects/astronomy/american/grades-9-10/solar-system",
+  "text": "the solar system astronomy → american → grades 9–10 → the solar system our neighbourhood in space. the planets the sun and the moon"
+ },
+ {
+  "kind": "resource",
+  "title": "The Solar System resources",
+  "path": "Resources → Astronomy → American → Grades 9–10 → The Solar System",
+  "url": "/resources/astronomy/american/grades-9-10/solar-system",
+  "text": "the solar system resources notes worksheets videos revision astronomy → american → grades 9–10 → the solar system the planets the sun and the moon"
+ },
+ {
+  "kind": "topic",
+  "title": "The Sun and the Moon",
+  "path": "Astronomy → American → Grades 9–10 → The Solar System → The Sun and the Moon",
+  "url": "/subjects/astronomy/american/grades-9-10/solar-system/the-sun-and-moon",
+  "text": "the sun and the moon astronomy → american → grades 9–10 → the solar system → the sun and the moon two familiar discs in the sky explain days, months, seasons and tides. day, night, seasons and eclipses."
+ },
+ {
+  "kind": "topic",
+  "title": "The Water Cycle",
+  "path": "Earth Science → American → Grades 9–10 → Water Systems → The Water Cycle",
+  "url": "/subjects/earth-science/american/grades-9-10/water-systems/the-water-cycle",
+  "text": "the water cycle earth science → american → grades 9–10 → water systems → the water cycle the water in your glass may have been dinosaur sweat — every drop is recycled endlessly. evaporation to precipitation and back again."
+ },
+ {
+  "kind": "topic",
+  "title": "Thinking and Biases",
+  "path": "Psychology → British → Year 12 → Mind and Memory → Thinking and Biases",
+  "url": "/subjects/psychology/british/year-12/mind-memory/thinking-biases",
+  "text": "thinking and biases psychology → british → year 12 → mind and memory → thinking and biases your brain runs on shortcuts — fast, useful, and systematically wrong in predictable ways. the shortcuts and traps in human reasoning."
+ },
+ {
+  "kind": "chapter",
+  "title": "Thinking Clearly",
+  "path": "Philosophy → IB → DP Year 1 → Thinking Clearly",
+  "url": "/subjects/philosophy/ib/dp-year-1/thinking-clearly",
+  "text": "thinking clearly philosophy → ib → dp year 1 → thinking clearly arguments, logic and fallacies. arguments fallacies"
+ },
+ {
+  "kind": "resource",
+  "title": "Thinking Clearly resources",
+  "path": "Resources → Philosophy → IB → DP Year 1 → Thinking Clearly",
+  "url": "/resources/philosophy/ib/dp-year-1/thinking-clearly",
+  "text": "thinking clearly resources notes worksheets videos revision philosophy → ib → dp year 1 → thinking clearly arguments fallacies"
+ },
+ {
+  "kind": "topic",
+  "title": "Time and Daily Life",
+  "path": "Japanese → British → Year 10 → Daily Japanese → Time and Daily Life",
+  "url": "/subjects/japanese/british/year-10/daily-japanese/time-and-daily-life",
+  "text": "time and daily life japanese → british → year 10 → daily japanese → time and daily life 今何時ですか? — what time is it? time words unlock daily life. telling time, daily routines."
+ },
+ {
+  "kind": "topic",
+  "title": "Time and Phrases",
+  "path": "Russian → British → Year 10 → Daily Russian → Time and Phrases",
+  "url": "/subjects/russian/british/year-10/daily-russian/time-and-phrases",
+  "text": "time and phrases russian → british → year 10 → daily russian → time and phrases который час? — what’s the time? plus the phrases of daily life. telling time, daily expressions."
+ },
+ {
+  "kind": "topic",
+  "title": "Time and Plans",
+  "path": "Chinese → British → Year 10 → Daily Chinese → Time and Plans",
+  "url": "/subjects/chinese/british/year-10/daily-chinese/time-and-plans",
+  "text": "time and plans chinese → british → year 10 → daily chinese → time and plans 几点? — what time? master time words and you can plan anything. telling time, making plans."
  },
  {
   "kind": "topic",
@@ -414,9 +1807,93 @@
  },
  {
   "kind": "topic",
+  "title": "Voting Systems",
+  "path": "Political Science → IB → DP Year 1 → Democracy → Voting Systems",
+  "url": "/subjects/political-science/ib/dp-year-1/democracy/voting-systems",
+  "text": "voting systems political science → ib → dp year 1 → democracy → voting systems the same votes can produce totally different governments depending on the counting rules. how votes become seats — and why the rules matter."
+ },
+ {
+  "kind": "chapter",
+  "title": "Water Systems",
+  "path": "Earth Science → American → Grades 9–10 → Water Systems",
+  "url": "/subjects/earth-science/american/grades-9-10/water-systems",
+  "text": "water systems earth science → american → grades 9–10 → water systems oceans, rivers and the water cycle. the water cycle oceans"
+ },
+ {
+  "kind": "resource",
+  "title": "Water Systems resources",
+  "path": "Resources → Earth Science → American → Grades 9–10 → Water Systems",
+  "url": "/resources/earth-science/american/grades-9-10/water-systems",
+  "text": "water systems resources notes worksheets videos revision earth science → american → grades 9–10 → water systems the water cycle oceans"
+ },
+ {
+  "kind": "topic",
   "title": "What is a Business?",
   "path": "Business → Cambridge → IGCSE → Business Basics → What is a Business?",
   "url": "/subjects/business/cambridge/igcse/business-basics/what-is-a-business",
   "text": "what is a business? business → cambridge → igcse → business basics → what is a business? every product you own came from a business taking a risk. learn what businesses are, why they exist, and the four ingredients every one needs. enterprise, needs and wants, and the four factors of production."
+ },
+ {
+  "kind": "topic",
+  "title": "What Is an Ecosystem?",
+  "path": "Environmental Science → Cambridge → IGCSE → Ecosystems → What Is an Ecosystem?",
+  "url": "/subjects/environmental-science/cambridge/igcse/ecosystems/what-is-an-ecosystem",
+  "text": "what is an ecosystem? environmental science → cambridge → igcse → ecosystems → what is an ecosystem? an ecosystem is a community of living things plus the non-living environment they interact with — from a rainforest to a rock pool. biotic, abiotic, and the flows that connect them."
+ },
+ {
+  "kind": "topic",
+  "title": "What Is Globalisation?",
+  "path": "Global Studies → IB → DP Year 1 → Globalisation → What Is Globalisation?",
+  "url": "/subjects/global-studies/ib/dp-year-1/globalisation/what-is-globalisation",
+  "text": "what is globalisation? global studies → ib → dp year 1 → globalisation → what is globalisation? your phone contains parts from 40+ countries. that’s globalisation — the deep integration of economies, cultures and politics. the shrinking of distance."
+ },
+ {
+  "kind": "topic",
+  "title": "What Is Politics?",
+  "path": "Political Science → IB → DP Year 1 → Power and Politics → What Is Politics?",
+  "url": "/subjects/political-science/ib/dp-year-1/power-politics/what-is-politics",
+  "text": "what is politics? political science → ib → dp year 1 → power and politics → what is politics? politics isn’t just elections — it’s the struggle over who decides, wherever decisions bind groups of people. power, authority and the state."
+ },
+ {
+  "kind": "topic",
+  "title": "Why People Migrate",
+  "path": "Global Studies → IB → DP Year 1 → Migration → Why People Migrate",
+  "url": "/subjects/global-studies/ib/dp-year-1/migration/why-people-migrate",
+  "text": "why people migrate global studies → ib → dp year 1 → migration → why people migrate 281 million people live outside their birth country. they move for work, safety, family — and hope. push and pull factors."
+ },
+ {
+  "kind": "topic",
+  "title": "Winners and Losers",
+  "path": "Global Studies → IB → DP Year 1 → Globalisation → Winners and Losers",
+  "url": "/subjects/global-studies/ib/dp-year-1/globalisation/winners-and-losers",
+  "text": "winners and losers global studies → ib → dp year 1 → globalisation → winners and losers globalisation lifted a billion people from poverty — and hollowed out factory towns. both are true. who gains from globalisation — and who pays."
+ },
+ {
+  "kind": "chapter",
+  "title": "World Religions",
+  "path": "Religious Studies → British → Year 10 → World Religions",
+  "url": "/subjects/religious-studies/british/year-10/world-religions",
+  "text": "world religions religious studies → british → year 10 → world religions the great faith traditions. major world religions sacred texts"
+ },
+ {
+  "kind": "resource",
+  "title": "World Religions resources",
+  "path": "Resources → Religious Studies → British → Year 10 → World Religions",
+  "url": "/resources/religious-studies/british/year-10/world-religions",
+  "text": "world religions resources notes worksheets videos revision religious studies → british → year 10 → world religions major world religions sacred texts"
+ },
+ {
+  "kind": "chapter",
+  "title": "Writing Systems",
+  "path": "Japanese → British → Year 10 → Writing Systems",
+  "url": "/subjects/japanese/british/year-10/writing-systems",
+  "text": "writing systems japanese → british → year 10 → writing systems hiragana, katakana, kanji. hiragana katakana and kanji"
+ },
+ {
+  "kind": "resource",
+  "title": "Writing Systems resources",
+  "path": "Resources → Japanese → British → Year 10 → Writing Systems",
+  "url": "/resources/japanese/british/year-10/writing-systems",
+  "text": "writing systems resources notes worksheets videos revision japanese → british → year 10 → writing systems hiragana katakana and kanji"
  }
 ]

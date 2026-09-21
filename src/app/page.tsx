@@ -17,6 +17,22 @@ const GLYPHS: Record<string, string> = {
   business: "B",
   spanish: "Ñ",
   french: "Ç",
+  "environmental-science": "♻",
+  "earth-science": "⊕",
+  "astronomy": "✦",
+  "engineering": "⚙",
+  "psychology": "Ψ",
+  "sociology": "◉",
+  "political-science": "⚖",
+  "philosophy": "φ",
+  "religious-studies": "◈",
+  "civics": "§",
+  "global-studies": "🌐",
+  "german": "Ä",
+  "arabic": "ع",
+  "chinese": "中",
+  "japanese": "あ",
+  "russian": "Ж",
 };
 
 /** Reference "How Thread Academy works" steps, verbatim. */
@@ -76,9 +92,7 @@ export default function HomePage() {
               {category}
             </div>
             <div className="subjects-grid">
-              {subjectsByCategory(category)
-                .slice(0, 2)
-                .map((subject) => (
+              {subjectsByCategory(category).map((subject) => (
                   <Link
                     key={subject.slug}
                     className="subject-card"

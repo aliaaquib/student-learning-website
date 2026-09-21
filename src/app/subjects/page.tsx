@@ -15,6 +15,22 @@ const GLYPHS: Record<string, string> = {
   business: "B",
   spanish: "Ñ",
   french: "Ç",
+  "environmental-science": "♻",
+  "earth-science": "⊕",
+  "astronomy": "✦",
+  "engineering": "⚙",
+  "psychology": "Ψ",
+  "sociology": "◉",
+  "political-science": "⚖",
+  "philosophy": "φ",
+  "religious-studies": "◈",
+  "civics": "§",
+  "global-studies": "🌐",
+  "german": "Ä",
+  "arabic": "ع",
+  "chinese": "中",
+  "japanese": "あ",
+  "russian": "Ж",
 };
 
 export const metadata = {

@@ -55,12 +55,12 @@ export const CURRICULA: Record<string, Curriculum> = {
           {
             slug: "year-10",
             name: "Year 10",
-            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages"],
+            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages", "astronomy", "earth-science", "religious-studies"],
           },
           {
             slug: "year-11",
             name: "Year 11",
-            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages"],
+            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages", "astronomy", "earth-science", "religious-studies"],
           },
         ],
       },
@@ -72,12 +72,12 @@ export const CURRICULA: Record<string, Curriculum> = {
           {
             slug: "year-12",
             name: "Year 12",
-            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "english", "history", "geography", "economics", "business", "languages"],
+            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "english", "history", "geography", "economics", "business", "languages", "engineering", "psychology", "sociology", "political-science", "philosophy"],
           },
           {
             slug: "year-13",
             name: "Year 13",
-            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "english", "history", "geography", "economics", "business", "languages"],
+            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "english", "history", "geography", "economics", "business", "languages", "engineering", "psychology", "sociology", "political-science", "philosophy"],
           },
         ],
       },
@@ -127,12 +127,12 @@ export const CURRICULA: Record<string, Curriculum> = {
           {
             slug: "igcse-year-1",
             name: "IGCSE Year 1",
-            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages"],
+            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages", "environmental-science", "religious-studies"],
           },
           {
             slug: "igcse-year-2",
             name: "IGCSE Year 2",
-            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages"],
+            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages", "environmental-science", "religious-studies"],
           },
         ],
       },
@@ -144,12 +144,12 @@ export const CURRICULA: Record<string, Curriculum> = {
           {
             slug: "as-level",
             name: "AS Level",
-            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "economics", "business", "english", "languages"],
+            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "economics", "business", "english", "languages", "psychology"],
           },
           {
             slug: "a-level",
             name: "A Level",
-            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "economics", "business", "english", "languages"],
+            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "economics", "business", "english", "languages", "psychology"],
           },
         ],
       },
@@ -192,7 +192,7 @@ export const CURRICULA: Record<string, Curriculum> = {
           {
             slug: "grade-8",
             name: "Grade 8",
-            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "languages"],
+            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "languages", "civics"],
           },
         ],
       },
@@ -204,12 +204,12 @@ export const CURRICULA: Record<string, Curriculum> = {
           {
             slug: "grades-9-10",
             name: "Grades 9–10",
-            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages"],
+            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages", "environmental-science", "earth-science", "astronomy", "psychology", "civics"],
           },
           {
             slug: "grades-11-12",
             name: "Grades 11–12",
-            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages"],
+            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages", "environmental-science", "earth-science", "astronomy", "engineering", "psychology", "sociology", "political-science", "civics", "global-studies"],
           },
         ],
       },
@@ -252,7 +252,7 @@ export const CURRICULA: Record<string, Curriculum> = {
           {
             slug: "myp-4-5",
             name: "MYP 4–5",
-            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages"],
+            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages", "global-studies"],
           },
         ],
       },
@@ -264,12 +264,12 @@ export const CURRICULA: Record<string, Curriculum> = {
           {
             slug: "dp-year-1",
             name: "DP Year 1",
-            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "english", "history", "geography", "economics", "business", "languages"],
+            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "english", "history", "geography", "economics", "business", "languages", "environmental-science", "psychology", "political-science", "philosophy", "global-studies"],
           },
           {
             slug: "dp-year-2",
             name: "DP Year 2",
-            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "english", "history", "geography", "economics", "business", "languages"],
+            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "english", "history", "geography", "economics", "business", "languages", "environmental-science", "psychology", "political-science", "philosophy", "global-studies"],
           },
         ],
       },
@@ -279,8 +279,8 @@ export const CURRICULA: Record<string, Curriculum> = {
 
 export const CURRICULUM_SLUGS = Object.keys(CURRICULA);
 
-/** "languages" in year subject lists expands to the three language subjects. */
-const LANGUAGE_SUBJECTS = ["english", "spanish", "french"];
+/** "languages" in year subject lists expands to the language subjects. */
+const LANGUAGE_SUBJECTS = ["english", "spanish", "french", "german", "arabic", "chinese", "japanese", "russian"];
 
 export function expandSubjects(subjects: string[]): string[] {
   const out: string[] = [];
