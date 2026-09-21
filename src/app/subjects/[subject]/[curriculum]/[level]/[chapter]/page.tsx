@@ -51,7 +51,6 @@ export default function ChapterPage({
   const level = curriculum ? resolveLevel(params.curriculum, params.level) : null;
   if (!subject || !chapter || !curriculum || !level || !level.subjects.includes(subject.slug)) notFound();
 
-  const base = `/subjects/${params.subject}/${params.curriculum}/${params.level}/${params.chapter}`;
   const topics = getAvailableTopics({
     curriculum: params.curriculum,
     level: params.level,
@@ -75,40 +74,51 @@ export default function ChapterPage({
         title={chapter.title}
         lede={chapter.desc}
       />
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">Lessons</span>
-            <h2>Lessons in this chapter</h2>
+      <div className="subject-overview">
+        <div className="overview-grid">
+          <aside className="overview-aside">
+            <h2>In this chapter</h2>
+            <ul className="learn-list">
+              <li>
+                {topics.length > 0
+                  ? `${topics.length} lesson${topics.length === 1 ? "" : "s"}`
+                  : "Lessons coming soon"}
+              </li>
+              <li>Definitions and key ideas</li>
+              <li>Worked examples</li>
+              <li>Practice questions with answers</li>
+              <li>Short quizzes with explanations</li>
+            </ul>
+          </aside>
+          <div>
+            <div className="chapters">
+              {topics.length > 0 ? (
+                topics.map((topic, i) => (
+                  <Link key={topic.slug} className="chapter-link" href={topic.url}>
+                    <span className="chapter-index">{String(i + 1).padStart(2, "0")}</span>
+                    <span>
+                      <span className="chapter-title">{topic.title}</span>
+                      <span className="chapter-desc">{topic.desc}</span>
+                    </span>
+                    <span className="chapter-status">Read lesson →</span>
+                  </Link>
+                ))
+              ) : (
+                <p className="empty-note">
+                  Lessons for this chapter are being written — check back soon, or explore another chapter.
+                </p>
+              )}
+            </div>
             {topics.length > 0 && (
-              <p>
-                <Link href={`/resources/${params.subject}/${params.curriculum}/${params.level}/${params.chapter}`}>
+              <p style={{ marginTop: 28 }}>
+                <Link className="inline-link" href={`/resources/${params.subject}/${params.curriculum}/${params.level}/${params.chapter}`}>
                   Chapter resources →
-                </Link>{" "}
-                — notes, worksheets, videos and interactive tools.
+                </Link>
               </p>
             )}
           </div>
-          {topics.length > 0 ? (
-            <div className="chapter-list">
-              {topics.map((topic, i) => (
-                <Link key={topic.slug} className="chapter-row" href={topic.url}>
-                  <span className="chapter-num">{String(i + 1).padStart(2, "0")}</span>
-                  <div>
-                    <h3>{topic.title}</h3>
-                    <p>{topic.desc}</p>
-                  </div>
-                  <span className="lesson-count">Read lesson →</span>
-                </Link>
-              ))}
-            </div>
-          ) : (
-            <p className="empty-note">
-              Lessons for this chapter are being written — check back soon, or explore another chapter.
-            </p>
-          )}
         </div>
-      </section>
+      </div>
     </>
   );
 }
