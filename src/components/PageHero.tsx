@@ -1,29 +1,34 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-export interface Crumb {
-  label: string;
-  href?: string;
-}
+type Crumb = { label: string; href?: string };
 
-/** page-hero: crumb + big title + lede, per the design. */
-export default function PageHero({ crumbs, title, lede }: { crumbs?: Crumb[]; title: ReactNode; lede?: ReactNode }) {
+export default function PageHero({
+  title,
+  lede,
+  crumbs,
+  eyebrow,
+}: {
+  title: ReactNode;
+  lede?: string;
+  crumbs?: Crumb[];
+  eyebrow?: ReactNode;
+}) {
   return (
     <div className="page-hero">
-      <div className="container">
-        {crumbs && crumbs.length > 0 && (
-          <span className="crumb">
-            {crumbs.map((c, i) => (
-              <span key={i}>
-                {i > 0 && " / "}
-                {c.href ? <Link href={c.href}>{c.label}</Link> : c.label}
-              </span>
-            ))}
-          </span>
-        )}
-        <h1>{title}</h1>
-        {lede && <p className="lede">{lede}</p>}
-      </div>
+      {crumbs && crumbs.length > 0 && (
+        <div className="breadcrumb">
+          {crumbs.map((c, i) => (
+            <span key={i}>
+              {i > 0 && <span aria-hidden="true"> › </span>}
+              {c.href ? <Link href={c.href}>{c.label}</Link> : c.label}
+            </span>
+          ))}
+        </div>
+      )}
+      {eyebrow && <div className="eyebrow">{eyebrow}</div>}
+      <h1>{title}</h1>
+      {lede && <p className="lede">{lede}</p>}
     </div>
   );
 }
