@@ -3,8 +3,9 @@ import PageHero from "@/components/PageHero";
 import { CURRICULA, CURRICULUM_SLUGS } from "@/lib/curriculum";
 
 export const metadata = {
-  title: "Curricula",
-  description: "British, Cambridge, American and IB curricula — each with its own level structure.",
+  title: "Curriculum",
+  description:
+    "Each curriculum is represented on its own terms. Choose one to see its stages and levels, then continue to subjects and chapters.",
 };
 
 export default function CurriculumIndexPage() {
@@ -12,24 +13,29 @@ export default function CurriculumIndexPage() {
     <>
       <PageHero
         crumbs={[{ label: "Home", href: "/" }, { label: "Curriculum" }]}
-        title="Curricula"
-        lede="Four curricula, four different structures. Thread Academy follows each one's own organisation — stages, years and levels exactly as schools use them."
+        eyebrow="Choose a learning structure"
+        title="Curriculum"
+        lede="Each curriculum is represented on its own terms. Choose one to see its stages and levels, then continue to subjects and chapters."
       />
-      <section className="section">
-        <div className="container">
-          <div className="card-grid two">
-            {CURRICULUM_SLUGS.map((slug) => {
-              const c = CURRICULA[slug];
-              return (
-                <Link key={slug} className="card" href={`/curriculum/${slug}`}>
-                  <span className="card-meta">{c.tagline}</span>
-                  <h3>{c.name}</h3>
-                  <p>{c.desc}</p>
-                  <span className="card-link">Explore curriculum →</span>
-                </Link>
-              );
-            })}
-          </div>
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="curriculum-grid">
+          {CURRICULUM_SLUGS.map((slug, i) => {
+            const c = CURRICULA[slug];
+            return (
+              <Link key={slug} className="curriculum-card" href={`/curriculum/${slug}`}>
+                <span className="curriculum-num">
+                  {String(i + 1).padStart(2, "0")} / CURRICULUM
+                </span>
+                <h3>{c.name}</h3>
+                <p>{c.desc}</p>
+                <div className="stage-line" aria-hidden="true">
+                  {c.stages.map((s) => (
+                    <span key={s.slug}>{s.name}</span>
+                  ))}
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </section>
     </>
