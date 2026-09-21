@@ -36,9 +36,6 @@ export default function SiteHeader() {
           </svg>
         </button>
       </div>
-      <button className="mobile-menu" aria-label="Open search" onClick={() => openSiteSearch()}>
-        ⌕
-      </button>
     </header>
   );
 }

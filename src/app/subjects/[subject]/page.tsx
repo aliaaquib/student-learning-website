@@ -38,20 +38,11 @@ export default function SubjectPage({ params }: { params: { subject: string } })
       />
 
       <section className="subject-overview">
-        <div className="overview-grid">
-          <aside className="overview-aside">
-            <h2>What students will learn</h2>
-            <ul className="learn-list">
-              {subject.learn.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </aside>
-          <div>
-            <div className="eyebrow" style={{ marginBottom: 18 }}>
-              Choose curriculum
-            </div>
-            <div className="curriculum-grid">
+        <div>
+          <div className="eyebrow" style={{ marginBottom: 18 }}>
+            Choose curriculum
+          </div>
+          <div className="curriculum-grid">
               {CURRICULUM_SLUGS.filter((cSlug) => curriculumOffersSubject(cSlug, subject.slug)).map(
                 (cSlug, i) => {
                   const curriculum = CURRICULA[cSlug];
@@ -78,7 +69,6 @@ export default function SubjectPage({ params }: { params: { subject: string } })
                 }
               )}
             </div>
-          </div>
         </div>
       </section>
     </>
