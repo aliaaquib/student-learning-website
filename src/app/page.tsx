@@ -3,107 +3,149 @@ import HeroSearch from "@/components/HeroSearch";
 import { CATEGORY_ORDER, subjectsByCategory } from "@/lib/subjects";
 import { CURRICULA, CURRICULUM_SLUGS } from "@/lib/curriculum";
 
+/** Reference glyphs per subject slug (approved design; not emoji). */
+const GLYPHS: Record<string, string> = {
+  mathematics: "x²",
+  physics: "F→",
+  chemistry: "H₂",
+  biology: "DNA",
+  "computer-science": "</>",
+  english: "Aa",
+  history: "AD",
+  geography: "◎",
+  economics: "↗",
+  business: "B",
+  spanish: "Ñ",
+  french: "Ç",
+};
+
+/** Reference "How Thread Academy works" steps, verbatim. */
 const STEPS = [
   {
-    num: "01",
-    title: "Discover",
-    text: "Search any topic — “linear equations”, “Newton's laws” — or browse by subject, curriculum and level until you find exactly what you need.",
+    num: "1",
+    title: "Choose a route",
+    text: "Select a subject or begin with your curriculum and level.",
   },
   {
-    num: "02",
-    title: "Learn",
-    text: "Read clear, structured textbook lessons: definitions, explanations, worked examples and diagrams, written to be understood — not memorised.",
+    num: "2",
+    title: "Open a chapter",
+    text: "See the sequence of topics and where each idea belongs.",
   },
   {
-    num: "03",
-    title: "Practice",
-    text: "Work through practice questions with hidden answers. Attempt each one yourself first, then reveal the solution to check your thinking.",
+    num: "3",
+    title: "Learn deeply",
+    text: "Read explanations, definitions, worked examples, and diagrams.",
   },
   {
-    num: "04",
-    title: "Test",
-    text: "Take short quizzes with instant explanations for every answer, so mistakes become the most useful part of the lesson.",
-  },
-  {
-    num: "05",
-    title: "Track",
-    text: "Follow the chapter sidebar to keep your place as you move through a topic, lesson by lesson, in a sensible order.",
-  },
-  {
-    num: "06",
-    title: "Continue",
-    text: "Every lesson links to the next one and to revision resources — notes, worksheets, videos and interactive tools for the chapter.",
+    num: "4",
+    title: "Use resources",
+    text: "Practise with quick checks, worksheets, notes, and revision guides.",
   },
 ];
 
 export default function HomePage() {
   return (
     <>
-      <section className="hero">
-        <div className="container">
-          <span className="hero-kicker">A free learning library</span>
-          <h1>
-            Learn anything. <span className="accent-word">Understand everything.</span>
-          </h1>
-          <p className="hero-sub">
-            Clear explanations, worked examples and interactive practice across Mathematics, Science,
-            Humanities and Languages — aligned with the British, Cambridge, American and IB curricula.
-          </p>
-          <HeroSearch />
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">Subjects</span>
-            <h2>Explore subjects</h2>
-            <p>Twelve subjects, each organised into chapters and bite-sized lessons you can read in any order.</p>
+      <header className="home-hero">
+        <div className="hero-grid">
+          <div>
+            <div className="eyebrow">Educational knowledge, organised clearly</div>
+            <h1>
+              Follow the thread. <span className="underline">Understand the subject.</span>
+            </h1>
+            <p className="hero-copy">
+              Thread Academy is an open learning platform for school subjects. Study Mathematics,
+              Biology, Physics, Computer Science, languages, and more through the curriculum and
+              level you actually follow.
+            </p>
           </div>
-          {CATEGORY_ORDER.map((category) => (
-            <div key={category} style={{ marginBottom: 64 }}>
-              <h3
-                style={{
-                  fontSize: 15,
-                  letterSpacing: "0.1em",
-                  textTransform: "uppercase",
-                  color: "var(--faint)",
-                  marginBottom: 24,
-                }}
-              >
-                {category}
-              </h3>
-              <div className="card-grid">
-                {subjectsByCategory(category).map((subject) => (
-                  <Link key={subject.slug} className="card" href={`/subjects/${subject.slug}`}>
-                    <span className="card-icon" aria-hidden="true">{subject.icon}</span>
-                    <h3>{subject.name}</h3>
-                    <p>{subject.tagline}</p>
-                    <span className="card-link">Explore subject →</span>
+          <aside className="today-card">
+            <div className="today-label">Why we built it</div>
+            <h2>Learning should have a clear structure.</h2>
+            <p>
+              Lessons connect definitions, explanations, worked examples, practice, and revision
+              so each idea leads naturally to the next.
+            </p>
+            <Link className="inline-link" href="/about">
+              About Thread Academy <span aria-hidden="true">→</span>
+            </Link>
+          </aside>
+        </div>
+        <HeroSearch />
+      </header>
+
+      <section className="section" id="subjects">
+        <div className="section-head">
+          <h2>Subjects, connected to real curricula.</h2>
+          <p>
+            Start with a discipline, choose your curriculum and level, then move through chapters
+            and complete textbook-style topics.
+          </p>
+        </div>
+        {CATEGORY_ORDER.map((category) => (
+          <div key={category}>
+            <div className="eyebrow" style={{ margin: "42px 0 16px" }}>
+              {category}
+            </div>
+            <div className="subjects-grid">
+              {subjectsByCategory(category)
+                .slice(0, 2)
+                .map((subject) => (
+                  <Link
+                    key={subject.slug}
+                    className="subject-card"
+                    href={`/subjects/${subject.slug}`}
+                  >
+                    <div className="subject-icon" aria-hidden="true">
+                      {GLYPHS[subject.slug] ?? subject.slug.slice(0, 2).toUpperCase()}
+                    </div>
+                    <div className="subject-bottom">
+                      <div>
+                        <h3>{subject.name}</h3>
+                        <div className="subject-meta">
+                          {subject.chapters.length} chapter areas · four curricula
+                        </div>
+                      </div>
+                      <span className="subject-arrow" aria-hidden="true">
+                        ↗
+                      </span>
+                    </div>
                   </Link>
                 ))}
-              </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+        <p style={{ marginTop: 36 }}>
+          <Link className="inline-link" href="/subjects">
+            Browse every subject <span aria-hidden="true">→</span>
+          </Link>
+        </p>
       </section>
 
-      <section className="section section-alt">
-        <div className="container">
+      <section className="section alt" id="curriculum">
+        <div className="inner">
           <div className="section-head">
-            <span className="eyebrow">Curricula</span>
-            <h2>Learn it your way</h2>
-            <p>Every curriculum keeps its own structure — pick the one your school follows.</p>
+            <h2>Four curricula. Their own structures.</h2>
+            <p>
+              British, Cambridge, American, and IB pathways keep the stages, years, grades, and
+              programmes that belong to them.
+            </p>
           </div>
-          <div className="card-grid two">
-            {CURRICULUM_SLUGS.map((slug) => {
+          <div className="curriculum-grid">
+            {CURRICULUM_SLUGS.map((slug, i) => {
               const c = CURRICULA[slug];
               return (
-                <Link key={slug} className="card" href={`/curriculum/${slug}`}>
-                  <span className="card-meta">{c.tagline}</span>
+                <Link key={slug} className="curriculum-card" href={`/curriculum/${slug}`}>
+                  <span className="curriculum-num">
+                    {String(i + 1).padStart(2, "0")} / CURRICULUM
+                  </span>
                   <h3>{c.name}</h3>
                   <p>{c.desc}</p>
-                  <span className="card-link">Explore curriculum →</span>
+                  <div className="stage-line" aria-hidden="true">
+                    {c.stages.map((s) => (
+                      <span key={s.slug}>{s.name}</span>
+                    ))}
+                  </div>
                 </Link>
               );
             })}
@@ -111,22 +153,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">How it works</span>
-            <h2>A simple loop for learning</h2>
-            <p>No accounts, no tracking, no paywalls — just a study loop that works.</p>
-          </div>
-          <div className="steps">
-            {STEPS.map((step) => (
-              <div key={step.num} className="step">
-                <span className="step-num">STEP {step.num}</span>
-                <h3>{step.title}</h3>
-                <p>{step.text}</p>
-              </div>
-            ))}
-          </div>
+      <section className="section" id="how">
+        <div className="section-head">
+          <h2>How Thread Academy works.</h2>
+          <p>
+            Use the platform as a guided library: find the right route, learn the topic in depth,
+            practise, then follow related ideas.
+          </p>
+        </div>
+        <div className="how-grid">
+          {STEPS.map((step) => (
+            <div key={step.num} className="how-step">
+              <div className="how-n">{step.num}</div>
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </div>
+          ))}
         </div>
       </section>
     </>
