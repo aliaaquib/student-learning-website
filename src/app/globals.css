@@ -207,6 +207,7 @@ a.chapter-link:hover{background:var(--surface);padding-left:16px;padding-right:1
 .search-overlay.open{display:grid}
 .search-panel{width:min(760px,100%);background:var(--bg);box-shadow:var(--shadow);padding:24px}
 .search-row{display:flex;gap:10px}
+.search-panel .search-wrap{margin-top:0;max-width:none;flex:1;min-width:0}
 .search-row input{flex:1;min-width:0;border:0;border-bottom:2px solid var(--ink);background:transparent;padding:14px 4px;font-size:1.25rem;outline:0}
 .close-search{border:0;background:var(--surface);width:50px}
 .search-results{margin-top:20px;border-top:1px solid var(--line);max-height:55vh;overflow:auto}
