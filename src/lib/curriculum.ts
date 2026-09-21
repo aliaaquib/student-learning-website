@@ -336,3 +336,11 @@ export function allLevelSlugs(curriculumSlug: string): { slug: string; stage: Cu
 export function getCurriculum(slug: string): Curriculum | null {
   return CURRICULA[slug] ?? null;
 }
+
+/** True when a curriculum offers a subject at one or more addressable levels
+ *  (stages and years alike). */
+export function curriculumOffersSubject(curriculumSlug: string, subjectSlug: string): boolean {
+  return allLevelSlugs(curriculumSlug).some(
+    ({ slug }) => resolveLevel(curriculumSlug, slug)?.subjects.includes(subjectSlug) ?? false
+  );
+}

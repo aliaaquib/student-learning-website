@@ -4,7 +4,8 @@ import PageHero from "@/components/PageHero";
 import { PracticeItem, PracticeQuestions } from "@/components/textbook/PracticeQuestions";
 import EquationSolver from "@/components/widgets/EquationSolver";
 import { getCurriculum, resolveLevel } from "@/lib/curriculum";
-import { getChapter, getSubject } from "@/lib/subjects";
+import { getSubject } from "@/lib/subjects";
+import { getChapterFor } from "@/lib/stage-chapters";
 import { getContentChapters } from "@/lib/content";
 import { getChapterResources } from "@/lib/resources";
 
@@ -23,7 +24,7 @@ export async function generateMetadata({
   params: { subject: string; curriculum: string; level: string; chapter: string };
 }) {
   const subject = getSubject(params.subject);
-  const chapter = getChapter(params.subject, params.chapter);
+  const chapter = getChapterFor(params.subject, params.curriculum, params.level, params.chapter);
   if (!subject || !chapter) return {};
   return {
     title: `${chapter.title} resources — ${subject.name}`,
@@ -58,7 +59,7 @@ export default function ChapterResourcesPage({
   params: { subject: string; curriculum: string; level: string; chapter: string };
 }) {
   const subject = getSubject(params.subject);
-  const chapter = getChapter(params.subject, params.chapter);
+  const chapter = getChapterFor(params.subject, params.curriculum, params.level, params.chapter);
   const curriculum = getCurriculum(params.curriculum);
   const level = curriculum ? resolveLevel(params.curriculum, params.level) : null;
   if (!subject || !chapter || !curriculum || !level) notFound();

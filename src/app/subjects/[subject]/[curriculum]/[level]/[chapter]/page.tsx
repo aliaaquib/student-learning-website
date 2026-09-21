@@ -2,7 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import { CURRICULUM_SLUGS, allLevelSlugs, getCurriculum, resolveLevel } from "@/lib/curriculum";
-import { SUBJECT_SLUGS, getChapter, getSubject } from "@/lib/subjects";
+import { SUBJECT_SLUGS, getSubject } from "@/lib/subjects";
+import { getChapterFor, getChaptersFor } from "@/lib/stage-chapters";
 import { getAvailableTopics } from "@/lib/content";
 
 export function generateStaticParams() {
@@ -13,9 +14,7 @@ export function generateStaticParams() {
       if (!resolved) continue;
       for (const subject of SUBJECT_SLUGS) {
         if (!resolved.subjects.includes(subject)) continue;
-        const sub = getSubject(subject);
-        if (!sub) continue;
-        for (const chapter of sub.chapters) {
+        for (const chapter of getChaptersFor(subject, curriculum, level)) {
           params.push({ subject, curriculum, level, chapter: chapter.id });
         }
       }
@@ -30,7 +29,7 @@ export async function generateMetadata({
   params: { subject: string; curriculum: string; level: string; chapter: string };
 }) {
   const subject = getSubject(params.subject);
-  const chapter = getChapter(params.subject, params.chapter);
+  const chapter = getChapterFor(params.subject, params.curriculum, params.level, params.chapter);
   const curriculum = getCurriculum(params.curriculum);
   const level = curriculum ? resolveLevel(params.curriculum, params.level) : null;
   if (!subject || !chapter || !curriculum || !level) return {};
@@ -46,7 +45,7 @@ export default function ChapterPage({
   params: { subject: string; curriculum: string; level: string; chapter: string };
 }) {
   const subject = getSubject(params.subject);
-  const chapter = getChapter(params.subject, params.chapter);
+  const chapter = getChapterFor(params.subject, params.curriculum, params.level, params.chapter);
   const curriculum = getCurriculum(params.curriculum);
   const level = curriculum ? resolveLevel(params.curriculum, params.level) : null;
   if (!subject || !chapter || !curriculum || !level || !level.subjects.includes(subject.slug)) notFound();
@@ -66,7 +65,11 @@ export default function ChapterPage({
           { label: "Subjects", href: "/subjects" },
           { label: subject.name, href: `/subjects/${subject.slug}` },
           {
-            label: `${curriculum.name} · ${level.name}`,
+            label: curriculum.name,
+            href: `/subjects/${params.subject}/${params.curriculum}`,
+          },
+          {
+            label: level.name,
             href: `/subjects/${params.subject}/${params.curriculum}/${params.level}`,
           },
           { label: chapter.title },

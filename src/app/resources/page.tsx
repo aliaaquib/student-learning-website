@@ -2,7 +2,8 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { getContentChapters } from "@/lib/content";
 import { getCurriculum, resolveLevel } from "@/lib/curriculum";
-import { SUBJECT_SLUGS, getChapter, getSubject } from "@/lib/subjects";
+import { SUBJECT_SLUGS, getSubject } from "@/lib/subjects";
+import { getChapterFor } from "@/lib/stage-chapters";
 
 const GLYPHS: Record<string, string> = {
   mathematics: "x²",
@@ -36,7 +37,7 @@ export default function ResourcesHubPage() {
     const subject = getSubject(subjectSlug);
     const curriculum = getCurriculum(combo.curriculum);
     const level = curriculum ? resolveLevel(combo.curriculum, combo.level) : null;
-    const chapter = getChapter(subjectSlug, combo.chapter);
+    const chapter = getChapterFor(subjectSlug, combo.curriculum, combo.level, combo.chapter);
     if (!subject || !curriculum || !level || !chapter) return null;
     return {
       subject,

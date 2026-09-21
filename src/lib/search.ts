@@ -1,6 +1,7 @@
 import type { SearchEntry } from "./types";
 import { CURRICULA, allLevelSlugs, resolveLevel } from "./curriculum";
 import { SUBJECTS } from "./subjects";
+import { getChapterFor } from "./stage-chapters";
 import { getChapterTopics } from "./chapters";
 import { getAllTopicParams, getTopicContent, getContentChapters } from "./content";
 
@@ -38,7 +39,7 @@ export function buildSearchIndex(): SearchEntry[] {
     if (!subject || !curriculum) continue;
     const level = resolveLevel(p.curriculum, p.level);
     if (!level) continue;
-    const chapter = subject.chapters.find((c) => c.id === p.chapter);
+    const chapter = getChapterFor(p.subject, p.curriculum, p.level, p.chapter);
     if (!chapter) continue;
     const meta = getChapterTopics(p.chapter).find((t) => t.slug === p.topic);
     const content = getTopicContent(p);
@@ -60,7 +61,7 @@ export function buildSearchIndex(): SearchEntry[] {
     if (!subject || !curriculum) continue;
     const level = resolveLevel(combo.curriculum, combo.level);
     if (!level) continue;
-    const chapter = subject.chapters.find((c) => c.id === combo.chapter);
+    const chapter = getChapterFor(combo.subject, combo.curriculum, combo.level, combo.chapter);
     if (!chapter) continue;
     const topicTitles = getChapterTopics(combo.chapter)
       .map((t) => t.title)

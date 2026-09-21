@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import { CURRICULUM_SLUGS, allLevelSlugs, getCurriculum, resolveLevel } from "@/lib/curriculum";
 import { SUBJECT_SLUGS, getSubject } from "@/lib/subjects";
-import { getAvailableTopics } from "@/lib/content";
+import { getChaptersFor } from "@/lib/stage-chapters";
 
 export function generateStaticParams() {
   const params: { subject: string; curriculum: string; level: string }[] = [];
@@ -52,7 +52,7 @@ export default function SubjectLevelPage({
         crumbs={[
           { label: "Home", href: "/" },
           { label: subject.name, href: `/subjects/${subject.slug}` },
-          { label: curriculum.name, href: `/curriculum/${curriculum.slug}` },
+          { label: curriculum.name, href: `/subjects/${subject.slug}/${curriculum.slug}` },
           { label: level.name },
         ]}
         eyebrow={`${subject.name} · ${curriculum.name} · ${level.name}`}
@@ -75,19 +75,13 @@ export default function SubjectLevelPage({
               Chapters
             </div>
             <div className="chapters">
-              {subject.chapters.map((chapter, i) => {
-                const topics = getAvailableTopics({
-                  curriculum: params.curriculum,
-                  level: params.level,
-                  subject: params.subject,
-                  chapter: chapter.id,
-                });
-                const href =
-                  topics.length > 0
-                    ? topics[0].url
-                    : `/subjects/${params.subject}/${params.curriculum}/${params.level}/${chapter.id}`;
+              {getChaptersFor(subject.slug, curriculum.slug, level.slug).map((chapter, i) => {
                 return (
-                  <Link key={chapter.id} className="chapter-link" href={href}>
+                  <Link
+                    key={chapter.id}
+                    className="chapter-link"
+                    href={`/subjects/${params.subject}/${params.curriculum}/${params.level}/${chapter.id}`}
+                  >
                     <span className="chapter-index">{String(i + 1).padStart(2, "0")}</span>
                     <span>
                       <span className="chapter-title">{chapter.title}</span>

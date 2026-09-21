@@ -4,7 +4,8 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { mdxComponents } from "@/mdx-components";
 import { ChapterSidebar } from "@/components/textbook/ChapterSidebar";
 import { getCurriculum, resolveLevel } from "@/lib/curriculum";
-import { getChapter, getSubject } from "@/lib/subjects";
+import { getSubject } from "@/lib/subjects";
+import { getChapterFor } from "@/lib/stage-chapters";
 import { getAllTopicParams, getAvailableTopics, getTopicContent } from "@/lib/content";
 
 export function generateStaticParams() {
@@ -31,7 +32,7 @@ export default function TopicPage({
   params: { subject: string; curriculum: string; level: string; chapter: string; topic: string };
 }) {
   const subject = getSubject(params.subject);
-  const chapter = getChapter(params.subject, params.chapter);
+  const chapter = getChapterFor(params.subject, params.curriculum, params.level, params.chapter);
   const curriculum = getCurriculum(params.curriculum);
   const level = curriculum ? resolveLevel(params.curriculum, params.level) : null;
   const content = getTopicContent(params);
