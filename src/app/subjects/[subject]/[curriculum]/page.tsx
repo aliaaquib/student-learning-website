@@ -59,20 +59,7 @@ export default function SubjectCurriculumPage({
         lede={`Pick a level to see the ${subject.name} chapters written for the ${curriculum.name} curriculum.`}
       />
       <section className="subject-overview">
-        <div className="overview-grid">
-          <aside className="overview-aside">
-            <h2>Your route</h2>
-            <ul className="learn-list">
-              <li>{subject.name}</li>
-              <li>{curriculum.name}</li>
-              <li>Choose a level</li>
-              <li>Chapters and topics</li>
-            </ul>
-          </aside>
-          <div>
-            <LevelPicker curriculum={curriculum} subject={subject} />
-          </div>
-        </div>
+        <LevelPicker curriculum={curriculum} subject={subject} />
       </section>
     </>
   );
