@@ -71,7 +71,14 @@ export default function TopicPage({
           <h1>{content.title}</h1>
           {content.lede && <p className="lesson-lede">{content.lede}</p>}
           <div className="lesson-content">
-            <MDXRemote source={content.source} components={mdxComponents} />
+            {/* blockJS:false — our MDX is authored in-repo (trusted); it passes
+                arrays/numbers as JSX props (e.g. QuizQuestion options).
+                blockDangerousJS stays on (v6 default) as a safety net. */}
+            <MDXRemote
+              source={content.source}
+              components={mdxComponents}
+              options={{ blockJS: false }}
+            />
           </div>
           <div className="lesson-footer">
             {next ? (
