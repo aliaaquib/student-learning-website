@@ -54,7 +54,6 @@ export default function LevelPicker({
       </div>
       {stage && (
         <div className="stage-panel">
-          <div className="eyebrow">Choose your level</div>
           <h2>{stage.name}</h2>
           <p>
             Choose a level to open the {subject.name} chapters for {stage.name}.
