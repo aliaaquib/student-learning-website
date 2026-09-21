@@ -58,17 +58,6 @@ export default function HomePage() {
               level you actually follow.
             </p>
           </div>
-          <aside className="today-card">
-            <div className="today-label">Why we built it</div>
-            <h2>Learning should have a clear structure.</h2>
-            <p>
-              Lessons connect definitions, explanations, worked examples, practice, and revision
-              so each idea leads naturally to the next.
-            </p>
-            <Link className="inline-link" href="/about">
-              About Thread Academy <span aria-hidden="true">→</span>
-            </Link>
-          </aside>
         </div>
         <HeroSearch />
       </header>
@@ -150,6 +139,20 @@ export default function HomePage() {
             })}
           </div>
         </div>
+      </section>
+
+      <section className="section" id="why">
+        <aside className="today-card">
+          <div className="today-label">Why we built it</div>
+          <h2>Learning should have a clear structure.</h2>
+          <p>
+            Lessons connect definitions, explanations, worked examples, practice, and revision
+            so each idea leads naturally to the next.
+          </p>
+          <Link className="inline-link" href="/about">
+            About Thread Academy <span aria-hidden="true">→</span>
+          </Link>
+        </aside>
       </section>
 
       <section className="section" id="how">
