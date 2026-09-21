@@ -82,7 +82,6 @@ export default function SubjectPage({ params }: { params: { subject: string } })
           { label: "Subjects", href: "/subjects" },
           { label: subject.name },
         ]}
-        eyebrow={`${subject.category} subject`}
         title={subject.name}
         lede={subject.intro}
       />
