@@ -2,7 +2,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import { SUBJECT_SLUGS, getSubject } from "@/lib/subjects";
-import { CURRICULA, CURRICULUM_SLUGS, resolveLevel } from "@/lib/curriculum";
+import {
+  CURRICULA,
+  CURRICULUM_SLUGS,
+  allLevelSlugs,
+  resolveLevel,
+} from "@/lib/curriculum";
 import { getContentChapters } from "@/lib/content";
 
 export function generateStaticParams() {
@@ -14,17 +19,55 @@ export async function generateMetadata({ params }: { params: { subject: string }
   if (!subject) return {};
   return {
     title: subject.name,
-    description: subject.tagline,
+    description: subject.intro,
   };
 }
 
-/** Deepest available chapter page for this subject+chapter (prefers Cambridge IGCSE). */
-function bestChapterPath(subjectSlug: string, chapterId: string): string | null {
-  const combos = getContentChapters().filter((c) => c.subject === subjectSlug && c.chapter === chapterId);
-  if (combos.length === 0) return null;
+/** Preferred entry level per curriculum (reference: defaultLevel). */
+const DEFAULT_LEVELS: Record<string, { slug: string; name: string }> = {
+  british: { slug: "year-8", name: "Year 8" },
+  cambridge: { slug: "igcse", name: "IGCSE" },
+  american: { slug: "grade-8", name: "Grade 8" },
+  ib: { slug: "myp-3", name: "MYP 3" },
+};
+
+/** Entry level for a subject in a curriculum: the preferred default level when
+ *  the subject is offered there, otherwise the first level that offers it. */
+function entryLevel(curriculumSlug: string, subjectSlug: string): { slug: string; name: string } {
+  const preferred = DEFAULT_LEVELS[curriculumSlug];
+  if (preferred) {
+    const resolved = resolveLevel(curriculumSlug, preferred.slug);
+    if (resolved?.subjects.includes(subjectSlug)) return preferred;
+  }
+  for (const { slug } of allLevelSlugs(curriculumSlug)) {
+    const resolved = resolveLevel(curriculumSlug, slug);
+    if (resolved?.subjects.includes(subjectSlug)) return { slug, name: resolved.name };
+  }
+  return preferred ?? { slug: "", name: "" };
+}
+
+/** Chapter page URL for a subject+chapter: prefers the level with published
+ *  lessons (Cambridge IGCSE first), otherwise the first level offering the
+ *  subject — the chapter page renders gracefully when lessons are still being
+ *  written. */
+function chapterPath(subjectSlug: string, chapterId: string): string {
+  const combos = getContentChapters().filter(
+    (c) => c.subject === subjectSlug && c.chapter === chapterId
+  );
   const preferred =
     combos.find((c) => c.curriculum === "cambridge" && c.level === "igcse") ?? combos[0];
-  return `/subjects/${subjectSlug}/${preferred.curriculum}/${preferred.level}/${chapterId}`;
+  if (preferred) {
+    return `/subjects/${subjectSlug}/${preferred.curriculum}/${preferred.level}/${chapterId}`;
+  }
+  for (const cSlug of CURRICULUM_SLUGS) {
+    for (const { slug } of allLevelSlugs(cSlug)) {
+      const resolved = resolveLevel(cSlug, slug);
+      if (resolved?.subjects.includes(subjectSlug)) {
+        return `/subjects/${subjectSlug}/${cSlug}/${slug}/${chapterId}`;
+      }
+    }
+  }
+  return `/subjects/${subjectSlug}`;
 }
 
 export default function SubjectPage({ params }: { params: { subject: string } }) {
@@ -34,89 +77,75 @@ export default function SubjectPage({ params }: { params: { subject: string } })
   return (
     <>
       <PageHero
-        crumbs={[{ label: "Home", href: "/" }, { label: "Subjects", href: "/subjects" }, { label: subject.name }]}
-        title={
-          <>
-            <span aria-hidden="true">{subject.icon} </span>
-            {subject.name}
-          </>
-        }
+        crumbs={[
+          { label: "Home", href: "/" },
+          { label: "Subjects", href: "/subjects" },
+          { label: subject.name },
+        ]}
+        eyebrow={`${subject.category} subject`}
+        title={subject.name}
         lede={subject.intro}
       />
 
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">What you&rsquo;ll learn</span>
-            <h2>Inside {subject.name}</h2>
-          </div>
-          <ul className="learn-list" style={{ marginBottom: 72 }}>
-            {subject.learn.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-
-          <div className="section-head">
-            <span className="eyebrow">Chapters</span>
-            <h2>Chapters</h2>
-            <p>Chapters with published lessons link straight to the lesson list.</p>
-          </div>
-          <div className="chapter-list" style={{ marginBottom: 88 }}>
-            {subject.chapters.map((chapter, i) => {
-              const href = bestChapterPath(subject.slug, chapter.id);
-              const inner = (
-                <>
-                  <span className="chapter-num">{String(i + 1).padStart(2, "0")}</span>
-                  <div>
-                    <h3>{chapter.title}</h3>
-                    <p>{chapter.desc}</p>
-                  </div>
-                  {href && <span className="lesson-count">Read lessons →</span>}
-                </>
-              );
-              return href ? (
-                <Link key={chapter.id} className="chapter-row" href={href}>
-                  {inner}
+      <section className="subject-overview">
+        <div className="overview-grid">
+          <aside className="overview-aside">
+            <h2>What students will learn</h2>
+            <ul className="learn-list">
+              {subject.learn.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </aside>
+          <div>
+            <div className="eyebrow" style={{ marginBottom: 18 }}>
+              Choose curriculum and level
+            </div>
+            <div className="curriculum-grid">
+              {CURRICULUM_SLUGS.map((cSlug, i) => {
+                const curriculum = CURRICULA[cSlug];
+                const level = entryLevel(cSlug, subject.slug);
+                return (
+                  <Link
+                    key={cSlug}
+                    className="curriculum-card"
+                    href={`/subjects/${subject.slug}/${cSlug}/${level.slug}`}
+                  >
+                    <span className="curriculum-num">
+                      {String(i + 1).padStart(2, "0")} / PATH
+                    </span>
+                    <h3>{curriculum.name}</h3>
+                    <p>
+                      {level.name} · {subject.name}
+                    </p>
+                    <div className="stage-line" aria-hidden="true">
+                      <span>Curriculum</span>
+                      <span>{level.name}</span>
+                      <span>Chapters</span>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+            <div className="eyebrow" style={{ margin: "54px 0 18px" }}>
+              Chapter overview
+            </div>
+            <div className="chapters">
+              {subject.chapters.map((chapter, i) => (
+                <Link
+                  key={chapter.id}
+                  className="chapter-link"
+                  href={chapterPath(subject.slug, chapter.id)}
+                >
+                  <span className="chapter-index">{String(i + 1).padStart(2, "0")}</span>
+                  <span>
+                    <span className="chapter-title">{chapter.title}</span>
+                    <span className="chapter-desc">{chapter.desc}</span>
+                  </span>
+                  <span className="chapter-status">Open →</span>
                 </Link>
-              ) : (
-                <div key={chapter.id} className="chapter-row">
-                  {inner}
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="section-head">
-            <span className="eyebrow">Curriculum &amp; level</span>
-            <h2>Choose your curriculum and level</h2>
-            <p>Lessons are organised per curriculum. Pick yours to see {subject.name} chapters for your level.</p>
-          </div>
-          <div className="level-grid">
-            {CURRICULUM_SLUGS.map((cSlug) => {
-              const curriculum = CURRICULA[cSlug];
-              const levels = curriculum.stages.flatMap((stage) => [
-                { slug: stage.slug, name: stage.name, stage: true },
-                ...stage.years.map((y) => ({ slug: y.slug, name: y.name, stage: false })),
-              ]);
-              const offered = levels.filter((l) => {
-                const resolved = resolveLevel(cSlug, l.slug);
-                return resolved?.subjects.includes(subject.slug);
-              });
-              if (offered.length === 0) return null;
-              return (
-                <div key={cSlug} className="card">
-                  <span className="card-meta">{curriculum.tagline}</span>
-                  <h3>{curriculum.name}</h3>
-                  <div className="year-pills">
-                    {offered.map((l) => (
-                      <Link key={l.slug} className="year-pill" href={`/subjects/${subject.slug}/${cSlug}/${l.slug}`}>
-                        {l.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
+              ))}
+            </div>
           </div>
         </div>
       </section>
