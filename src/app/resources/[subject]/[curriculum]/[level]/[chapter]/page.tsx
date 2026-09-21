@@ -31,6 +31,27 @@ export async function generateMetadata({
   };
 }
 
+function ResourceSection({ id, eyebrow, title, lede, children }: {
+  id: string;
+  eyebrow: string;
+  title: string;
+  lede: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div id={id} style={{ marginBottom: 72, scrollMarginTop: 100 }}>
+      <div className="section-head">
+        <div>
+          <span className="eyebrow">{eyebrow}</span>
+          <h2>{title}</h2>
+        </div>
+        <p>{lede}</p>
+      </div>
+      {children}
+    </div>
+  );
+}
+
 export default function ChapterResourcesPage({
   params,
 }: {
@@ -58,108 +79,115 @@ export default function ChapterResourcesPage({
         lede={`${subject.name} · ${curriculum.name} ${level.name}. Notes, worksheets, videos, interactive tools and revision materials for this chapter.`}
       />
 
-      <section className="section">
-        <div className="container">
-          <div className="resource-anchors">
-            <a href="#notes">Notes</a>
-            <a href="#worksheets">Worksheets</a>
-            <a href="#videos">Videos</a>
-            {resources.tools.length > 0 && <a href="#interactive-tools">Interactive tools</a>}
-            <a href="#revision">Revision</a>
-          </div>
+      <div className="subject-overview">
+        <div className="stage-line" style={{ marginBottom: 64 }} aria-label="On this page">
+          <a href="#notes">Notes</a>
+          <a href="#worksheets">Worksheets</a>
+          <a href="#videos">Videos</a>
+          {resources.tools.length > 0 && <a href="#interactive-tools">Interactive tools</a>}
+          <a href="#revision">Revision</a>
+        </div>
 
-          <div id="notes" style={{ marginBottom: 72, scrollMarginTop: 100 }}>
-            <div className="section-head">
-              <span className="eyebrow">Notes</span>
-              <h2>Study notes</h2>
-              <p>The chapter&rsquo;s lessons are the notes — read them in order, then use the resources below.</p>
-            </div>
-            <div className="chapter-list">
-              {resources.notes.map((note, i) => (
-                <Link key={note.url} className="chapter-row" href={note.url}>
-                  <span className="chapter-num">{String(i + 1).padStart(2, "0")}</span>
-                  <div>
-                    <h3>{note.title}</h3>
-                    <p>{note.desc}</p>
-                  </div>
-                  <span className="lesson-count">Read lesson →</span>
-                </Link>
+        <ResourceSection
+          id="notes"
+          eyebrow="Notes"
+          title="Study notes"
+          lede="The chapter's lessons are the notes — read them in order, then use the resources below."
+        >
+          <div className="chapters">
+            {resources.notes.map((note, i) => (
+              <Link key={note.url} className="chapter-link" href={note.url}>
+                <span className="chapter-index">{String(i + 1).padStart(2, "0")}</span>
+                <span>
+                  <span className="chapter-title">{note.title}</span>
+                  <span className="chapter-desc">{note.desc}</span>
+                </span>
+                <span className="chapter-status">Read lesson →</span>
+              </Link>
+            ))}
+          </div>
+        </ResourceSection>
+
+        <ResourceSection
+          id="worksheets"
+          eyebrow="Worksheets"
+          title="Practice worksheet"
+          lede="Attempt every question before revealing the answer — that struggle is where learning happens."
+        >
+          {resources.worksheets.length > 0 ? (
+            <PracticeQuestions>
+              {resources.worksheets.map((w, i) => (
+                <PracticeItem key={i} question={`${i + 1}. ${w.question}`} hint={w.hint}>
+                  <p>{w.answer}</p>
+                </PracticeItem>
               ))}
-            </div>
-          </div>
+            </PracticeQuestions>
+          ) : (
+            <p className="empty-note">
+              Practice questions live inside each lesson — work through them there, then return for revision.
+            </p>
+          )}
+        </ResourceSection>
 
-          <div id="worksheets" style={{ marginBottom: 72, scrollMarginTop: 100 }}>
-            <div className="section-head">
-              <span className="eyebrow">Worksheets</span>
-              <h2>Practice worksheet</h2>
-              <p>Attempt every question before revealing the answer — that struggle is where learning happens.</p>
-            </div>
-            {resources.worksheets.length > 0 ? (
-              <PracticeQuestions>
-                {resources.worksheets.map((w, i) => (
-                  <PracticeItem key={i} question={`${i + 1}. ${w.question}`} hint={w.hint}>
-                    <p>{w.answer}</p>
-                  </PracticeItem>
-                ))}
-              </PracticeQuestions>
-            ) : (
-              <p className="empty-note">
-                Practice questions live inside each lesson — work through them there, then return for revision.
-              </p>
-            )}
-          </div>
-
-          <div id="videos" style={{ marginBottom: 72, scrollMarginTop: 100 }}>
-            <div className="section-head">
-              <span className="eyebrow">Videos</span>
-              <h2>Watch and learn</h2>
-              <p>Hand-picked searches to find a clear video explanation of each lesson.</p>
-            </div>
+        <ResourceSection
+          id="videos"
+          eyebrow="Videos"
+          title="Watch and learn"
+          lede="Hand-picked searches to find a clear video explanation of each lesson."
+        >
+          <div className="chapters">
             {resources.videos.map((video) => (
-              <a key={video.url} className="video-row" href={video.url} target="_blank" rel="noopener noreferrer">
-                <span className="video-play" aria-hidden="true">▶</span>
-                <div>
-                  <h4>{video.title}</h4>
-                  <p>YouTube search · opens in a new tab</p>
-                </div>
+              <a
+                key={video.url}
+                className="video-row"
+                href={video.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="video-play" aria-hidden="true">
+                  ▶
+                </span>
+                <span>
+                  <span className="chapter-title" style={{ fontSize: "1.2rem" }}>
+                    {video.title}
+                  </span>
+                  <span className="chapter-desc">YouTube search · opens in a new tab</span>
+                </span>
+                <span className="chapter-status">Watch →</span>
               </a>
             ))}
           </div>
+        </ResourceSection>
 
-          {resources.tools.length > 0 && (
-            <div id="interactive-tools" style={{ marginBottom: 72, scrollMarginTop: 100 }}>
-              <div className="section-head">
-                <span className="eyebrow">Interactive tools</span>
-                <h2>Try it yourself</h2>
-                <p>{resources.tools[0].desc}</p>
-              </div>
-              <EquationSolver />
-            </div>
-          )}
+        {resources.tools.length > 0 && (
+          <ResourceSection
+            id="interactive-tools"
+            eyebrow="Interactive tools"
+            title="Try it yourself"
+            lede={resources.tools[0].desc}
+          >
+            <EquationSolver />
+          </ResourceSection>
+        )}
 
-          <div id="revision" style={{ scrollMarginTop: 100 }}>
-            <div className="section-head">
-              <span className="eyebrow">Revision</span>
-              <h2>Revision checklist</h2>
-              <p>Can you explain each of these out loud, without looking? If not, re-read that lesson.</p>
-            </div>
-            <ul className="learn-list">
-              {resources.revision.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-            <div style={{ marginTop: 48 }}>
-              <Link className="chapter-row" href={chapterBase}>
-                <div>
-                  <h3>Back to {chapter.title}</h3>
-                  <p>Return to the chapter&rsquo;s lessons.</p>
-                </div>
-                <span className="lesson-count">← Lessons</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+        <ResourceSection
+          id="revision"
+          eyebrow="Revision"
+          title="Revision checklist"
+          lede="Can you explain each of these out loud, without looking? If not, re-read that lesson."
+        >
+          <ul className="learn-list">
+            {resources.revision.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <p style={{ marginTop: 48 }}>
+            <Link className="inline-link" href={chapterBase}>
+              ← Back to {chapter.title}
+            </Link>
+          </p>
+        </ResourceSection>
+      </div>
     </>
   );
 }
