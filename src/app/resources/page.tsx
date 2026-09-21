@@ -2,76 +2,75 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { getContentChapters } from "@/lib/content";
 import { getCurriculum, resolveLevel } from "@/lib/curriculum";
-import { getChapter, getSubject } from "@/lib/subjects";
+import { SUBJECT_SLUGS, getChapter, getSubject } from "@/lib/subjects";
+
+const GLYPHS: Record<string, string> = {
+  mathematics: "x²",
+  physics: "F→",
+  chemistry: "H₂",
+  biology: "DNA",
+  "computer-science": "</>",
+  english: "Aa",
+  history: "AD",
+  geography: "◎",
+  economics: "↗",
+  business: "B",
+  spanish: "Ñ",
+  french: "Ç",
+};
 
 export const metadata = {
   title: "Resources",
-  description: "Notes, worksheets, videos, interactive tools and revision materials for every chapter.",
+  description:
+    "Find notes, worksheets, worked examples, interactive tools, and revision materials beside the chapter they support.",
 };
 
 export default function ResourcesHubPage() {
   const chapters = getContentChapters();
-  const bySubject = new Map<string, typeof chapters>();
-  for (const c of chapters) {
-    const list = bySubject.get(c.subject) ?? [];
-    list.push(c);
-    bySubject.set(c.subject, list);
-  }
+
+  const cards = SUBJECT_SLUGS.map((subjectSlug) => {
+    const combos = chapters.filter((c) => c.subject === subjectSlug);
+    if (combos.length === 0) return null;
+    const combo =
+      combos.find((c) => c.curriculum === "cambridge" && c.level === "igcse") ?? combos[0];
+    const subject = getSubject(subjectSlug);
+    const curriculum = getCurriculum(combo.curriculum);
+    const level = curriculum ? resolveLevel(combo.curriculum, combo.level) : null;
+    const chapter = getChapter(subjectSlug, combo.chapter);
+    if (!subject || !curriculum || !level || !chapter) return null;
+    return {
+      subject,
+      href: `/resources/${subjectSlug}/${combo.curriculum}/${combo.level}/${combo.chapter}`,
+      meta: `${curriculum.name} · ${level.name} · ${chapter.title}`,
+    };
+  }).filter((c) => c !== null);
 
   return (
     <>
       <PageHero
         crumbs={[{ label: "Home", href: "/" }, { label: "Resources" }]}
+        eyebrow="Curriculum-aware study materials"
         title="Resources"
-        lede="Everything that goes with a chapter: study notes, printable-style worksheets, hand-picked video searches, interactive tools and revision checklists."
+        lede="Find notes, worksheets, worked examples, interactive tools, and revision materials beside the chapter they support."
       />
-      <section className="section">
-        <div className="container">
-          {[...bySubject.entries()].map(([subjectSlug, list]) => {
-            const subject = getSubject(subjectSlug);
-            if (!subject) return null;
-            return (
-              <div key={subjectSlug} style={{ marginBottom: 64 }}>
-                <h2
-                  style={{
-                    fontSize: 15,
-                    letterSpacing: "0.1em",
-                    textTransform: "uppercase",
-                    color: "var(--faint)",
-                    marginBottom: 24,
-                  }}
-                >
-                  {subject.icon} {subject.name}
-                </h2>
-                <div className="chapter-list">
-                  {list.map((c) => {
-                    const curriculum = getCurriculum(c.curriculum);
-                    const level = curriculum ? resolveLevel(c.curriculum, c.level) : null;
-                    const chapter = getChapter(c.subject, c.chapter);
-                    if (!curriculum || !level || !chapter) return null;
-                    return (
-                      <Link
-                        key={`${c.curriculum}/${c.level}/${c.chapter}`}
-                        className="chapter-row"
-                        href={`/resources/${c.subject}/${c.curriculum}/${c.level}/${c.chapter}`}
-                      >
-                        <span className="chapter-num">
-                          {curriculum.name} · {level.name}
-                        </span>
-                        <div>
-                          <h3>{chapter.title}</h3>
-                          <p>{chapter.desc}</p>
-                        </div>
-                        <span className="lesson-count">
-                          {c.topicCount} lesson{c.topicCount === 1 ? "" : "s"} · resources →
-                        </span>
-                      </Link>
-                    );
-                  })}
-                </div>
+      <section className="subject-overview">
+        <div className="subjects-grid">
+          {cards.map((card) => (
+            <Link key={card.subject.slug} className="subject-card" href={card.href}>
+              <div className="subject-icon" aria-hidden="true">
+                {GLYPHS[card.subject.slug] ?? card.subject.slug.slice(0, 2).toUpperCase()}
               </div>
-            );
-          })}
+              <div className="subject-bottom">
+                <div>
+                  <h3>{card.subject.name}</h3>
+                  <div className="subject-meta">{card.meta}</div>
+                </div>
+                <span className="subject-arrow" aria-hidden="true">
+                  ↗
+                </span>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
     </>
