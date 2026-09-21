@@ -13,20 +13,21 @@ export default function SearchPage() {
   return (
     <>
       <PageHero
+        crumbs={[{ label: "Home", href: "/" }, { label: "Search" }]}
         title="Search"
         lede="Every lesson, chapter and resource — across all subjects and curricula."
       />
-      <Suspense
-        fallback={
-          <section className="section">
-            <div className="container">
-              <p className="muted">Loading search…</p>
+      <div className="subject-overview" style={{ paddingTop: 0 }}>
+        <Suspense
+          fallback={
+            <div className="search-panel">
+              <p className="empty">Loading search…</p>
             </div>
-          </section>
-        }
-      >
-        <SearchUI />
-      </Suspense>
+          }
+        >
+          <SearchUI />
+        </Suspense>
+      </div>
     </>
   );
 }
