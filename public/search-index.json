@@ -1,0 +1,422 @@
+[
+ {
+  "kind": "chapter",
+  "title": "Algebra",
+  "path": "Mathematics → British → Year 8 → Algebra",
+  "url": "/subjects/mathematics/british/year-8/algebra",
+  "text": "algebra mathematics → british → year 8 → algebra letters that stand for numbers — expressions, equations and functions. introduction to algebra variables expressions linear equations quadratic equations functions"
+ },
+ {
+  "kind": "chapter",
+  "title": "Algebra",
+  "path": "Mathematics → Cambridge → IGCSE → Algebra",
+  "url": "/subjects/mathematics/cambridge/igcse/algebra",
+  "text": "algebra mathematics → cambridge → igcse → algebra letters that stand for numbers — expressions, equations and functions. introduction to algebra variables expressions linear equations quadratic equations functions"
+ },
+ {
+  "kind": "resource",
+  "title": "Algebra resources",
+  "path": "Resources → Mathematics → British → Year 8 → Algebra",
+  "url": "/resources/mathematics/british/year-8/algebra",
+  "text": "algebra resources notes worksheets videos revision mathematics → british → year 8 → algebra introduction to algebra variables expressions linear equations quadratic equations functions"
+ },
+ {
+  "kind": "resource",
+  "title": "Algebra resources",
+  "path": "Resources → Mathematics → Cambridge → IGCSE → Algebra",
+  "url": "/resources/mathematics/cambridge/igcse/algebra",
+  "text": "algebra resources notes worksheets videos revision mathematics → cambridge → igcse → algebra introduction to algebra variables expressions linear equations quadratic equations functions"
+ },
+ {
+  "kind": "chapter",
+  "title": "American curriculum",
+  "path": "Curricula",
+  "url": "/curriculum/american",
+  "text": "american curriculum us k–12 system the american system runs from kindergarten through grade 12: elementary school, middle school and high school, with standards set state by state. elementary school grades k–2 grades 3–5 middle school grade 6 grade 7 grade 8 high school grades 9–10 grades 11–12"
+ },
+ {
+  "kind": "chapter",
+  "title": "Atomic Structure",
+  "path": "Chemistry → Cambridge → IGCSE → Atomic Structure",
+  "url": "/subjects/chemistry/cambridge/igcse/atomic-structure",
+  "text": "atomic structure chemistry → cambridge → igcse → atomic structure atoms, elements and the particles inside them. atoms and elements"
+ },
+ {
+  "kind": "resource",
+  "title": "Atomic Structure resources",
+  "path": "Resources → Chemistry → Cambridge → IGCSE → Atomic Structure",
+  "url": "/resources/chemistry/cambridge/igcse/atomic-structure",
+  "text": "atomic structure resources notes worksheets videos revision chemistry → cambridge → igcse → atomic structure atoms and elements"
+ },
+ {
+  "kind": "topic",
+  "title": "Atoms and Elements",
+  "path": "Chemistry → Cambridge → IGCSE → Atomic Structure → Atoms and Elements",
+  "url": "/subjects/chemistry/cambridge/igcse/atomic-structure/atoms-and-elements",
+  "text": "atoms and elements chemistry → cambridge → igcse → atomic structure → atoms and elements everything is built from atoms: tiny nuclei of protons and neutrons, orbited by electrons. learn the particles, and what makes each element unique. protons, neutrons, electrons — and what makes an element."
+ },
+ {
+  "kind": "subject",
+  "title": "Biology",
+  "path": "Subjects",
+  "url": "/subjects/biology",
+  "text": "biology the science of living things. biology is the study of life — from the microscopic machinery inside a single cell to entire ecosystems. you'll learn how living things are built, how they work, and how they interact with each other and their environment. cell biology organisation bioenergetics inheritance & genetics ecology"
+ },
+ {
+  "kind": "chapter",
+  "title": "British curriculum",
+  "path": "Curricula",
+  "url": "/curriculum/british",
+  "text": "british curriculum the national curriculum for england the british curriculum organises school into primary, secondary, gcse/igcse and a level stages, with national assessments marking each transition. primary year 1–2 year 3–4 year 5–6 secondary year 7 year 8 year 9 gcse / igcse year 10 year 11 a level year 12 year 13"
+ },
+ {
+  "kind": "subject",
+  "title": "Business",
+  "path": "Subjects",
+  "url": "/subjects/business",
+  "text": "business how enterprises start, grow and survive. business studies how organisations turn ideas into products and profit. you'll learn what makes a business work — from spotting an opportunity and reaching customers to managing money and people. business basics marketing finance"
+ },
+ {
+  "kind": "chapter",
+  "title": "Business Basics",
+  "path": "Business → Cambridge → IGCSE → Business Basics",
+  "url": "/subjects/business/cambridge/igcse/business-basics",
+  "text": "business basics business → cambridge → igcse → business basics enterprise, business types and the fundamentals of trading. what is a business?"
+ },
+ {
+  "kind": "resource",
+  "title": "Business Basics resources",
+  "path": "Resources → Business → Cambridge → IGCSE → Business Basics",
+  "url": "/resources/business/cambridge/igcse/business-basics",
+  "text": "business basics resources notes worksheets videos revision business → cambridge → igcse → business basics what is a business?"
+ },
+ {
+  "kind": "chapter",
+  "title": "Cambridge curriculum",
+  "path": "Curricula",
+  "url": "/curriculum/cambridge",
+  "text": "cambridge curriculum cambridge pathway cambridge international organises learning into primary, lower secondary, igcse and as & a level stages, used by schools in over 160 countries. primary stage 4–6 lower secondary stage 7 stage 8 stage 9 igcse igcse year 1 igcse year 2 as / a level as level a level"
+ },
+ {
+  "kind": "chapter",
+  "title": "Cell Biology",
+  "path": "Biology → Cambridge → IGCSE → Cell Biology",
+  "url": "/subjects/biology/cambridge/igcse/cell-biology",
+  "text": "cell biology biology → cambridge → igcse → cell biology the building blocks of life: cells, organelles and microscopes. cell structure"
+ },
+ {
+  "kind": "resource",
+  "title": "Cell Biology resources",
+  "path": "Resources → Biology → Cambridge → IGCSE → Cell Biology",
+  "url": "/resources/biology/cambridge/igcse/cell-biology",
+  "text": "cell biology resources notes worksheets videos revision biology → cambridge → igcse → cell biology cell structure"
+ },
+ {
+  "kind": "topic",
+  "title": "Cell Structure",
+  "path": "Biology → Cambridge → IGCSE → Cell Biology → Cell Structure",
+  "url": "/subjects/biology/cambridge/igcse/cell-biology/cell-structure",
+  "text": "cell structure biology → cambridge → igcse → cell biology → cell structure every living thing is built from cells — tiny machines with specialised parts. meet the organelles, learn what each one does, and see how plant and animal cells differ. meet the organelles: the tiny machines inside every cell."
+ },
+ {
+  "kind": "subject",
+  "title": "Chemistry",
+  "path": "Subjects",
+  "url": "/subjects/chemistry",
+  "text": "chemistry what stuff is made of — and why it reacts. chemistry explains the material world: the atoms everything is built from, how they bond into molecules, and why substances transform in reactions. you'll move from particles you can't see to predictions you can test. atomic structure the periodic table chemical bonding chemical changes quantitative chemistry"
+ },
+ {
+  "kind": "subject",
+  "title": "Computer Science",
+  "path": "Subjects",
+  "url": "/subjects/computer-science",
+  "text": "computer science how computers think — and how to make them do what you want. computer science is about solving problems precisely. you'll learn how to break problems down, write programs in python, and understand the ideas — from variables to functions — that every piece of software is built on. computational thinking programming fundamentals algorithms data representation"
+ },
+ {
+  "kind": "subject",
+  "title": "Economics",
+  "path": "Subjects",
+  "url": "/subjects/economics",
+  "text": "economics how choices, markets and money shape the world. economics studies how people, businesses and governments make choices when resources are scarce. from the price of bread to national inflation, you'll learn the models economists use — and their limits. microeconomics macroeconomics"
+ },
+ {
+  "kind": "subject",
+  "title": "English",
+  "path": "Subjects",
+  "url": "/subjects/english",
+  "text": "english read deeply. write clearly. argue well. english builds the two skills everything else depends on: understanding what you read and expressing what you think. you'll analyse texts, craft essays and stories, and master the mechanics of powerful sentences. reading skills writing skills grammar & vocabulary"
+ },
+ {
+  "kind": "topic",
+  "title": "Expressions",
+  "path": "Mathematics → Cambridge → IGCSE → Algebra → Expressions",
+  "url": "/subjects/mathematics/cambridge/igcse/algebra/expressions",
+  "text": "expressions mathematics → cambridge → igcse → algebra → expressions tidy up algebra: collect like terms, expand brackets and factorise. simplifying first makes every equation easier to solve. simplifying, expanding and collecting like terms."
+ },
+ {
+  "kind": "chapter",
+  "title": "Forces",
+  "path": "Physics → Cambridge → IGCSE → Forces",
+  "url": "/subjects/physics/cambridge/igcse/forces",
+  "text": "forces physics → cambridge → igcse → forces pushes, pulls and newton's three laws of motion. newton's laws of motion"
+ },
+ {
+  "kind": "resource",
+  "title": "Forces resources",
+  "path": "Resources → Physics → Cambridge → IGCSE → Forces",
+  "url": "/resources/physics/cambridge/igcse/forces",
+  "text": "forces resources notes worksheets videos revision physics → cambridge → igcse → forces newton's laws of motion"
+ },
+ {
+  "kind": "subject",
+  "title": "French",
+  "path": "Subjects",
+  "url": "/subjects/french",
+  "text": "french parlez français — step by step, from bonjour. french is spoken on every continent and prized in diplomacy, culture and business. you'll start with greetings and everyday phrases, then build the grammar that lets you say exactly what you mean. french basics grammar foundations"
+ },
+ {
+  "kind": "chapter",
+  "title": "French Basics",
+  "path": "French → Cambridge → IGCSE → French Basics",
+  "url": "/subjects/french/cambridge/igcse/french-basics",
+  "text": "french basics french → cambridge → igcse → french basics your first steps in français. greetings and introductions"
+ },
+ {
+  "kind": "resource",
+  "title": "French Basics resources",
+  "path": "Resources → French → Cambridge → IGCSE → French Basics",
+  "url": "/resources/french/cambridge/igcse/french-basics",
+  "text": "french basics resources notes worksheets videos revision french → cambridge → igcse → french basics greetings and introductions"
+ },
+ {
+  "kind": "topic",
+  "title": "Functions",
+  "path": "Mathematics → Cambridge → IGCSE → Algebra → Functions",
+  "url": "/subjects/mathematics/cambridge/igcse/algebra/functions",
+  "text": "functions mathematics → cambridge → igcse → algebra → functions a function is a machine: feed in a number, get another number out. learn function notation, how to evaluate functions, and what graphs reveal. machines that turn inputs into outputs."
+ },
+ {
+  "kind": "subject",
+  "title": "Geography",
+  "path": "Subjects",
+  "url": "/subjects/geography",
+  "text": "geography the planet, its people and the forces connecting them. geography connects the physical planet with human life. you'll study rivers and coasts alongside cities and development, learning to explain patterns — and to evaluate the big challenges facing the world. physical geography weather & climate human geography"
+ },
+ {
+  "kind": "topic",
+  "title": "Greetings and Introductions",
+  "path": "French → Cambridge → IGCSE → French Basics → Greetings and Introductions",
+  "url": "/subjects/french/cambridge/igcse/french-basics/greetings",
+  "text": "greetings and introductions french → cambridge → igcse → french basics → greetings and introductions your first french: bonjour for every occasion, introducing yourself with je m'appelle, and the small politeness rules that matter. your first french: bonjour, je m'appelle… and more."
+ },
+ {
+  "kind": "topic",
+  "title": "Greetings and Introductions",
+  "path": "Spanish → Cambridge → IGCSE → Spanish Basics → Greetings and Introductions",
+  "url": "/subjects/spanish/cambridge/igcse/spanish-basics/greetings",
+  "text": "greetings and introductions spanish → cambridge → igcse → spanish basics → greetings and introductions your first spanish: say hello for every time of day, introduce yourself, and ask how someone is — with pronunciation that actually works. your first spanish: hola, me llamo… and more."
+ },
+ {
+  "kind": "subject",
+  "title": "History",
+  "path": "Subjects",
+  "url": "/subjects/history",
+  "text": "history what happened — and why it still matters. history is the study of how the modern world was made. you'll investigate revolutions and empires, learn to weigh evidence like a historian, and practise building arguments from sources rather than opinions. the modern world the twentieth century working with sources"
+ },
+ {
+  "kind": "chapter",
+  "title": "IB curriculum",
+  "path": "Curricula",
+  "url": "/curriculum/ib",
+  "text": "ib curriculum international baccalaureate the ib offers three programmes — pyp, myp and the diploma programme — built around inquiry, international-mindedness and the learner profile. pyp pyp lower pyp upper myp myp 1–2 myp 3 myp 4–5 dp dp year 1 dp year 2"
+ },
+ {
+  "kind": "topic",
+  "title": "Introduction to Algebra",
+  "path": "Mathematics → Cambridge → IGCSE → Algebra → Introduction to Algebra",
+  "url": "/subjects/mathematics/cambridge/igcse/algebra/introduction",
+  "text": "introduction to algebra mathematics → cambridge → igcse → algebra → introduction to algebra algebra lets you reason about numbers you don't know yet. meet expressions, equations, and the vocabulary — variable, coefficient, constant, term — that the whole chapter runs on. what algebra is and why letters beat numbers."
+ },
+ {
+  "kind": "topic",
+  "title": "Linear Equations",
+  "path": "Mathematics → British → Year 8 → Algebra → Linear Equations",
+  "url": "/subjects/mathematics/british/year-8/algebra/linear-equations",
+  "text": "linear equations mathematics → british → year 8 → algebra → linear equations find the mystery number: whatever you do to one side of an equation, do to the other. one-step and two-step equations, year 8 style. solve for x: one step, two steps, both sides."
+ },
+ {
+  "kind": "topic",
+  "title": "Linear Equations",
+  "path": "Mathematics → Cambridge → IGCSE → Algebra → Linear Equations",
+  "url": "/subjects/mathematics/cambridge/igcse/algebra/linear-equations",
+  "text": "linear equations mathematics → cambridge → igcse → algebra → linear equations the golden rule of algebra: whatever you do to one side, do to the other. master one-step, two-step and both-sides equations — and always check your answer. solve for x: one step, two steps, both sides."
+ },
+ {
+  "kind": "subject",
+  "title": "Mathematics",
+  "path": "Subjects",
+  "url": "/subjects/mathematics",
+  "text": "mathematics the language of patterns — from algebra to geometry. mathematics trains you to reason precisely. start with number and arithmetic, master algebra — the art of working with unknowns — then explore geometry, statistics and probability, where patterns and chance follow strict, beautiful rules. number & arithmetic algebra geometry statistics probability"
+ },
+ {
+  "kind": "chapter",
+  "title": "Microeconomics",
+  "path": "Economics → Cambridge → IGCSE → Microeconomics",
+  "url": "/subjects/economics/cambridge/igcse/microeconomics",
+  "text": "microeconomics economics → cambridge → igcse → microeconomics individual markets: supply, demand and the choices of firms and consumers. supply and demand"
+ },
+ {
+  "kind": "resource",
+  "title": "Microeconomics resources",
+  "path": "Resources → Economics → Cambridge → IGCSE → Microeconomics",
+  "url": "/resources/economics/cambridge/igcse/microeconomics",
+  "text": "microeconomics resources notes worksheets videos revision economics → cambridge → igcse → microeconomics supply and demand"
+ },
+ {
+  "kind": "topic",
+  "title": "Newton's Laws of Motion",
+  "path": "Physics → Cambridge → IGCSE → Forces → Newton's Laws of Motion",
+  "url": "/subjects/physics/cambridge/igcse/forces/newtons-laws",
+  "text": "newton's laws of motion physics → cambridge → igcse → forces → newton's laws of motion three laws from 1687 that still govern everything from a falling apple to a rocket launch. learn them, draw the forces, and calculate what happens next. the three laws that govern how everything moves."
+ },
+ {
+  "kind": "chapter",
+  "title": "Physical Geography",
+  "path": "Geography → Cambridge → IGCSE → Physical Geography",
+  "url": "/subjects/geography/cambridge/igcse/physical-geography",
+  "text": "physical geography geography → cambridge → igcse → physical geography rivers, coasts and the processes that sculpt landscapes. rivers and erosion"
+ },
+ {
+  "kind": "resource",
+  "title": "Physical Geography resources",
+  "path": "Resources → Geography → Cambridge → IGCSE → Physical Geography",
+  "url": "/resources/geography/cambridge/igcse/physical-geography",
+  "text": "physical geography resources notes worksheets videos revision geography → cambridge → igcse → physical geography rivers and erosion"
+ },
+ {
+  "kind": "subject",
+  "title": "Physics",
+  "path": "Subjects",
+  "url": "/subjects/physics",
+  "text": "physics the rules the universe plays by. physics is the study of matter, energy and how they interact. from the forces that move a football to the waves that carry light, you'll learn to describe the physical world with precision — and to predict what happens next. forces motion energy waves electricity"
+ },
+ {
+  "kind": "chapter",
+  "title": "Programming Fundamentals",
+  "path": "Computer Science → Cambridge → IGCSE → Programming Fundamentals",
+  "url": "/subjects/computer-science/cambridge/igcse/programming",
+  "text": "programming fundamentals computer science → cambridge → igcse → programming fundamentals python from zero: variables, data, logic, loops and functions. variables"
+ },
+ {
+  "kind": "resource",
+  "title": "Programming Fundamentals resources",
+  "path": "Resources → Computer Science → Cambridge → IGCSE → Programming Fundamentals",
+  "url": "/resources/computer-science/cambridge/igcse/programming",
+  "text": "programming fundamentals resources notes worksheets videos revision computer science → cambridge → igcse → programming fundamentals variables"
+ },
+ {
+  "kind": "topic",
+  "title": "Quadratic Equations",
+  "path": "Mathematics → Cambridge → IGCSE → Algebra → Quadratic Equations",
+  "url": "/subjects/mathematics/cambridge/igcse/algebra/quadratic-equations",
+  "text": "quadratic equations mathematics → cambridge → igcse → algebra → quadratic equations when x² appears, equations curve. learn to solve quadratics by factorising — and meet the quadratic formula, the tool that never fails. when x² appears: factorising and the quadratic formula."
+ },
+ {
+  "kind": "chapter",
+  "title": "Reading Skills",
+  "path": "English → Cambridge → IGCSE → Reading Skills",
+  "url": "/subjects/english/cambridge/igcse/reading-skills",
+  "text": "reading skills english → cambridge → igcse → reading skills understanding texts: theme, character, language and structure. understanding theme"
+ },
+ {
+  "kind": "resource",
+  "title": "Reading Skills resources",
+  "path": "Resources → English → Cambridge → IGCSE → Reading Skills",
+  "url": "/resources/english/cambridge/igcse/reading-skills",
+  "text": "reading skills resources notes worksheets videos revision english → cambridge → igcse → reading skills understanding theme"
+ },
+ {
+  "kind": "topic",
+  "title": "Rivers and Erosion",
+  "path": "Geography → Cambridge → IGCSE → Physical Geography → Rivers and Erosion",
+  "url": "/subjects/geography/cambridge/igcse/physical-geography/rivers-and-erosion",
+  "text": "rivers and erosion geography → cambridge → igcse → physical geography → rivers and erosion rivers are sculptors: they erode, transport and deposit material, carving valleys and building floodplains. learn the processes and the landforms they create. how flowing water sculpts the land."
+ },
+ {
+  "kind": "subject",
+  "title": "Spanish",
+  "path": "Subjects",
+  "url": "/subjects/spanish",
+  "text": "spanish habla español — one of the world's great languages. spanish opens up half a billion speakers across four continents. starting from your very first words, you'll build the vocabulary, grammar patterns and confidence to hold real conversations. spanish basics grammar foundations"
+ },
+ {
+  "kind": "chapter",
+  "title": "Spanish Basics",
+  "path": "Spanish → Cambridge → IGCSE → Spanish Basics",
+  "url": "/subjects/spanish/cambridge/igcse/spanish-basics",
+  "text": "spanish basics spanish → cambridge → igcse → spanish basics your first steps in español: greetings and introductions. greetings and introductions"
+ },
+ {
+  "kind": "resource",
+  "title": "Spanish Basics resources",
+  "path": "Resources → Spanish → Cambridge → IGCSE → Spanish Basics",
+  "url": "/resources/spanish/cambridge/igcse/spanish-basics",
+  "text": "spanish basics resources notes worksheets videos revision spanish → cambridge → igcse → spanish basics greetings and introductions"
+ },
+ {
+  "kind": "topic",
+  "title": "Supply and Demand",
+  "path": "Economics → Cambridge → IGCSE → Microeconomics → Supply and Demand",
+  "url": "/subjects/economics/cambridge/igcse/microeconomics/supply-and-demand",
+  "text": "supply and demand economics → cambridge → igcse → microeconomics → supply and demand two curves that set nearly every price you'll ever pay. learn how supply and demand work, what shifts them, and how markets find equilibrium. the two curves that set nearly every price."
+ },
+ {
+  "kind": "topic",
+  "title": "The Industrial Revolution",
+  "path": "History → Cambridge → IGCSE → The Modern World → The Industrial Revolution",
+  "url": "/subjects/history/cambridge/igcse/modern-world/industrial-revolution",
+  "text": "the industrial revolution history → cambridge → igcse → the modern world → the industrial revolution between 1750 and 1900, steam, coal and factories remade britain — and then the world. learn what changed, why it started in britain, and what it cost. how steam, coal and factories remade the world."
+ },
+ {
+  "kind": "chapter",
+  "title": "The Modern World",
+  "path": "History → Cambridge → IGCSE → The Modern World",
+  "url": "/subjects/history/cambridge/igcse/modern-world",
+  "text": "the modern world history → cambridge → igcse → the modern world industrialisation, empire and the forces that shaped today. the industrial revolution"
+ },
+ {
+  "kind": "resource",
+  "title": "The Modern World resources",
+  "path": "Resources → History → Cambridge → IGCSE → The Modern World",
+  "url": "/resources/history/cambridge/igcse/modern-world",
+  "text": "the modern world resources notes worksheets videos revision history → cambridge → igcse → the modern world the industrial revolution"
+ },
+ {
+  "kind": "topic",
+  "title": "Understanding Theme",
+  "path": "English → Cambridge → IGCSE → Reading Skills → Understanding Theme",
+  "url": "/subjects/english/cambridge/igcse/reading-skills/understanding-theme",
+  "text": "understanding theme english → cambridge → igcse → reading skills → understanding theme the theme is the big idea hiding inside a text. learn to spot it, track it through a story, and prove it with evidence. find the big idea hiding inside a text."
+ },
+ {
+  "kind": "topic",
+  "title": "Variables",
+  "path": "Computer Science → Cambridge → IGCSE → Programming Fundamentals → Variables",
+  "url": "/subjects/computer-science/cambridge/igcse/programming/variables",
+  "text": "variables computer science → cambridge → igcse → programming fundamentals → variables a variable is a named box that stores a value you can reuse and change. learn to create them in real python — running right here in your browser. a named box that stores a value — in real, runnable python."
+ },
+ {
+  "kind": "topic",
+  "title": "Variables",
+  "path": "Mathematics → Cambridge → IGCSE → Algebra → Variables",
+  "url": "/subjects/mathematics/cambridge/igcse/algebra/variables",
+  "text": "variables mathematics → cambridge → igcse → algebra → variables the letter x is a container, not a mystery. learn what variables stand for, how they vary, and how to substitute values into expressions. named boxes that store values you can reuse and change."
+ },
+ {
+  "kind": "topic",
+  "title": "What is a Business?",
+  "path": "Business → Cambridge → IGCSE → Business Basics → What is a Business?",
+  "url": "/subjects/business/cambridge/igcse/business-basics/what-is-a-business",
+  "text": "what is a business? business → cambridge → igcse → business basics → what is a business? every product you own came from a business taking a risk. learn what businesses are, why they exist, and the four ingredients every one needs. enterprise, needs and wants, and the four factors of production."
+ }
+]
