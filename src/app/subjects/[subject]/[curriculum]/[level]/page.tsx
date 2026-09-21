@@ -60,38 +60,27 @@ export default function SubjectLevelPage({
         lede={`Follow the ${subject.name} chapters for ${curriculum.name} ${level.name}. The topics below move from foundations to connected applications.`}
       />
       <section className="subject-overview">
-        <div className="overview-grid">
-          <aside className="overview-aside">
-            <h2>Your route</h2>
-            <ul className="learn-list">
-              <li>{subject.name}</li>
-              <li>{curriculum.name}</li>
-              <li>{level.name}</li>
-              <li>Chapters and topics</li>
-            </ul>
-          </aside>
-          <div>
-            <div className="eyebrow" style={{ marginBottom: 18 }}>
-              Chapters
-            </div>
-            <div className="chapters">
-              {getChaptersFor(subject.slug, curriculum.slug, level.slug).map((chapter, i) => {
-                return (
-                  <Link
-                    key={chapter.id}
-                    className="chapter-link"
-                    href={`/subjects/${params.subject}/${params.curriculum}/${params.level}/${chapter.id}`}
-                  >
-                    <span className="chapter-index">{String(i + 1).padStart(2, "0")}</span>
-                    <span>
-                      <span className="chapter-title">{chapter.title}</span>
-                      <span className="chapter-desc">{chapter.desc}</span>
-                    </span>
-                    <span className="chapter-status">Read →</span>
-                  </Link>
-                );
-              })}
-            </div>
+        <div>
+          <div className="eyebrow" style={{ marginBottom: 18 }}>
+            Chapters
+          </div>
+          <div className="chapters">
+            {getChaptersFor(subject.slug, curriculum.slug, level.slug).map((chapter, i) => {
+              return (
+                <Link
+                  key={chapter.id}
+                  className="chapter-link"
+                  href={`/subjects/${params.subject}/${params.curriculum}/${params.level}/${chapter.id}`}
+                >
+                  <span className="chapter-index">{String(i + 1).padStart(2, "0")}</span>
+                  <span>
+                    <span className="chapter-title">{chapter.title}</span>
+                    <span className="chapter-desc">{chapter.desc}</span>
+                  </span>
+                  <span className="chapter-status">Read →</span>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
