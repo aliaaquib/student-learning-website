@@ -54,7 +54,6 @@ export default function SubjectCurriculumPage({
           { label: subject.name, href: `/subjects/${subject.slug}` },
           { label: curriculum.name },
         ]}
-        eyebrow={`${subject.name} · ${curriculum.name}`}
         title="Choose your level"
         lede={`Pick a level to see the ${subject.name} chapters written for the ${curriculum.name} curriculum.`}
       />

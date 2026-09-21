@@ -55,7 +55,6 @@ export default function SubjectLevelPage({
           { label: curriculum.name, href: `/subjects/${subject.slug}/${curriculum.slug}` },
           { label: level.name },
         ]}
-        eyebrow={`${subject.name} · ${curriculum.name} · ${level.name}`}
         title={subject.name}
         lede={`Follow the ${subject.name} chapters for ${curriculum.name} ${level.name}. The topics below move from foundations to connected applications.`}
       />
