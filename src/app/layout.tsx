@@ -6,7 +6,7 @@ import { SearchOverlayHost } from "@/components/SearchOverlayHost";
 
 export const metadata: Metadata = {
   title: {
-    default: "Thread Academy — Follow the thread. Understand the subject.",
+    default: "Thread Academy",
     template: "%s — Thread Academy",
   },
   description:
