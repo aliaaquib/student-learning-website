@@ -4,6 +4,21 @@ import PageHero from "@/components/PageHero";
 import { CURRICULUM_SLUGS, allLevelSlugs, getCurriculum, resolveLevel } from "@/lib/curriculum";
 import { getSubject } from "@/lib/subjects";
 
+const GLYPHS: Record<string, string> = {
+  mathematics: "x²",
+  physics: "F→",
+  chemistry: "H₂",
+  biology: "DNA",
+  "computer-science": "</>",
+  english: "Aa",
+  history: "AD",
+  geography: "◎",
+  economics: "↗",
+  business: "B",
+  spanish: "Ñ",
+  french: "Ç",
+};
+
 export function generateStaticParams() {
   const params: { curriculum: string; level: string }[] = [];
   for (const curriculum of CURRICULUM_SLUGS) {
@@ -40,29 +55,34 @@ export default function CurriculumLevelPage({ params }: { params: { curriculum: 
           { label: curriculum.name, href: `/curriculum/${curriculum.slug}` },
           { label: level.name },
         ]}
-        title={`${curriculum.name} · ${level.name}`}
-        lede={`${level.desc} Choose a subject to see its chapters for this level.`}
+        eyebrow={`${curriculum.name} · ${level.name}`}
+        title="Choose a subject"
+        lede={`Each subject opens a curriculum-aware chapter sequence for ${level.name}.`}
       />
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">Subjects</span>
-            <h2>Subjects at this level</h2>
-          </div>
-          <div className="card-grid">
-            {subjects.map((subject) => (
-              <Link
-                key={subject.slug}
-                className="card"
-                href={`/subjects/${subject.slug}/${curriculum.slug}/${level.slug}`}
-              >
-                <span className="card-icon" aria-hidden="true">{subject.icon}</span>
-                <h3>{subject.name}</h3>
-                <p>{subject.tagline}</p>
-                <span className="card-link">View chapters →</span>
-              </Link>
-            ))}
-          </div>
+      <section className="subject-overview">
+        <div className="subjects-grid">
+          {subjects.map((subject) => (
+            <Link
+              key={subject.slug}
+              className="subject-card"
+              href={`/subjects/${subject.slug}/${curriculum.slug}/${level.slug}`}
+            >
+              <div className="subject-icon" aria-hidden="true">
+                {GLYPHS[subject.slug] ?? subject.slug.slice(0, 2).toUpperCase()}
+              </div>
+              <div className="subject-bottom">
+                <div>
+                  <h3>{subject.name}</h3>
+                  <div className="subject-meta">
+                    {curriculum.name} · {level.name}
+                  </div>
+                </div>
+                <span className="subject-arrow" aria-hidden="true">
+                  ↗
+                </span>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
     </>
