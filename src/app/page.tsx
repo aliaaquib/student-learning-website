@@ -49,7 +49,6 @@ export default function HomePage() {
       <header className="home-hero">
         <div className="hero-grid">
           <div>
-            <div className="eyebrow">Educational knowledge, organised clearly</div>
             <h1>
               Follow the thread. <span className="underline">Understand the subject.</span>
             </h1>
