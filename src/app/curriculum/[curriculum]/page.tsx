@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import PageHero from "@/components/PageHero";
+import StagePicker from "./StagePicker";
 import { CURRICULUM_SLUGS, getCurriculum } from "@/lib/curriculum";
 
 export function generateStaticParams() {
@@ -18,37 +18,20 @@ export default function CurriculumPage({ params }: { params: { curriculum: strin
   if (!curriculum) notFound();
 
   return (
-    <>
-      <PageHero
-        crumbs={[{ label: "Home", href: "/" }, { label: "Curriculum", href: "/curriculum" }, { label: curriculum.name }]}
-        title={`${curriculum.name} curriculum`}
-        lede={curriculum.desc}
-      />
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">Level structure</span>
-            <h2>How {curriculum.name} is organised</h2>
-            <p>Pick a stage or a specific year to see the subjects offered at that level.</p>
-          </div>
-          {curriculum.stages.map((stage) => (
-            <div key={stage.slug} style={{ marginBottom: 56 }}>
-              <h3 style={{ fontSize: 24, marginBottom: 8 }}>{stage.name}</h3>
-              <p style={{ color: "var(--muted)", marginBottom: 20 }}>{stage.desc}</p>
-              <div className="year-pills">
-                <Link className="year-pill" href={`/curriculum/${curriculum.slug}/${stage.slug}`}>
-                  All of {stage.name} →
-                </Link>
-                {stage.years.map((year) => (
-                  <Link key={year.slug} className="year-pill" href={`/curriculum/${curriculum.slug}/${year.slug}`}>
-                    {year.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    </>
+    <div className="curr-page">
+      <div className="breadcrumb">
+        <Link href="/">Home</Link>
+        <span aria-hidden="true"> › </span>
+        <Link href="/curriculum">Curriculum</Link>
+        <span aria-hidden="true"> › </span>
+        <span>{curriculum.name}</span>
+      </div>
+      <div className="eyebrow">Curriculum structure</div>
+      <h1>{curriculum.name}</h1>
+      <p className="curr-intro">
+        {curriculum.desc} Choose a programme or school stage, then select the level you study.
+      </p>
+      <StagePicker curriculum={curriculum} />
+    </div>
   );
 }
