@@ -1,0 +1,73 @@
+---
+title: "The normal distribution"
+lede: "The bell curve, standardisation with z-scores, and finding probabilities from tables or technology."
+---
+
+<LearningObjectives>
+  <li>Define and explain The normal distribution in your own words</li>
+  <li>Use key terms such as Normal distribution accurately</li>
+  <li>Apply what you have learned to new examples and questions</li>
+  <li>Avoid the common mistakes learners make with this topic</li>
+</LearningObjectives>
+
+This lesson focuses on The normal distribution: the bell curve, standardisation with z-scores, and finding probabilities from tables or technology.
+
+<Definition term="The normal distribution">
+  The bell curve, standardisation with z-scores, and finding probabilities from tables or technology.
+</Definition>
+
+## Key ideas
+
+### Standardising the normal
+
+Convert X ~ N(μ, σ²) to Z ~ N(0, 1) via z = (x − μ)/σ, then read probabilities from tables. The total area under the curve is 1, and the curve is symmetric about μ, so the probability that X falls below the mean μ is 0.5.
+
+### Binomial probabilities
+
+P(X = r) = C(n, r) pʳ (1 − p)ⁿ⁻ʳ. The conditions matter: fixed n, two outcomes, constant p, independent trials. For n = 5, p = 0.3: P(X = 2) = 10 × 0.09 × 0.343 = 0.3087.
+
+**Key term — Normal distribution:** A continuous symmetric bell-shaped distribution, fully described by its mean μ and variance σ², written X ~ N(μ, σ²).
+
+<WorkedExample title="Worked example: The normal distribution">
+  Explain why 'the mean has increased' is a one-tailed alternative hypothesis.
+
+  It specifies an increase only, so the critical region lies in a single (upper) tail of the distribution.
+
+  **Answer:** It specifies an increase only, so the critical region lies in a single (upper) tail of the distribution.
+</WorkedExample>
+
+<ImportantNote title="Common mistakes">
+  - **Using the binomial model when trials are not independent** Check the conditions: without replacement from a small population, p changes each trial and the binomial does not apply.
+  - **Confusing one-tailed and two-tailed tests** A two-tailed alternative ('not equal to') splits the significance level across both tails; using one tail doubles your chance of a false rejection.
+</ImportantNote>
+
+## Practice
+
+<PracticeQuestions>
+  <PracticeItem question="X ~ N(100, 15²). Find the z-score for x = 130." hint="z = (x − μ)/σ.">
+    z = (130 − 100)/15 = 2.
+  </PracticeItem>
+  <PracticeItem question="X ~ B(4, 0.5). Find P(X = 0)." hint="All four trials fail.">
+    P = C(4,0) × 0.5⁰ × 0.5⁴ = 0.0625.
+  </PracticeItem>
+  <PracticeItem question="X ~ B(6, 0.2). Find P(X = 1)." hint="C(6,1) = 6.">
+    P = 6 × 0.2 × 0.8⁵ = 6 × 0.2 × 0.32768 = 0.393216.
+  </PracticeItem>
+  <PracticeItem question="For X ~ N(μ, σ²), what is P(X greater than μ)?" hint="Think about symmetry.">
+    0.5 — half the area lies above the mean.
+  </PracticeItem>
+</PracticeQuestions>
+
+## Quick check
+
+<Quiz title="The normal distribution — quick check">
+  <QuizQuestion question="Which of these best defines &quot;Normal distribution&quot;?" options={["The probability threshold (often 5%) below which observed results are deemed too unlikely under H₀, so H₀ is rejected.", "The default claim in a hypothesis test — typically 'no effect' or 'no change' — which is rejected only if the evidence is strong enough.", "The distribution of the number of successes in n independent trials each with success probability p, written X ~ B(n, p).", "A continuous symmetric bell-shaped distribution, fully described by its mean μ and variance σ², written X ~ N(μ, σ²)."]} answer={3} explanation="A continuous symmetric bell-shaped distribution, fully described by its mean μ and variance σ², written X ~ N(μ, σ²)." />
+  <QuizQuestion question="A test at the 5% level gives p-value 0.032. What is the conclusion?" options={["z = (130 − 100)/15 = 2.", "0.5 — half the area lies above the mean.", "P = 6 × 0.2 × 0.8⁵ = 6 × 0.2 × 0.32768 = 0.393216.", "0.032 is less than 0.05, so reject H₀; there is sufficient evidence against the null hypothesis."]} answer={3} explanation="0.032 is less than 0.05, so reject H₀; there is sufficient evidence against the null hypothesis." />
+</Quiz>
+
+<Summary>
+  - The normal distribution: the bell curve, standardisation with z-scores, and finding probabilities from tables or technology.
+  - Standardising the normal: Convert X ~ N(μ, σ²) to Z ~ N(0, 1) via z = (x − μ)/σ, then read probabilities from tables.
+  - Binomial distribution: The distribution of the number of successes in n independent trials each with success probability p, written X ~ B(n, p)..
+  - Watch out for: using the binomial model when trials are not independent
+</Summary>

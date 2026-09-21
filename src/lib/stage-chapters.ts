@@ -380,7 +380,7 @@ export const BAND_CHAPTERS: Record<string, Record<Band, Chapter[]>> = {
     "advanced": [
       { id: "coasts", title: "Coastal Systems", desc: "Erosion, deposition and managing coasts." },
       { id: "urbanisation", title: "Urbanisation", desc: "Why cities grow and how they change." },
-      { id: "development", title: "Development", desc: "Measuring and explaining global inequality." },
+      { id: "global-development", title: "Development", desc: "Measuring and explaining global inequality." },
     ],
   },
   "german": {

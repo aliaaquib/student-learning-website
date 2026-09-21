@@ -1,4 +1,5 @@
 import type { Topic } from "./types";
+import { EXTRA_TOPICS } from "./chapter-topics-extra";
 
 /**
  * Topics per chapter. Keyed by chapter id (globally unique).
@@ -276,5 +277,9 @@ export const CHAPTER_TOPICS: Record<string, Topic[]> = {
 };
 
 export function getChapterTopics(chapterId: string): Topic[] {
-  return CHAPTER_TOPICS[chapterId] ?? [];
+  const base = CHAPTER_TOPICS[chapterId] ?? [];
+  // Hand-written topics always come first; generated ones top the chapter up to four lessons.
+  if (base.length >= 4) return base;
+  const extra = (EXTRA_TOPICS[chapterId] ?? []).filter((t) => !base.some((b) => b.slug === t.slug));
+  return [...base, ...extra].slice(0, 4);
 }
