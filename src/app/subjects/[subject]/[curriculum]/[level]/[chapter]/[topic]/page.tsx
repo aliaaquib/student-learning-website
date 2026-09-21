@@ -59,9 +59,6 @@ export default function TopicPage({
       />
       <div className="lesson-main">
         <div className="lesson-top">
-          <span className="lesson-kicker">
-            {subject.name} · {curriculum.name} · {level.name} · {chapter.title}
-          </span>
           <h1>{content.title}</h1>
           {content.lede && <p>{content.lede}</p>}
         </div>
