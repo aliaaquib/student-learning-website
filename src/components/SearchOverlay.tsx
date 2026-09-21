@@ -68,13 +68,24 @@ export function SearchOverlay({
     >
       <div className="search-panel">
         <div className="search-row">
-          <input
-            ref={inputRef}
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search a subject or lesson"
-            aria-label="Search lessons"
-          />
+          <form role="search" className="search-wrap overlay-search" onSubmit={(e) => e.preventDefault()}>
+            <svg className="search-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-4-4" />
+            </svg>
+            <input
+              ref={inputRef}
+              className="hero-search"
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search subjects, chapters, and topics"
+              aria-label="Search lessons"
+            />
+            <button className="search-submit" type="submit">
+              Search
+            </button>
+          </form>
           <button className="close-search" onClick={onClose} aria-label="Close search">
             ✕
           </button>
