@@ -27,6 +27,8 @@ function score(entry: SearchEntry, toks: string[]): number {
   return s;
 }
 
+/** /search results UI — the reference search-panel language:
+ *  bottom-rule input, black button, hairline result rows. */
 export default function SearchUI() {
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -74,82 +76,84 @@ export default function SearchUI() {
     });
   }
 
+  function tryExample() {
+    setValue("linear equations");
+    setQ("linear equations");
+  }
+
   return (
-    <section className="section">
-      <div className="container">
-        <form onSubmit={submit} role="search" style={{ marginBottom: "var(--sp-6)" }}>
-          <div className="search-shell">
-            <input
-              className="search-input"
-              type="search"
-              value={value}
-              onChange={(e) => setValue(e.target.value)}
-              placeholder="Search lessons, chapters, subjects, resources…"
-              aria-label="Search lessons"
-            />
-            <button className="btn btn-primary" type="submit">
-              Search
-            </button>
+    <div className="search-panel">
+      <form onSubmit={submit} role="search" className="search-page-form">
+        <div className="search-row">
+          <input
+            type="search"
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+            placeholder="Search lessons, chapters, subjects, resources…"
+            aria-label="Search lessons"
+          />
+          <button className="search-go" type="submit">
+            Search
+          </button>
+        </div>
+      </form>
+
+      {failed && (
+        <div className="empty">
+          <b style={{ color: "var(--ink)" }}>Search is unavailable.</b>
+          <br />
+          The search index could not be loaded. Please check your connection and try again.
+        </div>
+      )}
+
+      {!failed && index === null && <p className="empty">Loading the search index…</p>}
+
+      {!failed && index !== null && tokens(q).length === 0 && (
+        <div className="empty">
+          Type above to search every lesson, chapter, subject and resource. Try{" "}
+          <button
+            type="button"
+            onClick={tryExample}
+            style={{
+              border: 0,
+              background: "transparent",
+              padding: 0,
+              fontWeight: 800,
+              borderBottom: "2px solid var(--accent)",
+            }}
+          >
+            “linear equations”
+          </button>
+          .
+        </div>
+      )}
+
+      {results.length > 0 && (
+        <>
+          <p className="muted" style={{ margin: "6px 0 0" }}>
+            {results.length} result{results.length === 1 ? "" : "s"} for “{q}”
+          </p>
+          <div className="search-results">
+            {results.map((r) => (
+              <Link key={`${r.kind}:${r.url}`} className="search-result" href={r.url}>
+                <b>{r.title}</b>
+                <span>
+                  {KIND_LABEL[r.kind]}
+                  {r.path ? ` · ${r.path}` : ""}
+                </span>
+              </Link>
+            ))}
           </div>
-        </form>
+        </>
+      )}
 
-        {failed && (
-          <div className="callout callout-warn">
-            <div className="callout-title">Search is unavailable</div>
-            <p>The search index could not be loaded. Please check your connection and try again.</p>
-          </div>
-        )}
-
-        {!failed && index === null && (
-          <p className="muted">Loading the search index…</p>
-        )}
-
-        {!failed && index !== null && tokens(q).length === 0 && (
-          <div className="callout">
-            <div className="callout-title">Try a search</div>
-            <p>
-              Type above to search every lesson, chapter, subject and resource. Try{" "}
-              <button
-                type="button"
-                className="linklike"
-                onClick={() => {
-                  setValue("linear equations");
-                  setQ("linear equations");
-                }}
-              >
-                “linear equations”
-              </button>
-              .
-            </p>
-          </div>
-        )}
-
-        {results.length > 0 && (
-          <>
-            <p className="muted" style={{ marginBottom: "var(--sp-4)" }}>
-              {results.length} result{results.length === 1 ? "" : "s"} for “{q}”
-            </p>
-            <ul className="search-results">
-              {results.map((r) => (
-                <li key={`${r.kind}:${r.url}`} className="search-result">
-                  <span className="pill">{KIND_LABEL[r.kind]}</span>
-                  <Link href={r.url}>
-                    <strong>{r.title}</strong>
-                  </Link>
-                  {r.path && <p className="muted">{r.path}</p>}
-                </li>
-              ))}
-            </ul>
-          </>
-        )}
-
-        {index !== null && tokens(q).length > 0 && results.length === 0 && !failed && (
-          <div className="callout callout-warn">
-            <div className="callout-title">No results</div>
-            <p>Nothing matched “{q}”. Try different words, or browse subjects instead.</p>
-          </div>
-        )}
-      </div>
-    </section>
+      {index !== null && tokens(q).length > 0 && results.length === 0 && !failed && (
+        <div className="empty">
+          <b style={{ color: "var(--ink)" }}>No results.</b>
+          <br />
+          Nothing matched “{q}”. Try different words, or browse subjects instead.
+        </div>
+      )}
+    </div>
   );
 }
