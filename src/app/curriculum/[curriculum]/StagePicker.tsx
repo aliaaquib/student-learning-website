@@ -29,7 +29,6 @@ export default function StagePicker({ curriculum }: { curriculum: Curriculum }) 
       </div>
       {stage && (
         <div className="stage-panel">
-          <div className="eyebrow">Choose your level</div>
           <h2>{stage.name}</h2>
           <p>Continue to the subjects available in this part of the {curriculum.name} curriculum.</p>
           <div className="grade-grid">

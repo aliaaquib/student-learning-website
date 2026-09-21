@@ -26,7 +26,6 @@ export default function CurriculumPage({ params }: { params: { curriculum: strin
         <span aria-hidden="true"> › </span>
         <span>{curriculum.name}</span>
       </div>
-      <div className="eyebrow">Curriculum structure</div>
       <h1>{curriculum.name}</h1>
       <p className="curr-intro">
         {curriculum.desc} Choose a programme or school stage, then select the level you study.
