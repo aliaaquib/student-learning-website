@@ -2,9 +2,25 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { CATEGORY_ORDER, subjectsByCategory } from "@/lib/subjects";
 
+const GLYPHS: Record<string, string> = {
+  mathematics: "x²",
+  physics: "F→",
+  chemistry: "H₂",
+  biology: "DNA",
+  "computer-science": "</>",
+  english: "Aa",
+  history: "AD",
+  geography: "◎",
+  economics: "↗",
+  business: "B",
+  spanish: "Ñ",
+  french: "Ç",
+};
+
 export const metadata = {
   title: "Subjects",
-  description: "Browse all twelve Thread Academy subjects — Mathematics, Sciences, Humanities and Languages.",
+  description:
+    "Explore school subjects by category. Every subject can be followed through British, Cambridge, American, or IB structures.",
 };
 
 export default function SubjectsPage() {
@@ -12,38 +28,42 @@ export default function SubjectsPage() {
     <>
       <PageHero
         crumbs={[{ label: "Home", href: "/" }, { label: "Subjects" }]}
+        eyebrow="Knowledge library"
         title="Subjects"
-        lede="Twelve subjects, each organised into chapters and bite-sized lessons. Pick a subject, then choose your curriculum and level."
+        lede="Explore school subjects by category. Every subject can be followed through British, Cambridge, American, or IB structures."
       />
-      <section className="section">
-        <div className="container">
-          {CATEGORY_ORDER.map((category) => (
-            <div key={category} style={{ marginBottom: 64 }}>
-              <h2
-                style={{
-                  fontSize: 15,
-                  letterSpacing: "0.1em",
-                  textTransform: "uppercase",
-                  color: "var(--faint)",
-                  marginBottom: 24,
-                }}
-              >
-                {category}
-              </h2>
-              <div className="card-grid">
-                {subjectsByCategory(category).map((subject) => (
-                  <Link key={subject.slug} className="card" href={`/subjects/${subject.slug}`}>
-                    <span className="card-icon" aria-hidden="true">{subject.icon}</span>
-                    <span className="card-meta">{subject.chapters.length} chapters</span>
-                    <h3>{subject.name}</h3>
-                    <p>{subject.tagline}</p>
-                    <span className="card-link">Explore subject →</span>
-                  </Link>
-                ))}
-              </div>
+      <section className="subject-overview">
+        {CATEGORY_ORDER.map((category) => (
+          <div key={category}>
+            <div className="eyebrow" style={{ margin: "42px 0 16px" }}>
+              {category}
             </div>
-          ))}
-        </div>
+            <div className="subjects-grid">
+              {subjectsByCategory(category).map((subject) => (
+                <Link
+                  key={subject.slug}
+                  className="subject-card"
+                  href={`/subjects/${subject.slug}`}
+                >
+                  <div className="subject-icon" aria-hidden="true">
+                    {GLYPHS[subject.slug] ?? subject.slug.slice(0, 2).toUpperCase()}
+                  </div>
+                  <div className="subject-bottom">
+                    <div>
+                      <h3>{subject.name}</h3>
+                      <div className="subject-meta">
+                        {subject.chapters.length} chapter areas · four curricula
+                      </div>
+                    </div>
+                    <span className="subject-arrow" aria-hidden="true">
+                      ↗
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        ))}
       </section>
     </>
   );
