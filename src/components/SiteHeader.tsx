@@ -19,6 +19,7 @@ export default function SiteHeader() {
     <header className="nav">
       <Link href="/" className="brand" aria-label="Thread Academy home">
         <span className="brand-mark" aria-hidden="true" />
+        <span>Thread Academy</span>
       </Link>
       <nav className="nav-links" aria-label="Primary">
         {NAV.map((item) => (
