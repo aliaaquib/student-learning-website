@@ -1,9 +1,8 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { mdxComponents } from "@/mdx-components";
-import { Breadcrumbs } from "@/components/textbook/Breadcrumbs";
 import { ChapterSidebar } from "@/components/textbook/ChapterSidebar";
-import { NextChapter } from "@/components/textbook/NextChapter";
 import { getCurriculum, resolveLevel } from "@/lib/curriculum";
 import { getChapter, getSubject } from "@/lib/subjects";
 import { getAllTopicParams, getAvailableTopics, getTopicContent } from "@/lib/content";
@@ -46,48 +45,42 @@ export default function TopicPage({
     subject: params.subject,
     chapter: params.chapter,
   });
-  const index = topics.findIndex((t) => t.slug === params.topic);
-  const next = index >= 0 ? topics[index + 1] : undefined;
 
   return (
-    <div className="container">
-      <div className="learn-layout">
-        <ChapterSidebar
-          subjectName={subject.name}
-          chapterTitle={chapter.title}
-          topics={topics}
-          currentSlug={params.topic}
-        />
-        <div className="lesson-body">
-          <Breadcrumbs
-            items={[
-              { label: "Subjects", href: "/subjects" },
-              { label: subject.name, href: `/subjects/${subject.slug}` },
-              { label: `${curriculum.name} · ${level.name}`, href: levelBase },
-              { label: chapter.title, href: chapterBase },
-              { label: content.title },
-            ]}
-          />
+    <div className="lesson-layout">
+      <ChapterSidebar
+        subjectName={subject.name}
+        chapterTitle={chapter.title}
+        topics={topics}
+        currentSlug={params.topic}
+        backHref={levelBase}
+        backLabel={`${curriculum.name} ${level.name}`}
+      />
+      <div className="lesson-main">
+        <div className="lesson-top">
+          <span className="lesson-kicker">
+            {subject.name} · {curriculum.name} · {level.name} · {chapter.title}
+          </span>
           <h1>{content.title}</h1>
-          {content.lede && <p className="lesson-lede">{content.lede}</p>}
-          <div className="lesson-content">
-            {/* blockJS:false — our MDX is authored in-repo (trusted); it passes
-                arrays/numbers as JSX props (e.g. QuizQuestion options).
-                blockDangerousJS stays on (v6 default) as a safety net. */}
-            <MDXRemote
-              source={content.source}
-              components={mdxComponents}
-              options={{ blockJS: false }}
-            />
-          </div>
-          <div className="lesson-footer">
-            {next ? (
-              <NextChapter kicker="Next lesson" title={next.title} href={next.url} />
-            ) : (
-              <NextChapter kicker="Chapter complete" title={`Back to ${chapter.title}`} href={chapterBase} />
-            )}
-          </div>
+          {content.lede && <p>{content.lede}</p>}
         </div>
+        <article className="lesson-article">
+          {/* blockJS:false — our MDX is authored in-repo (trusted); it passes
+              arrays/numbers as JSX props (e.g. QuizQuestion options).
+              blockDangerousJS stays on (v6 default) as a safety net. */}
+          <MDXRemote source={content.source} components={mdxComponents} options={{ blockJS: false }} />
+          <div className="lesson-finish">
+            <Link className="next-btn" href={levelBase}>
+              Back to {subject.name} chapters
+            </Link>
+            <Link
+              className="next-btn"
+              href={`/resources/${params.subject}/${params.curriculum}/${params.level}/${params.chapter}`}
+            >
+              Related resources →
+            </Link>
+          </div>
+        </article>
       </div>
     </div>
   );
