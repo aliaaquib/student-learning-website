@@ -123,7 +123,10 @@ export function JsonLd({ data }: { data: Record<string, unknown> | Record<string
         <script
           key={i}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(block) }}
+          // Escape `<` so a `</script>` sequence in titles/descriptions can
+          // never break out of the script tag (defense in depth; JSON-LD
+          // strings are internally generated but titles come from MDX files).
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(block).replace(/</g, "\\u003c") }}
         />
       ))}
     </>
