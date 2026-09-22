@@ -8,7 +8,7 @@ import type { Metadata } from "next";
  * Replace this with the final public production domain as soon as it is set
  * (and Deployment Protection is disabled), then rebuild.
  */
-export const SITE_URL = "https://threadlearning-6xh8j3v59-aaquibali.vercel.app";
+export const SITE_URL = "https://threadlearning.vercel.app";
 
 export const SITE_NAME = "Thread Academy";
 
