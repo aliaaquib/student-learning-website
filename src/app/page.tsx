@@ -100,7 +100,7 @@ export default function HomePage() {
               {category}
             </div>
             <div className="subjects-grid">
-              {subjectsByCategory(category).map((subject) => (
+              {subjectsByCategory(category).slice(0, 3).map((subject) => (
                   <Link
                     key={subject.slug}
                     className="subject-card"
@@ -123,6 +123,12 @@ export default function HomePage() {
                   </Link>
                 ))}
             </div>
+            <p style={{ marginTop: 18 }}>
+              <Link className="inline-link" href={`/subjects/${category.toLowerCase()}`}>
+                Browse {category === "STEM" ? "STEM" : category === "HUMANITIES" ? "Humanities" : "Languages"} subjects{" "}
+                <span aria-hidden="true">→</span>
+              </Link>
+            </p>
           </div>
         ))}
         <p style={{ marginTop: 36 }}>

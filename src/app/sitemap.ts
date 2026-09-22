@@ -37,6 +37,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     add(`/subjects/${subject}`, 0.9);
   }
 
+  // Subject category indexes (e.g. /subjects/stem).
+  for (const category of ["stem", "humanities", "languages"]) {
+    add(`/subjects/${category}`, 0.8);
+  }
+
   for (const curriculum of CURRICULUM_SLUGS) {
     add(`/curriculum/${curriculum}`, 0.9);
     for (const { slug: level } of allLevelSlugs(curriculum)) {
