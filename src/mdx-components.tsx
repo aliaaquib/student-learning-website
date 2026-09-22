@@ -49,8 +49,20 @@ function Pre({ children }: { children?: ReactNode }) {
   return <CodeBlock lang={lang}>{code}</CodeBlock>;
 }
 
+/** Only these URL schemes are allowed in MDX links. Anything else
+ *  (javascript:, data:, vbscript:, …) renders as plain text, never a link. */
+function isSafeHref(href: string): boolean {
+  const h = href.trim();
+  if (h === "" || h.startsWith("/") || h.startsWith("#")) return true;
+  return /^(https?:\/\/|mailto:|tel:)/i.test(h);
+}
+
 function MdxLink(props: AnchorHTMLAttributes<HTMLAnchorElement>) {
   const href = props.href ?? "";
+  if (!isSafeHref(href)) {
+    // Unsafe scheme (e.g. javascript:) — render the text with no link.
+    return <span>{props.children}</span>;
+  }
   if (href.startsWith("/")) {
     return <Link href={href}>{props.children}</Link>;
   }
