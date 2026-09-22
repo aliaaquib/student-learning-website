@@ -8,6 +8,7 @@ import { getSubject } from "@/lib/subjects";
 import { getChapterFor } from "@/lib/stage-chapters";
 import { getContentChapters } from "@/lib/content";
 import { getChapterResources } from "@/lib/resources";
+import { pageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getContentChapters().map((c) => ({
@@ -25,11 +26,15 @@ export async function generateMetadata({
 }) {
   const subject = getSubject(params.subject);
   const chapter = getChapterFor(params.subject, params.curriculum, params.level, params.chapter);
+  const curriculum = getCurriculum(params.curriculum);
+  const level = curriculum ? resolveLevel(params.curriculum, params.level) : null;
   if (!subject || !chapter) return {};
-  return {
-    title: `${chapter.title} resources — ${subject.name}`,
-    description: `Notes, worksheets, videos, interactive tools and revision materials for ${chapter.title}.`,
-  };
+  const levelPart = curriculum && level ? ` (${curriculum.name} ${level.name})` : "";
+  return pageMetadata({
+    title: `${chapter.title} resources — ${subject.name}${levelPart}`,
+    description: `Notes, worksheets, videos, interactive tools and revision materials for ${chapter.title} (${subject.name}${levelPart}).`,
+    path: `/resources/${params.subject}/${params.curriculum}/${params.level}/${params.chapter}`,
+  });
 }
 
 function ResourceSection({ id, eyebrow, title, lede, children }: {

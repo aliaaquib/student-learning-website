@@ -1,11 +1,15 @@
 import { Suspense } from "react";
 import PageHero from "@/components/PageHero";
 import SearchUI from "./SearchUI";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata = {
+/** Search results pages are not indexed; the content they link to is. */
+export const metadata = pageMetadata({
   title: "Search",
   description: "Search every lesson, chapter, subject and resource on Thread Academy.",
-};
+  path: "/search",
+  noindex: true,
+});
 
 /** Server shell (prerendered) + client search UI inside a Suspense boundary
  *  so useSearchParams() works with a fully static export. */

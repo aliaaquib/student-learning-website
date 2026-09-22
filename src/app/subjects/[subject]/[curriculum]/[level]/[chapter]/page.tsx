@@ -5,6 +5,7 @@ import { CURRICULUM_SLUGS, allLevelSlugs, getCurriculum, resolveLevel } from "@/
 import { SUBJECT_SLUGS, getSubject } from "@/lib/subjects";
 import { getChapterFor, getChaptersFor } from "@/lib/stage-chapters";
 import { getAvailableTopics } from "@/lib/content";
+import { pageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   const params: { subject: string; curriculum: string; level: string; chapter: string }[] = [];
@@ -33,10 +34,12 @@ export async function generateMetadata({
   const curriculum = getCurriculum(params.curriculum);
   const level = curriculum ? resolveLevel(params.curriculum, params.level) : null;
   if (!subject || !chapter || !curriculum || !level) return {};
-  return {
+  return pageMetadata({
     title: `${chapter.title} — ${subject.name} (${curriculum.name} ${level.name})`,
-    description: chapter.desc,
-  };
+    description: `${chapter.desc} Open ${chapter.title} for ${subject.name} ${curriculum.name} ${level.name}: lessons, worked examples and practice questions.`,
+    path: `/subjects/${subject.slug}/${curriculum.slug}/${level.slug}/${chapter.id}`,
+    type: "article",
+  });
 }
 
 export default function ChapterPage({

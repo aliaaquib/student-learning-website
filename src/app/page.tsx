@@ -2,6 +2,14 @@ import Link from "next/link";
 import HeroSearch from "@/components/HeroSearch";
 import { CATEGORY_ORDER, subjectsByCategory } from "@/lib/subjects";
 import { CURRICULA, CURRICULUM_SLUGS } from "@/lib/curriculum";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Thread Academy",
+  description:
+    "Free school lessons, worked examples, practice and tests across British, Cambridge, American and IB curricula — from primary foundations to advanced study. No account required.",
+  path: "/",
+});
 
 /** Reference glyphs per subject slug (approved design; not emoji). */
 const GLYPHS: Record<string, string> = {

@@ -6,6 +6,7 @@ import {
   getCurriculum,
 } from "@/lib/curriculum";
 import { SUBJECT_SLUGS, getSubject } from "@/lib/subjects";
+import { pageMetadata } from "@/lib/seo";
 import LevelPicker from "./LevelPicker";
 
 export function generateStaticParams() {
@@ -28,10 +29,11 @@ export async function generateMetadata({
   const subject = getSubject(params.subject);
   const curriculum = getCurriculum(params.curriculum);
   if (!subject || !curriculum) return {};
-  return {
-    title: `${subject.name} — ${curriculum.name}`,
-    description: `Choose a ${curriculum.name} level to open the ${subject.name} chapters.`,
-  };
+  return pageMetadata({
+    title: `${subject.name} — ${curriculum.name} levels`,
+    description: `Choose a ${curriculum.name} level to open the ${subject.name} chapters: lessons, worked examples and practice for every level.`,
+    path: `/subjects/${subject.slug}/${curriculum.slug}`,
+  });
 }
 
 export default function SubjectCurriculumPage({

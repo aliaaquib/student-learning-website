@@ -4,6 +4,7 @@ import PageHero from "@/components/PageHero";
 import { CURRICULUM_SLUGS, allLevelSlugs, getCurriculum, resolveLevel } from "@/lib/curriculum";
 import { SUBJECT_SLUGS, getSubject } from "@/lib/subjects";
 import { getChaptersFor } from "@/lib/stage-chapters";
+import { pageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   const params: { subject: string; curriculum: string; level: string }[] = [];
@@ -30,10 +31,11 @@ export async function generateMetadata({
   const curriculum = getCurriculum(params.curriculum);
   const level = curriculum ? resolveLevel(params.curriculum, params.level) : null;
   if (!subject || !curriculum || !level) return {};
-  return {
-    title: `${subject.name} — ${curriculum.name} ${level.name}`,
-    description: `Follow the ${subject.name} chapters for ${curriculum.name} ${level.name}.`,
-  };
+  return pageMetadata({
+    title: `${subject.name} chapters — ${curriculum.name} ${level.name}`,
+    description: `All ${subject.name} chapters for ${curriculum.name} ${level.name}. Open a chapter for lessons, worked examples and practice questions.`,
+    path: `/subjects/${subject.slug}/${curriculum.slug}/${level.slug}`,
+  });
 }
 
 export default function SubjectLevelPage({

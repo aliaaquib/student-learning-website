@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import { CURRICULUM_SLUGS, allLevelSlugs, getCurriculum, resolveLevel } from "@/lib/curriculum";
 import { getSubject } from "@/lib/subjects";
+import { pageMetadata } from "@/lib/seo";
 
 const GLYPHS: Record<string, string> = {
   mathematics: "x²",
@@ -33,10 +34,11 @@ export async function generateMetadata({ params }: { params: { curriculum: strin
   const curriculum = getCurriculum(params.curriculum);
   const level = curriculum ? resolveLevel(params.curriculum, params.level) : null;
   if (!curriculum || !level) return {};
-  return {
-    title: `${curriculum.name} ${level.name}`,
-    description: `Subjects offered in ${curriculum.name} ${level.name}.`,
-  };
+  return pageMetadata({
+    title: `${curriculum.name} ${level.name} subjects`,
+    description: `Subjects offered in ${curriculum.name} ${level.name}. Pick a subject to open its chapters, lessons and practice.`,
+    path: `/curriculum/${curriculum.slug}/${level.slug}`,
+  });
 }
 
 export default function CurriculumLevelPage({ params }: { params: { curriculum: string; level: string } }) {

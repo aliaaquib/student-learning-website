@@ -1,10 +1,12 @@
 import PageHero from "@/components/PageHero";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "About",
   description:
     "Thread Academy is an educational knowledge platform built to make complete school subjects easier to navigate, understand, and revisit.",
-};
+  path: "/about",
+});
 
 const PROVIDES = [
   "Curriculum-specific routes",

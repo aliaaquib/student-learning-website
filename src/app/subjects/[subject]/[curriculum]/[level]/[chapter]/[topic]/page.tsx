@@ -7,6 +7,7 @@ import { getCurriculum, resolveLevel } from "@/lib/curriculum";
 import { getSubject } from "@/lib/subjects";
 import { getChapterFor } from "@/lib/stage-chapters";
 import { getAllTopicParams, getAvailableTopics, getTopicContent } from "@/lib/content";
+import { JsonLd, articleJsonLd, breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getAllTopicParams();
@@ -20,10 +21,20 @@ export async function generateMetadata({
   const content = getTopicContent(params);
   const subject = getSubject(params.subject);
   if (!content || !subject) return {};
-  return {
-    title: `${content.title} — ${subject.name}`,
-    description: content.lede || content.title,
-  };
+  const chapter = getChapterFor(params.subject, params.curriculum, params.level, params.chapter);
+  const curriculum = getCurriculum(params.curriculum);
+  const level = curriculum ? resolveLevel(params.curriculum, params.level) : null;
+  const chapterPart = chapter ? ` — ${chapter.title}` : "";
+  const levelPart = curriculum && level ? ` (${curriculum.name} ${level.name})` : "";
+  const levelDesc = curriculum && level ? ` ${curriculum.name} ${level.name} lesson` : " lesson";
+  return pageMetadata({
+    title: `${content.title}${chapterPart} — ${subject.name}${levelPart}`,
+    description: content.lede
+      ? `${content.lede}${levelDesc} with worked examples and practice.`
+      : `${content.title}: a ${subject.name}${levelDesc} with worked examples and practice.`,
+    path: `/subjects/${params.subject}/${params.curriculum}/${params.level}/${params.chapter}/${params.topic}`,
+    type: "article",
+  });
 }
 
 export default function TopicPage({
@@ -48,7 +59,28 @@ export default function TopicPage({
   });
 
   return (
-    <div className="lesson-layout">
+    <>
+      <JsonLd
+        data={[
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: subject.name, path: `/subjects/${params.subject}` },
+            {
+              name: `${curriculum.name} ${level.name}`,
+              path: levelBase,
+            },
+            { name: chapter.title, path: chapterBase },
+            { name: content.title },
+          ]),
+          articleJsonLd({
+            headline: content.title,
+            description: content.lede || `${content.title} — a ${subject.name} lesson.`,
+            path: `/subjects/${params.subject}/${params.curriculum}/${params.level}/${params.chapter}/${params.topic}`,
+            chapter: chapter.title,
+          }),
+        ]}
+      />
+      <div className="lesson-layout">
       <ChapterSidebar
         subjectName={subject.name}
         chapterTitle={chapter.title}
@@ -80,6 +112,7 @@ export default function TopicPage({
           </div>
         </article>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

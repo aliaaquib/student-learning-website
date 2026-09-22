@@ -1,12 +1,14 @@
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { CURRICULA, CURRICULUM_SLUGS } from "@/lib/curriculum";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Curriculum",
   description:
-    "Each curriculum is represented on its own terms. Choose one to see its stages and levels, then continue to subjects and chapters.",
-};
+    "Each curriculum is represented on its own terms. Choose British, Cambridge, American or IB to see its stages and levels, then continue to subjects and chapters.",
+  path: "/curriculum",
+});
 
 export default function CurriculumIndexPage() {
   return (

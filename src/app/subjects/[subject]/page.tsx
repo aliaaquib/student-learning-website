@@ -7,6 +7,7 @@ import {
   CURRICULUM_SLUGS,
   curriculumOffersSubject,
 } from "@/lib/curriculum";
+import { JsonLd, courseJsonLd, pageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return SUBJECT_SLUGS.map((subject) => ({ subject }));
@@ -15,10 +16,14 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { subject: string } }) {
   const subject = getSubject(params.subject);
   if (!subject) return {};
-  return {
-    title: subject.name,
-    description: subject.intro,
-  };
+  const curricula = CURRICULUM_SLUGS.filter((c) => curriculumOffersSubject(c, subject.slug))
+    .map((c) => CURRICULA[c].name)
+    .join(", ");
+  return pageMetadata({
+    title: `${subject.name} lessons, chapters and practice`,
+    description: `${subject.tagline ?? subject.intro} Follow ${subject.name} through ${curricula}: levels, chapters, lessons, worked examples and practice — free, no account required.`,
+    path: `/subjects/${subject.slug}`,
+  });
 }
 
 export default function SubjectPage({ params }: { params: { subject: string } }) {
@@ -27,6 +32,13 @@ export default function SubjectPage({ params }: { params: { subject: string } })
 
   return (
     <>
+      <JsonLd
+        data={courseJsonLd({
+          name: `${subject.name} — school lessons and practice`,
+          description: subject.intro,
+          path: `/subjects/${subject.slug}`,
+        })}
+      />
       <PageHero
         crumbs={[
           { label: "Home", href: "/" },

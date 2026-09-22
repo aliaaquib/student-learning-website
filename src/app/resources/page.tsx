@@ -4,6 +4,7 @@ import { getContentChapters } from "@/lib/content";
 import { getCurriculum, resolveLevel } from "@/lib/curriculum";
 import { SUBJECT_SLUGS, getSubject } from "@/lib/subjects";
 import { getChapterFor } from "@/lib/stage-chapters";
+import { pageMetadata } from "@/lib/seo";
 
 const GLYPHS: Record<string, string> = {
   mathematics: "x²",
@@ -20,11 +21,12 @@ const GLYPHS: Record<string, string> = {
   french: "Ç",
 };
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Resources",
   description:
     "Find notes, worksheets, worked examples, interactive tools, and revision materials beside the chapter they support.",
-};
+  path: "/resources",
+});
 
 export default function ResourcesHubPage() {
   const chapters = getContentChapters();

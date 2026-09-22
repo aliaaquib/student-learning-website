@@ -1,6 +1,14 @@
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { CATEGORY_ORDER, subjectsByCategory } from "@/lib/subjects";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Subjects",
+  description:
+    "Explore 28 school subjects by category. Every subject can be followed through British, Cambridge, American, or IB structures.",
+  path: "/subjects",
+});
 
 const GLYPHS: Record<string, string> = {
   mathematics: "x²",
@@ -31,12 +39,6 @@ const GLYPHS: Record<string, string> = {
   "chinese": "中",
   "japanese": "あ",
   "russian": "Ж",
-};
-
-export const metadata = {
-  title: "Subjects",
-  description:
-    "Explore school subjects by category. Every subject can be followed through British, Cambridge, American, or IB structures.",
 };
 
 export default function SubjectsPage() {
