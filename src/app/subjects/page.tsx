@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Subjects",
   description:
-    "Explore 28 school subjects by category. Every subject can be followed through British, Cambridge, American, or IB structures.",
+    "Explore 28 school subjects by category. Every subject can be followed through Cambridge, American, IB, or CBSE/ICSE structures.",
   path: "/subjects",
 });
 
@@ -47,7 +47,7 @@ export default function SubjectsPage() {
       <PageHero
         crumbs={[{ label: "Home", href: "/" }, { label: "Subjects" }]}
         title="Subjects"
-        lede="Explore school subjects by category. Every subject can be followed through British, Cambridge, American, or IB structures."
+        lede="Explore school subjects by category. Every subject can be followed through Cambridge, American, IB, or CBSE/ICSE structures."
       />
       <section className="subject-overview">
         {CATEGORY_ORDER.map((category) => (

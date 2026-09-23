@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Curriculum",
   description:
-    "Each curriculum is represented on its own terms. Choose British, Cambridge, American or IB to see its stages and levels, then continue to subjects and chapters.",
+    "Each curriculum is represented on its own terms. Choose Cambridge, American, IB or CBSE/ICSE to see its stages and levels, then continue to subjects and chapters.",
   path: "/curriculum",
 });
 

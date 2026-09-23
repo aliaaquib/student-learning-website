@@ -53,7 +53,7 @@ export default function SiteFooter() {
       </div>
       <div className="footer-bottom">
         <span>© Thread Academy</span>
-        <span>British · Cambridge · American · IB</span>
+        <span>Cambridge · American · IB · CBSE/ICSE</span>
       </div>
     </footer>
   );

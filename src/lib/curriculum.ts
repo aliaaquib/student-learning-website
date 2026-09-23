@@ -5,84 +5,6 @@ import type { Curriculum, CurriculumStage, ResolvedLevel } from "./types";
  * Ported from the approved content model; year/stage slugs added for routing.
  */
 export const CURRICULA: Record<string, Curriculum> = {
-  british: {
-    slug: "british",
-    name: "British",
-    tagline: "The National Curriculum for England",
-    desc: "The British curriculum organises school into Primary, Secondary, GCSE/IGCSE and A Level stages, with national assessments marking each transition.",
-    stages: [
-      {
-        slug: "primary",
-        name: "Primary",
-        desc: "Foundations in literacy, numeracy and science.",
-        years: [
-          { slug: "year-1-2", name: "Year 1–2", subjects: ["mathematics", "english", "languages"] },
-          { slug: "year-3-4", name: "Year 3–4", subjects: ["mathematics", "english", "biology", "languages"] },
-          {
-            slug: "year-5-6",
-            name: "Year 5–6",
-            subjects: ["mathematics", "english", "biology", "computer-science", "history", "geography"],
-          },
-        ],
-      },
-      {
-        slug: "secondary",
-        name: "Secondary",
-        desc: "Broader subjects and deeper concepts in Years 7–9.",
-        years: [
-          {
-            slug: "year-7",
-            name: "Year 7",
-            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "languages"],
-          },
-          {
-            slug: "year-8",
-            name: "Year 8",
-            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "languages"],
-          },
-          {
-            slug: "year-9",
-            name: "Year 9",
-            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages"],
-          },
-        ],
-      },
-      {
-        slug: "gcse-igcse",
-        name: "GCSE / IGCSE",
-        desc: "Two-year examined courses, usually Years 10–11.",
-        years: [
-          {
-            slug: "year-10",
-            name: "Year 10",
-            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages", "astronomy", "earth-science", "religious-studies"],
-          },
-          {
-            slug: "year-11",
-            name: "Year 11",
-            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "business", "languages", "astronomy", "earth-science", "religious-studies"],
-          },
-        ],
-      },
-      {
-        slug: "a-level",
-        name: "A Level",
-        desc: "Specialised two-year study, usually Years 12–13.",
-        years: [
-          {
-            slug: "year-12",
-            name: "Year 12",
-            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "english", "history", "geography", "economics", "business", "languages", "engineering", "psychology", "sociology", "political-science", "philosophy"],
-          },
-          {
-            slug: "year-13",
-            name: "Year 13",
-            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "english", "history", "geography", "economics", "business", "languages", "engineering", "psychology", "sociology", "political-science", "philosophy"],
-          },
-        ],
-      },
-    ],
-  },
   cambridge: {
     slug: "cambridge",
     name: "Cambridge",
@@ -275,6 +197,83 @@ export const CURRICULA: Record<string, Curriculum> = {
       },
     ],
   },
+  "cbse-icse": {
+    slug: "cbse-icse",
+    name: "CBSE / ICSE",
+    tagline: "Indian school boards",
+    desc: "India's national boards organise school into Primary, Middle, Secondary and Senior Secondary stages, with board examinations in Classes 10 and 12.",
+    stages: [
+      {
+        slug: "primary",
+        name: "Primary",
+        desc: "Classes 1–5: foundations in literacy, numeracy and EVS.",
+        years: [
+          { slug: "classes-1-2", name: "Classes 1–2", subjects: ["mathematics", "english", "languages"] },
+          {
+            slug: "classes-3-5",
+            name: "Classes 3–5",
+            subjects: ["mathematics", "english", "biology", "computer-science", "languages"],
+          },
+        ],
+      },
+      {
+        slug: "middle-school",
+        name: "Middle School",
+        desc: "Classes 6–8: subject-wise learning takes shape.",
+        years: [
+          {
+            slug: "class-6",
+            name: "Class 6",
+            subjects: ["mathematics", "english", "biology", "physics", "computer-science", "history", "geography", "languages"],
+          },
+          {
+            slug: "class-7",
+            name: "Class 7",
+            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "languages"],
+          },
+          {
+            slug: "class-8",
+            name: "Class 8",
+            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "civics", "languages"],
+          },
+        ],
+      },
+      {
+        slug: "secondary",
+        name: "Secondary",
+        desc: "Classes 9–10: board examination preparation.",
+        years: [
+          {
+            slug: "class-9",
+            name: "Class 9",
+            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "civics", "languages"],
+          },
+          {
+            slug: "class-10",
+            name: "Class 10",
+            subjects: ["mathematics", "english", "biology", "physics", "chemistry", "computer-science", "history", "geography", "economics", "civics", "languages"],
+          },
+        ],
+      },
+      {
+        slug: "senior-secondary",
+        name: "Senior Secondary",
+        desc: "Classes 11–12: specialised streams and board examinations.",
+        years: [
+          {
+            slug: "class-11",
+            name: "Class 11",
+            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "english", "economics", "business", "languages", "psychology"],
+          },
+          {
+            slug: "class-12",
+            name: "Class 12",
+            subjects: ["mathematics", "biology", "physics", "chemistry", "computer-science", "english", "economics", "business", "languages", "psychology"],
+          },
+        ],
+      },
+    ],
+  },
 };
 
 export const CURRICULUM_SLUGS = Object.keys(CURRICULA);
@@ -293,7 +292,7 @@ export function expandSubjects(subjects: string[]): string[] {
 
 /**
  * Resolve a level slug for routing. Accepts either a stage slug
- * (e.g. cambridge "igcse") or a year slug inside a stage (e.g. british "year-8").
+ * (e.g. cambridge "igcse") or a year slug inside a stage (e.g. cambridge "stage-7").
  */
 export function resolveLevel(curriculumSlug: string, levelSlug: string): ResolvedLevel | null {
   const curriculum = CURRICULA[curriculumSlug];

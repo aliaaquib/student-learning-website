@@ -14,10 +14,10 @@ import { resolveLevel } from "./curriculum";
 export type Band = "foundations" | "developing" | "examination" | "advanced";
 
 const STAGE_BANDS: Record<string, Band> = {
-  "british:primary": "foundations",
-  "british:secondary": "developing",
-  "british:gcse-igcse": "examination",
-  "british:a-level": "advanced",
+  "cbse-icse:primary": "foundations",
+  "cbse-icse:middle-school": "developing",
+  "cbse-icse:secondary": "examination",
+  "cbse-icse:senior-secondary": "advanced",
   "cambridge:primary": "foundations",
   "cambridge:lower-secondary": "developing",
   "cambridge:igcse": "examination",

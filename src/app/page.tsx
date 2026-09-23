@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Thread Academy",
   description:
-    "Free school lessons, worked examples, practice and tests across British, Cambridge, American and IB curricula — from primary foundations to advanced study. No account required.",
+    "Free school lessons, worked examples, practice and tests across Cambridge, American, IB and CBSE/ICSE curricula — from primary foundations to advanced study. No account required.",
   path: "/",
 });
 
@@ -143,7 +143,7 @@ export default function HomePage() {
           <div className="section-head">
             <h2>Four curricula. Their own structures.</h2>
             <p>
-              British, Cambridge, American, and IB pathways keep the stages, years, grades, and
+              Cambridge, American, IB, and CBSE/ICSE pathways keep the stages, years, grades, and
               programmes that belong to them.
             </p>
           </div>

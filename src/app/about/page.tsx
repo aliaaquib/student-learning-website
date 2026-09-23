@@ -23,7 +23,7 @@ const CHAPTERS = [
   },
   {
     title: "Our structure",
-    desc: "Subject → Curriculum → Level → Chapter → Topic. British, Cambridge, American, and IB routes keep their own stages rather than being forced into one hierarchy.",
+    desc: "Subject → Curriculum → Level → Chapter → Topic. Cambridge, American, IB, and CBSE/ICSE routes keep their own stages rather than being forced into one hierarchy.",
   },
   {
     title: "How students use it",

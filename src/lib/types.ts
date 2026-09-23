@@ -28,7 +28,7 @@ export interface Curriculum {
 }
 
 /** A resolved "level" for routing: either a whole stage (e.g. cambridge/igcse)
- *  or a specific year inside a stage (e.g. british/year-8). */
+ *  or a specific year inside a stage (e.g. cambridge/stage-7). */
 export interface ResolvedLevel {
   kind: "stage" | "year";
   slug: string;

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s — Thread Academy",
   },
   description:
-    "Thread Academy is an open educational knowledge platform for school learning: clear lessons, practice and tests across British, Cambridge, American and IB curricula. No account required.",
+    "Thread Academy is an open educational knowledge platform for school learning: clear lessons, practice and tests across Cambridge, American, IB and CBSE/ICSE curricula. No account required.",
   alternates: { canonical: SITE_URL },
   openGraph: {
     type: "website",
@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: SITE_NAME,
     description:
-      "Thread Academy is an open educational knowledge platform for school learning: clear lessons, practice and tests across British, Cambridge, American and IB curricula.",
+      "Thread Academy is an open educational knowledge platform for school learning: clear lessons, practice and tests across Cambridge, American, IB and CBSE/ICSE curricula.",
   },
   twitter: {
     card: "summary",
     title: SITE_NAME,
     description:
-      "Free school lessons, practice and tests across British, Cambridge, American and IB curricula.",
+      "Free school lessons, practice and tests across Cambridge, American, IB and CBSE/ICSE curricula.",
   },
   icons: { icon: "/favicon.svg" },
   robots: { index: true, follow: true },
