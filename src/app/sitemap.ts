@@ -1,42 +1,25 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/seo";
 import { SUBJECT_SLUGS } from "@/lib/subjects";
-import { getAllPosts, getPostSlugs } from "@/lib/blog";
+import { getPostSlugs } from "@/lib/blog";
 import {
   CURRICULUM_SLUGS,
   allLevelSlugs,
   curriculumOffersSubject,
   resolveLevel,
 } from "@/lib/curriculum";
-import {
-  allChapterCombos,
-  getAllTopicParams,
-  getContentChapters,
-  topicFileMtime,
-} from "@/lib/content";
+import { allChapterCombos, getAllTopicParams, getContentChapters } from "@/lib/content";
 
 /**
  * Generates /sitemap.xml for the static export.
  * Lists every public, indexable page: home, indexes, subjects, curricula,
  * levels, chapters, topics and resource pages. Search is intentionally
  * excluded (it carries a noindex meta tag).
- *
- * lastModified is only set where we know a real date: blog posts use their
- * published date, topic pages use their MDX file's modification time.
- * Index pages omit it rather than faking daily churn.
  */
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [];
-  const add = (
-    path: string,
-    priority: number,
-    lastModified?: Date
-  ) =>
-    urls.push({
-      url: `${SITE_URL}${path}`,
-      ...(lastModified ? { lastModified } : {}),
-      priority,
-    });
+  const add = (path: string, priority: number) =>
+    urls.push({ url: `${SITE_URL}${path}`, lastModified: new Date(), priority });
 
   add("/", 1.0);
   add("/subjects", 0.9);
@@ -45,11 +28,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   add("/blog", 0.8);
   add("/about", 0.5);
 
-  // Blog posts (learning journal) — lastmod = published date.
-  const postDates = new Map(getAllPosts().map((p) => [p.slug, p.date]));
+  // Blog posts (learning journal).
   for (const slug of getPostSlugs()) {
-    const date = postDates.get(slug);
-    add(`/blog/${slug}`, 0.8, date ? new Date(`${date}T00:00:00Z`) : undefined);
+    add(`/blog/${slug}`, 0.8);
   }
 
   for (const subject of SUBJECT_SLUGS) {
@@ -81,8 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const t of getAllTopicParams()) {
     add(
       `/subjects/${t.subject}/${t.curriculum}/${t.level}/${t.chapter}/${t.topic}`,
-      0.9,
-      topicFileMtime(t) ?? undefined
+      0.9
     );
   }
 

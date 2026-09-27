@@ -43,17 +43,6 @@ function resolvedTopicFile(p: TopicParams): string | null {
   return null;
 }
 
-/** Last-modified date of a topic's MDX file, for sitemap lastmod. */
-export function topicFileMtime(p: TopicParams): Date | null {
-  const file = resolvedTopicFile(p);
-  if (!file) return null;
-  try {
-    return fs.statSync(file).mtime;
-  } catch {
-    return null;
-  }
-}
-
 export function topicExists(p: TopicParams): boolean {
   return resolvedTopicFile(p) !== null;
 }

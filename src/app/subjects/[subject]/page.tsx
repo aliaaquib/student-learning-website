@@ -76,8 +76,8 @@ export async function generateMetadata({ params }: { params: { subject: string }
     .map((c) => CURRICULA[c].name)
     .join(", ");
   return pageMetadata({
-    title: `${subject.name} revision & learning resources`,
-    description: `${subject.tagline ?? subject.intro} Follow ${subject.name} through ${curricula}: chapter-based lessons, worked examples and practice questions for revision — free, no account required.`,
+    title: `${subject.name} lessons, chapters and practice`,
+    description: `${subject.tagline ?? subject.intro} Follow ${subject.name} through ${curricula}: levels, chapters, lessons, worked examples and practice — free, no account required.`,
     path: `/subjects/${subject.slug}`,
   });
 }

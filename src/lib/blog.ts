@@ -10,8 +10,6 @@ export interface BlogPostMeta {
   description: string;
   /** ISO date (YYYY-MM-DD). */
   date: string;
-  /** ISO date of the last real content update; only set when actually changed. */
-  updated?: string;
   subject: string;
   subjectSlug: string;
   curriculum: string;
@@ -54,7 +52,6 @@ function readPost(file: string): BlogPost | null {
     title: str(data.title, slug),
     description: str(data.description),
     date: dateStr(data.date),
-    updated: data.updated ? dateStr(data.updated) || undefined : undefined,
     subject: str(data.subject),
     subjectSlug: str(data.subject_slug),
     curriculum: str(data.curriculum),

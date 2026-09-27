@@ -1,30 +1,15 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import HeroSearch from "@/components/HeroSearch";
 import { CATEGORY_ORDER, subjectsByCategory } from "@/lib/subjects";
 import { CURRICULA, CURRICULUM_SLUGS } from "@/lib/curriculum";
-import { JsonLd, organizationJsonLd, pageMetadata, websiteJsonLd } from "@/lib/seo";
+import { pageMetadata } from "@/lib/seo";
 
-const HOME_TITLE = "Free School Subject Revision & Learning Resources";
-const HOME_TITLE_FULL = `${HOME_TITLE} — Thread Academy`;
-const HOME_DESCRIPTION =
-  "Free learning platform for school subjects: chapter-based lessons, worked examples and practice questions for Cambridge, American, IB and CBSE/ICSE curricula.";
-
-const homeBase = pageMetadata({
-  title: HOME_TITLE,
-  description: HOME_DESCRIPTION,
+export const metadata = pageMetadata({
+  title: "Thread Academy",
+  description:
+    "Free school lessons, worked examples, practice and tests across Cambridge, American, IB and CBSE/ICSE curricula — from primary foundations to advanced study. No account required.",
   path: "/",
 });
-
-// `absolute` bypasses the root layout's title template, so the homepage
-// title is exactly this string on every page type (the template does not
-// apply to the root segment's own title).
-export const metadata: Metadata = {
-  ...homeBase,
-  title: { absolute: HOME_TITLE_FULL },
-  openGraph: { ...homeBase.openGraph, title: HOME_TITLE_FULL },
-  twitter: { ...homeBase.twitter, title: HOME_TITLE_FULL },
-};
 
 /** Reference glyphs per subject slug (approved design; not emoji). */
 const GLYPHS: Record<string, string> = {
@@ -85,7 +70,6 @@ const STEPS = [
 export default function HomePage() {
   return (
     <>
-      <JsonLd data={[websiteJsonLd(), organizationJsonLd()]} />
       <header className="home-hero">
         <div className="hero-grid">
           <div>
