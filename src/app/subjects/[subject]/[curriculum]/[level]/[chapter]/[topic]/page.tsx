@@ -21,14 +21,12 @@ export async function generateMetadata({
   const content = getTopicContent(params);
   const subject = getSubject(params.subject);
   if (!content || !subject) return {};
-  const chapter = getChapterFor(params.subject, params.curriculum, params.level, params.chapter);
   const curriculum = getCurriculum(params.curriculum);
   const level = curriculum ? resolveLevel(params.curriculum, params.level) : null;
-  const chapterPart = chapter ? ` — ${chapter.title}` : "";
   const levelPart = curriculum && level ? ` (${curriculum.name} ${level.name})` : "";
   const levelDesc = curriculum && level ? ` ${curriculum.name} ${level.name} lesson` : " lesson";
   return pageMetadata({
-    title: `${content.title}${chapterPart} — ${subject.name}${levelPart}`,
+    title: `${content.title} — ${subject.name}${levelPart}`,
     description: content.lede
       ? `${content.lede}${levelDesc} with worked examples and practice.`
       : `${content.title}: a ${subject.name}${levelDesc} with worked examples and practice.`,
@@ -57,6 +55,21 @@ export default function TopicPage({
     subject: params.subject,
     chapter: params.chapter,
   });
+
+  // Previous / next lesson within this chapter, for sequential navigation
+  // with descriptive anchor text (helps students and search engines).
+  const currentIndex = topics.findIndex((t) => t.slug === params.topic);
+  const prevTopic = currentIndex > 0 ? topics[currentIndex - 1] : null;
+  const nextTopic =
+    currentIndex >= 0 && currentIndex < topics.length - 1 ? topics[currentIndex + 1] : null;
+
+  const crumbs = [
+    { label: "Home", href: "/" },
+    { label: subject.name, href: `/subjects/${params.subject}` },
+    { label: `${curriculum.name} ${level.name}`, href: levelBase },
+    { label: chapter.title, href: chapterBase },
+    { label: content.title },
+  ];
 
   return (
     <>
@@ -90,6 +103,16 @@ export default function TopicPage({
         backLabel={`${curriculum.name} ${level.name}`}
       />
       <div className="lesson-main">
+        {/* Visible breadcrumb trail in the same language as PageHero's,
+            matching the BreadcrumbList JSON-LD above. */}
+        <nav className="breadcrumb" aria-label="Breadcrumb" style={{ padding: "18px 24px 0" }}>
+          {crumbs.map((c, i) => (
+            <span key={i}>
+              {i > 0 && <span aria-hidden="true"> › </span>}
+              {c.href ? <Link href={c.href}>{c.label}</Link> : c.label}
+            </span>
+          ))}
+        </nav>
         <div className="lesson-top">
           <h1>{content.title}</h1>
           {content.lede && <p>{content.lede}</p>}
@@ -100,6 +123,16 @@ export default function TopicPage({
               blockDangerousJS stays on (v6 default) as a safety net. */}
           <MDXRemote source={content.source} components={mdxComponents} options={{ blockJS: false }} />
           <div className="lesson-finish">
+            {prevTopic && (
+              <Link className="next-btn" href={prevTopic.url}>
+                ← Previous: {prevTopic.title}
+              </Link>
+            )}
+            {nextTopic && (
+              <Link className="next-btn" href={nextTopic.url}>
+                Next: {nextTopic.title} →
+              </Link>
+            )}
             <Link className="next-btn" href={levelBase}>
               Back to {subject.name} chapters
             </Link>
